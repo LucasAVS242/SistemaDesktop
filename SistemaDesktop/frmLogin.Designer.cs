@@ -35,8 +35,8 @@ namespace SistemaDesktop
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblNivelAcesso = new System.Windows.Forms.Label();
+            this.cbmNivelAcesso = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblUsuario
@@ -61,40 +61,34 @@ namespace SistemaDesktop
             // 
             this.txtUsuario.Location = new System.Drawing.Point(583, 46);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(156, 20);
             this.txtUsuario.TabIndex = 2;
             // 
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(583, 93);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtSenha.Size = new System.Drawing.Size(156, 20);
             this.txtSenha.TabIndex = 3;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(713, 180);
+            this.btnLogin.Location = new System.Drawing.Point(664, 210);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(12, 180);
+            this.btnCadastrar.Location = new System.Drawing.Point(583, 210);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 5;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(583, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
             // 
             // lblNivelAcesso
             // 
@@ -105,13 +99,21 @@ namespace SistemaDesktop
             this.lblNivelAcesso.TabIndex = 7;
             this.lblNivelAcesso.Text = "Nivel de Acesso:";
             // 
+            // cbmNivelAcesso
+            // 
+            this.cbmNivelAcesso.FormattingEnabled = true;
+            this.cbmNivelAcesso.Location = new System.Drawing.Point(583, 139);
+            this.cbmNivelAcesso.Name = "cbmNivelAcesso";
+            this.cbmNivelAcesso.Size = new System.Drawing.Size(156, 21);
+            this.cbmNivelAcesso.TabIndex = 8;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbmNivelAcesso);
             this.Controls.Add(this.lblNivelAcesso);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtSenha);
@@ -133,8 +135,8 @@ namespace SistemaDesktop
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblNivelAcesso;
+        private System.Windows.Forms.ComboBox cbmNivelAcesso;
     }
 }
 

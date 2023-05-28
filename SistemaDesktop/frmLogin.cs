@@ -14,9 +14,56 @@ namespace SistemaDesktop
 {
     public partial class frmLogin : Form
     {
+        SqlConnection conn = new SqlConnection(Properties.Settings.Default.CadastroUsuarioConnectionString);
+
         public frmLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if ((txtUsuario.Text != "") && (cbmNivelAcesso.Text != "") && (txtSenha.Text != ""))
+                {
+                    SqlCommand comm = new SqlCommand("Select * From tbUsuario Where nomeUsuario = @usuario and " + "senha = @senha and nivelAcesso=@nivel", conn);
+                    comm.Parameters.Add("@usuario", SqlDbType.VarChar).Value = txtUsuario.Text;
+                    comm.Parameters.Add("@senha", SqlDbType.VarChar).Value = txtSenha.Text;
+                    comm.Parameters.Add("@nivel", SqlDbType.VarChar).Value = cbmNivelAcesso.Text;
+                    conn.Open();
+                    SqlDataReader reader = null;
+                    reader = comm.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        //Será implementado mais adiante
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "Usuário ou senha incorretos",
+                            "Atenção!",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "Todos os Campos são obrigatórios",
+                        "Atenção!",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }
