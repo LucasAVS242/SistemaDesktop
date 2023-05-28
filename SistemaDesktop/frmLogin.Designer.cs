@@ -33,12 +33,16 @@ namespace SistemaDesktop
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblNivelAcesso = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(35, 45);
+            this.lblUsuario.Location = new System.Drawing.Point(531, 49);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(46, 13);
             this.lblUsuario.TabIndex = 0;
@@ -47,7 +51,7 @@ namespace SistemaDesktop
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(35, 175);
+            this.lblSenha.Location = new System.Drawing.Point(536, 96);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(41, 13);
             this.lblSenha.TabIndex = 1;
@@ -55,23 +59,61 @@ namespace SistemaDesktop
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(130, 45);
+            this.txtUsuario.Location = new System.Drawing.Point(583, 46);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 2;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(130, 168);
+            this.txtSenha.Location = new System.Drawing.Point(583, 93);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(100, 20);
             this.txtSenha.TabIndex = 3;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(713, 180);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Location = new System.Drawing.Point(12, 180);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.TabIndex = 5;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(583, 139);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // lblNivelAcesso
+            // 
+            this.lblNivelAcesso.AutoSize = true;
+            this.lblNivelAcesso.Location = new System.Drawing.Point(490, 142);
+            this.lblNivelAcesso.Name = "lblNivelAcesso";
+            this.lblNivelAcesso.Size = new System.Drawing.Size(87, 13);
+            this.lblNivelAcesso.TabIndex = 7;
+            this.lblNivelAcesso.Text = "Nivel de Acesso:";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblNivelAcesso);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblSenha);
@@ -89,6 +131,10 @@ namespace SistemaDesktop
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblNivelAcesso;
     }
 }
 
