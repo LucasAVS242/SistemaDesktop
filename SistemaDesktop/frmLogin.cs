@@ -15,7 +15,8 @@ namespace SistemaDesktop
     public partial class frmLogin : Form
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.CadastroUsuarioConnectionString);
-
+        public static string NivelAcesso;
+        public static 
         public frmLogin()
         {
             InitializeComponent();
@@ -64,6 +65,21 @@ namespace SistemaDesktop
             {
                 conn.Close();
             }
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

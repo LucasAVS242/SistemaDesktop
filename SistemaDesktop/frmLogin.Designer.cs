@@ -29,6 +29,7 @@ namespace SistemaDesktop
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -42,50 +43,61 @@ namespace SistemaDesktop
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(531, 49);
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(68, 45);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(46, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(59, 17);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuário:";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(536, 96);
+            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lblSenha.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblSenha.Location = new System.Drawing.Point(79, 85);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(41, 13);
+            this.lblSenha.Size = new System.Drawing.Size(48, 17);
             this.lblSenha.TabIndex = 1;
             this.lblSenha.Text = "Senha:";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(583, 46);
+            this.txtUsuario.Location = new System.Drawing.Point(133, 44);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(156, 20);
             this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(583, 93);
+            this.txtSenha.Location = new System.Drawing.Point(133, 84);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(156, 20);
             this.txtSenha.TabIndex = 3;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(664, 210);
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnLogin.Location = new System.Drawing.Point(227, 176);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(62, 35);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(583, 210);
+            this.btnCadastrar.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnCadastrar.Location = new System.Drawing.Point(133, 176);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(75, 35);
             this.btnCadastrar.TabIndex = 5;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -93,16 +105,22 @@ namespace SistemaDesktop
             // lblNivelAcesso
             // 
             this.lblNivelAcesso.AutoSize = true;
-            this.lblNivelAcesso.Location = new System.Drawing.Point(490, 142);
+            this.lblNivelAcesso.BackColor = System.Drawing.Color.Transparent;
+            this.lblNivelAcesso.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblNivelAcesso.Location = new System.Drawing.Point(17, 126);
             this.lblNivelAcesso.Name = "lblNivelAcesso";
-            this.lblNivelAcesso.Size = new System.Drawing.Size(87, 13);
+            this.lblNivelAcesso.Size = new System.Drawing.Size(110, 17);
             this.lblNivelAcesso.TabIndex = 7;
             this.lblNivelAcesso.Text = "Nivel de Acesso:";
             // 
             // cbmNivelAcesso
             // 
             this.cbmNivelAcesso.FormattingEnabled = true;
-            this.cbmNivelAcesso.Location = new System.Drawing.Point(583, 139);
+            this.cbmNivelAcesso.Items.AddRange(new object[] {
+            "",
+            "Administrador",
+            "Usuário"});
+            this.cbmNivelAcesso.Location = new System.Drawing.Point(133, 125);
             this.cbmNivelAcesso.Name = "cbmNivelAcesso";
             this.cbmNivelAcesso.Size = new System.Drawing.Size(156, 21);
             this.cbmNivelAcesso.TabIndex = 8;
@@ -111,7 +129,8 @@ namespace SistemaDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(389, 245);
             this.Controls.Add(this.cbmNivelAcesso);
             this.Controls.Add(this.lblNivelAcesso);
             this.Controls.Add(this.btnCadastrar);
@@ -122,6 +141,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.lblUsuario);
             this.Name = "frmLogin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
