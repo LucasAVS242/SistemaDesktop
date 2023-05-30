@@ -33,5 +33,15 @@ namespace SistemaDesktop
             this.tbUsuarioTableAdapter.Fill(this.cadastroUsuarioDataSet.tbUsuario);
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nomeUsuarioLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

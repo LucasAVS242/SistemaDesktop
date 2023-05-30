@@ -15,8 +15,8 @@ namespace SistemaDesktop
     public partial class frmLogin : Form
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.CadastroUsuarioConnectionString);
-        public static string NivelAcesso;
-        public static 
+        public static string nivelAcesso;
+        public static string usuarioConectado;
         public frmLogin()
         {
             InitializeComponent();
@@ -38,6 +38,12 @@ namespace SistemaDesktop
                     if (reader.Read())
                     {
                         //Será implementado mais adiante
+                        usuarioConectado = txtUsuario.Text;
+                        nivelAcesso = cbmNivelAcesso.Text;
+                        frmTelaPrincipal p = new frmTelaPrincipal();
+
+                        this.Hide();
+                        p.Show();
                     }
                     else
                     {
@@ -79,7 +85,12 @@ namespace SistemaDesktop
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            //Possivel problema
+        }
 
+        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
