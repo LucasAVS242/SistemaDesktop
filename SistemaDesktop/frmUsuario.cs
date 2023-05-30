@@ -21,9 +21,14 @@ namespace SistemaDesktop
 
         private void tbUsuarioBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.tbUsuarioBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
+            
+            
+            
+            
+            
+            //this.Validate();
+            //this.tbUsuarioBindingSource.EndEdit();
+            //this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
 
         }
 
@@ -40,6 +45,11 @@ namespace SistemaDesktop
         }
 
         private void nomeUsuarioLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbUsuarioDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

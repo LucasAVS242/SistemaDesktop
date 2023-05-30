@@ -115,6 +115,7 @@ namespace SistemaDesktop
             // 
             // cbmNivelAcesso
             // 
+            this.cbmNivelAcesso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbmNivelAcesso.FormattingEnabled = true;
             this.cbmNivelAcesso.Items.AddRange(new object[] {
             "",
