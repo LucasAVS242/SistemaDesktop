@@ -18,5 +18,20 @@ namespace SistemaDesktop
         {
             InitializeComponent();
         }
+
+        private void tbClienteBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tbClienteBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
+
+        }
+
+        private void frmCliente_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'cadastroUsuarioDataSet.tbCliente' table. You can move, or remove it, as needed.
+            this.tbClienteTableAdapter.Fill(this.cadastroUsuarioDataSet.tbCliente);
+
+        }
     }
 }
