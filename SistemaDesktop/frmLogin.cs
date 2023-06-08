@@ -13,7 +13,7 @@ using System.Data.SqlClient;
 namespace SistemaDesktop
 {
     public partial class frmLogin : Form
-    {
+    { 
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.CadastroUsuarioConnectionString);
         public static string nivelAcesso;
         public static string usuarioConectado;

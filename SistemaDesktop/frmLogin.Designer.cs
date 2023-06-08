@@ -121,7 +121,7 @@ namespace SistemaDesktop
             this.cbmNivelAcesso.Items.AddRange(new object[] {
             "",
             "Administrador",
-            "Usuário"});
+            "Usuario"});
             this.cbmNivelAcesso.Location = new System.Drawing.Point(133, 125);
             this.cbmNivelAcesso.Name = "cbmNivelAcesso";
             this.cbmNivelAcesso.Size = new System.Drawing.Size(156, 21);
