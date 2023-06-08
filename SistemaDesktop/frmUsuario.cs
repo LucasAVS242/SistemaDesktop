@@ -44,7 +44,8 @@ namespace SistemaDesktop
                         }
                         this.Validate();
                         this.tbUsuarioBindingSource.EndEdit();
-                        this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
+                        MessageBox.Show("Cadastro realizado com sucesso");
+                        this.tbUsuarioTableAdapter.Update(this.cadastroUsuarioDataSet.tbUsuario);
 
                     }
                     else
@@ -86,7 +87,7 @@ namespace SistemaDesktop
         private void frmUsuario_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'cadastroUsuarioDataSet.tbUsuario' table. You can move, or remove it, as needed.
-            thois.suarioTableAdapter.Fill(this.cadastroUsuarioDataSet.tbUsuario);
+            this.tbUsuarioTableAdapter.Fill(this.cadastroUsuarioDataSet.tbUsuario);
 
         }
 
@@ -108,6 +109,11 @@ namespace SistemaDesktop
         private void tbUsuarioDataGridView_DoubleClick(object sender, EventArgs e)
         {
            
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,8 +40,6 @@ namespace SistemaDesktop
             System.Windows.Forms.Label label1;
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.idUsuarioTextBox = new System.Windows.Forms.TextBox();
-            this.tbUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cadastroUsuarioDataSet = new SistemaDesktop.CadastroUsuarioDataSet();
             this.nomeUsuarioTextBox = new System.Windows.Forms.TextBox();
             this.senhaTextBox = new System.Windows.Forms.TextBox();
             this.nivelAcessoComboBox = new System.Windows.Forms.ComboBox();
@@ -60,17 +58,19 @@ namespace SistemaDesktop
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tbUsuarioBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.tbUsuarioTableAdapter = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.tbUsuarioTableAdapter();
-            this.tableAdapterManager = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.TableAdapterManager();
             this.tbUsuarioDataGridView = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.repitasenhaTextBox = new System.Windows.Forms.TextBox();
             this.idUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nivelAcessoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataCadastroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cadastradoPorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.repitasenhaTextBox = new System.Windows.Forms.TextBox();
+            this.tbUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cadastroUsuarioDataSet = new SistemaDesktop.CadastroUsuarioDataSet();
+            this.tbUsuarioTableAdapter = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.tbUsuarioTableAdapter();
+            this.tableAdapterManager = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.TableAdapterManager();
             idUsuarioLabel1 = new System.Windows.Forms.Label();
             nomeUsuarioLabel = new System.Windows.Forms.Label();
             senhaLabel1 = new System.Windows.Forms.Label();
@@ -79,12 +79,12 @@ namespace SistemaDesktop
             cadastradoPorLabel1 = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioBindingNavigator)).BeginInit();
             this.tbUsuarioBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioDataGridView)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // idUsuarioLabel1
@@ -179,20 +179,12 @@ namespace SistemaDesktop
             // idUsuarioTextBox
             // 
             this.idUsuarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUsuarioBindingSource, "idUsuario", true));
+            this.idUsuarioTextBox.Enabled = false;
             this.idUsuarioTextBox.Location = new System.Drawing.Point(116, 46);
             this.idUsuarioTextBox.Name = "idUsuarioTextBox";
+            this.idUsuarioTextBox.ReadOnly = true;
             this.idUsuarioTextBox.Size = new System.Drawing.Size(121, 25);
             this.idUsuarioTextBox.TabIndex = 13;
-            // 
-            // tbUsuarioBindingSource
-            // 
-            this.tbUsuarioBindingSource.DataMember = "tbUsuario";
-            this.tbUsuarioBindingSource.DataSource = this.cadastroUsuarioDataSet;
-            // 
-            // cadastroUsuarioDataSet
-            // 
-            this.cadastroUsuarioDataSet.DataSetName = "CadastroUsuarioDataSet";
-            this.cadastroUsuarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nomeUsuarioTextBox
             // 
@@ -227,6 +219,7 @@ namespace SistemaDesktop
             // dataCadastroTextBox
             // 
             this.dataCadastroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUsuarioBindingSource, "dataCadastro", true));
+            this.dataCadastroTextBox.Enabled = false;
             this.dataCadastroTextBox.Location = new System.Drawing.Point(116, 201);
             this.dataCadastroTextBox.Name = "dataCadastroTextBox";
             this.dataCadastroTextBox.Size = new System.Drawing.Size(121, 25);
@@ -235,6 +228,7 @@ namespace SistemaDesktop
             // cadastradoPorTextBox
             // 
             this.cadastradoPorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUsuarioBindingSource, "cadastradoPor", true));
+            this.cadastradoPorTextBox.Enabled = false;
             this.cadastradoPorTextBox.Location = new System.Drawing.Point(116, 237);
             this.cadastradoPorTextBox.Name = "cadastradoPorTextBox";
             this.cadastradoPorTextBox.Size = new System.Drawing.Size(121, 25);
@@ -278,6 +272,7 @@ namespace SistemaDesktop
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
             // 
             // bindingNavigatorCountItem
             // 
@@ -365,20 +360,6 @@ namespace SistemaDesktop
             this.tbUsuarioBindingNavigatorSaveItem.Text = "Save Data";
             this.tbUsuarioBindingNavigatorSaveItem.Click += new System.EventHandler(this.tbUsuarioBindingNavigatorSaveItem_Click);
             // 
-            // tbUsuarioTableAdapter
-            // 
-            this.tbUsuarioTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.tbClienteTableAdapter = null;
-            this.tableAdapterManager.tbOrdemProdutoTableAdapter = null;
-            this.tableAdapterManager.tbOSTableAdapter = null;
-            this.tableAdapterManager.tbServicoTableAdapter = null;
-            this.tableAdapterManager.tbUsuarioTableAdapter = this.tbUsuarioTableAdapter;
-            this.tableAdapterManager.UpdateOrder = SistemaDesktop.CadastroUsuarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // tbUsuarioDataGridView
             // 
             this.tbUsuarioDataGridView.AllowUserToAddRows = false;
@@ -401,6 +382,39 @@ namespace SistemaDesktop
             this.tbUsuarioDataGridView.TabIndex = 2;
             this.tbUsuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbUsuarioDataGridView_CellContentClick);
             this.tbUsuarioDataGridView.DoubleClick += new System.EventHandler(this.tbUsuarioDataGridView_DoubleClick);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.tbUsuarioDataGridView);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBox2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox2.Location = new System.Drawing.Point(273, 52);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(468, 262);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Usuário";
+            // 
+            // repitasenhaTextBox
+            // 
+            this.repitasenhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUsuarioBindingSource, "senha", true));
+            this.repitasenhaTextBox.Location = new System.Drawing.Point(116, 139);
+            this.repitasenhaTextBox.Name = "repitasenhaTextBox";
+            this.repitasenhaTextBox.PasswordChar = '*';
+            this.repitasenhaTextBox.Size = new System.Drawing.Size(121, 25);
+            this.repitasenhaTextBox.TabIndex = 24;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            label1.Location = new System.Drawing.Point(9, 142);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(103, 17);
+            label1.TabIndex = 25;
+            label1.Text = "Repita a senha:";
             // 
             // idUsuarioDataGridViewTextBoxColumn
             // 
@@ -447,38 +461,29 @@ namespace SistemaDesktop
             this.cadastradoPorDataGridViewTextBoxColumn.Name = "cadastradoPorDataGridViewTextBoxColumn";
             this.cadastradoPorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // groupBox2
+            // tbUsuarioBindingSource
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.tbUsuarioDataGridView);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox2.Location = new System.Drawing.Point(273, 52);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(468, 262);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Usuário";
+            this.tbUsuarioBindingSource.DataMember = "tbUsuario";
+            this.tbUsuarioBindingSource.DataSource = this.cadastroUsuarioDataSet;
             // 
-            // repitasenhaTextBox
+            // cadastroUsuarioDataSet
             // 
-            this.repitasenhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUsuarioBindingSource, "senha", true));
-            this.repitasenhaTextBox.Location = new System.Drawing.Point(116, 139);
-            this.repitasenhaTextBox.Name = "repitasenhaTextBox";
-            this.repitasenhaTextBox.PasswordChar = '*';
-            this.repitasenhaTextBox.Size = new System.Drawing.Size(121, 25);
-            this.repitasenhaTextBox.TabIndex = 24;
+            this.cadastroUsuarioDataSet.DataSetName = "CadastroUsuarioDataSet";
+            this.cadastroUsuarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label1
+            // tbUsuarioTableAdapter
             // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            label1.Location = new System.Drawing.Point(9, 142);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(103, 17);
-            label1.TabIndex = 25;
-            label1.Text = "Repita a senha:";
+            this.tbUsuarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.tbClienteTableAdapter = null;
+            this.tableAdapterManager.tbOrdemProdutoTableAdapter = null;
+            this.tableAdapterManager.tbOSTableAdapter = null;
+            this.tableAdapterManager.tbServicoTableAdapter = null;
+            this.tableAdapterManager.tbUsuarioTableAdapter = this.tbUsuarioTableAdapter;
+            this.tableAdapterManager.UpdateOrder = SistemaDesktop.CadastroUsuarioDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // frmUsuario
             // 
@@ -495,13 +500,13 @@ namespace SistemaDesktop
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioBindingNavigator)).EndInit();
             this.tbUsuarioBindingNavigator.ResumeLayout(false);
             this.tbUsuarioBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioDataGridView)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tbUsuarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

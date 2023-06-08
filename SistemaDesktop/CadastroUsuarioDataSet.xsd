@@ -371,10 +371,10 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
   <xs:element name="CadastroUsuarioDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CadastroUsuarioDataSet" msprop:Generator_UserDSName="CadastroUsuarioDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbCliente" msprop:Generator_TableClassName="tbClienteDataTable" msprop:Generator_TableVarName="tabletbCliente" msprop:Generator_RowChangedName="tbClienteRowChanged" msprop:Generator_TablePropName="tbCliente" msprop:Generator_RowDeletingName="tbClienteRowDeleting" msprop:Generator_RowChangingName="tbClienteRowChanging" msprop:Generator_RowEvHandlerName="tbClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="tbClienteRowDeleted" msprop:Generator_RowClassName="tbClienteRow" msprop:Generator_UserTableName="tbCliente" msprop:Generator_RowEvArgName="tbClienteRowChangeEvent">
+        <xs:element name="tbCliente" msprop:Generator_TableClassName="tbClienteDataTable" msprop:Generator_TableVarName="tabletbCliente" msprop:Generator_TablePropName="tbCliente" msprop:Generator_RowDeletingName="tbClienteRowDeleting" msprop:Generator_RowChangingName="tbClienteRowChanging" msprop:Generator_RowEvHandlerName="tbClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="tbClienteRowDeleted" msprop:Generator_UserTableName="tbCliente" msprop:Generator_RowChangedName="tbClienteRowChanged" msprop:Generator_RowEvArgName="tbClienteRowChangeEvent" msprop:Generator_RowClassName="tbClienteRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="idCliente" msprop:Generator_ColumnVarNameInTable="columnidCliente" msprop:Generator_ColumnPropNameInRow="idCliente" msprop:Generator_ColumnPropNameInTable="idClienteColumn" msprop:Generator_UserColumnName="idCliente" type="xs:int" />
+              <xs:element name="idCliente" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnidCliente" msprop:Generator_ColumnPropNameInRow="idCliente" msprop:Generator_ColumnPropNameInTable="idClienteColumn" msprop:Generator_UserColumnName="idCliente" type="xs:int" />
               <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -431,7 +431,7 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="cep" msprop:Generator_ColumnVarNameInTable="columncep" msprop:Generator_ColumnPropNameInRow="cep" msprop:Generator_ColumnPropNameInTable="cepColumn" msprop:Generator_UserColumnName="cep" minOccurs="0">
+              <xs:element name="cep" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columncep" msprop:Generator_ColumnPropNameInRow="cep" msprop:Generator_ColumnPropNameInTable="cepColumn" msprop:Generator_UserColumnName="cep" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
@@ -462,10 +462,10 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbUsuario" msprop:Generator_TableClassName="tbUsuarioDataTable" msprop:Generator_TableVarName="tabletbUsuario" msprop:Generator_RowChangedName="tbUsuarioRowChanged" msprop:Generator_TablePropName="tbUsuario" msprop:Generator_RowDeletingName="tbUsuarioRowDeleting" msprop:Generator_RowChangingName="tbUsuarioRowChanging" msprop:Generator_RowEvHandlerName="tbUsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="tbUsuarioRowDeleted" msprop:Generator_RowClassName="tbUsuarioRow" msprop:Generator_UserTableName="tbUsuario" msprop:Generator_RowEvArgName="tbUsuarioRowChangeEvent">
+        <xs:element name="tbUsuario" msprop:Generator_TableClassName="tbUsuarioDataTable" msprop:Generator_TableVarName="tabletbUsuario" msprop:Generator_TablePropName="tbUsuario" msprop:Generator_RowDeletingName="tbUsuarioRowDeleting" msprop:Generator_RowChangingName="tbUsuarioRowChanging" msprop:Generator_RowEvHandlerName="tbUsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="tbUsuarioRowDeleted" msprop:Generator_UserTableName="tbUsuario" msprop:Generator_RowChangedName="tbUsuarioRowChanged" msprop:Generator_RowEvArgName="tbUsuarioRowChangeEvent" msprop:Generator_RowClassName="tbUsuarioRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="idUsuario" msprop:Generator_ColumnVarNameInTable="columnidUsuario" msprop:Generator_ColumnPropNameInRow="idUsuario" msprop:Generator_ColumnPropNameInTable="idUsuarioColumn" msprop:Generator_UserColumnName="idUsuario" type="xs:int" />
+              <xs:element name="idUsuario" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnidUsuario" msprop:Generator_ColumnPropNameInRow="idUsuario" msprop:Generator_ColumnPropNameInTable="idUsuarioColumn" msprop:Generator_UserColumnName="idUsuario" type="xs:int" />
               <xs:element name="nomeUsuario" msprop:Generator_ColumnVarNameInTable="columnnomeUsuario" msprop:Generator_ColumnPropNameInRow="nomeUsuario" msprop:Generator_ColumnPropNameInTable="nomeUsuarioColumn" msprop:Generator_UserColumnName="nomeUsuario">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -504,7 +504,7 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbOrdemProduto" msprop:Generator_TableClassName="tbOrdemProdutoDataTable" msprop:Generator_TableVarName="tabletbOrdemProduto" msprop:Generator_TablePropName="tbOrdemProduto" msprop:Generator_RowDeletingName="tbOrdemProdutoRowDeleting" msprop:Generator_RowChangingName="tbOrdemProdutoRowChanging" msprop:Generator_RowEvHandlerName="tbOrdemProdutoRowChangeEventHandler" msprop:Generator_RowDeletedName="tbOrdemProdutoRowDeleted" msprop:Generator_UserTableName="tbOrdemProduto" msprop:Generator_RowChangedName="tbOrdemProdutoRowChanged" msprop:Generator_RowEvArgName="tbOrdemProdutoRowChangeEvent" msprop:Generator_RowClassName="tbOrdemProdutoRow">
+        <xs:element name="tbOrdemProduto" msprop:Generator_TableClassName="tbOrdemProdutoDataTable" msprop:Generator_TableVarName="tabletbOrdemProduto" msprop:Generator_RowChangedName="tbOrdemProdutoRowChanged" msprop:Generator_TablePropName="tbOrdemProduto" msprop:Generator_RowDeletingName="tbOrdemProdutoRowDeleting" msprop:Generator_RowChangingName="tbOrdemProdutoRowChanging" msprop:Generator_RowEvHandlerName="tbOrdemProdutoRowChangeEventHandler" msprop:Generator_RowDeletedName="tbOrdemProdutoRowDeleted" msprop:Generator_RowClassName="tbOrdemProdutoRow" msprop:Generator_UserTableName="tbOrdemProduto" msprop:Generator_RowEvArgName="tbOrdemProdutoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idOS" msprop:Generator_ColumnVarNameInTable="columnidOS" msprop:Generator_ColumnPropNameInRow="idOS" msprop:Generator_ColumnPropNameInTable="idOSColumn" msprop:Generator_UserColumnName="idOS" type="xs:int" minOccurs="0" />
@@ -512,10 +512,10 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbOS" msprop:Generator_TableClassName="tbOSDataTable" msprop:Generator_TableVarName="tabletbOS" msprop:Generator_TablePropName="tbOS" msprop:Generator_RowDeletingName="tbOSRowDeleting" msprop:Generator_RowChangingName="tbOSRowChanging" msprop:Generator_RowEvHandlerName="tbOSRowChangeEventHandler" msprop:Generator_RowDeletedName="tbOSRowDeleted" msprop:Generator_UserTableName="tbOS" msprop:Generator_RowChangedName="tbOSRowChanged" msprop:Generator_RowEvArgName="tbOSRowChangeEvent" msprop:Generator_RowClassName="tbOSRow">
+        <xs:element name="tbOS" msprop:Generator_TableClassName="tbOSDataTable" msprop:Generator_TableVarName="tabletbOS" msprop:Generator_RowChangedName="tbOSRowChanged" msprop:Generator_TablePropName="tbOS" msprop:Generator_RowDeletingName="tbOSRowDeleting" msprop:Generator_RowChangingName="tbOSRowChanging" msprop:Generator_RowEvHandlerName="tbOSRowChangeEventHandler" msprop:Generator_RowDeletedName="tbOSRowDeleted" msprop:Generator_RowClassName="tbOSRow" msprop:Generator_UserTableName="tbOS" msprop:Generator_RowEvArgName="tbOSRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="idOS" msprop:Generator_ColumnVarNameInTable="columnidOS" msprop:Generator_ColumnPropNameInRow="idOS" msprop:Generator_ColumnPropNameInTable="idOSColumn" msprop:Generator_UserColumnName="idOS" type="xs:int" />
+              <xs:element name="idOS" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnidOS" msprop:Generator_ColumnPropNameInRow="idOS" msprop:Generator_ColumnPropNameInTable="idOSColumn" msprop:Generator_UserColumnName="idOS" type="xs:int" />
               <xs:element name="idCliente" msprop:Generator_ColumnVarNameInTable="columnidCliente" msprop:Generator_ColumnPropNameInRow="idCliente" msprop:Generator_ColumnPropNameInTable="idClienteColumn" msprop:Generator_UserColumnName="idCliente" type="xs:int" />
               <xs:element name="dataCadastro" msprop:Generator_ColumnVarNameInTable="columndataCadastro" msprop:Generator_ColumnPropNameInRow="dataCadastro" msprop:Generator_ColumnPropNameInTable="dataCadastroColumn" msprop:Generator_UserColumnName="dataCadastro" minOccurs="0">
                 <xs:simpleType>
@@ -534,10 +534,10 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbServico" msprop:Generator_TableClassName="tbServicoDataTable" msprop:Generator_TableVarName="tabletbServico" msprop:Generator_TablePropName="tbServico" msprop:Generator_RowDeletingName="tbServicoRowDeleting" msprop:Generator_RowChangingName="tbServicoRowChanging" msprop:Generator_RowEvHandlerName="tbServicoRowChangeEventHandler" msprop:Generator_RowDeletedName="tbServicoRowDeleted" msprop:Generator_UserTableName="tbServico" msprop:Generator_RowChangedName="tbServicoRowChanged" msprop:Generator_RowEvArgName="tbServicoRowChangeEvent" msprop:Generator_RowClassName="tbServicoRow">
+        <xs:element name="tbServico" msprop:Generator_TableClassName="tbServicoDataTable" msprop:Generator_TableVarName="tabletbServico" msprop:Generator_RowChangedName="tbServicoRowChanged" msprop:Generator_TablePropName="tbServico" msprop:Generator_RowDeletingName="tbServicoRowDeleting" msprop:Generator_RowChangingName="tbServicoRowChanging" msprop:Generator_RowEvHandlerName="tbServicoRowChangeEventHandler" msprop:Generator_RowDeletedName="tbServicoRowDeleted" msprop:Generator_RowClassName="tbServicoRow" msprop:Generator_UserTableName="tbServico" msprop:Generator_RowEvArgName="tbServicoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="idServico" msprop:Generator_ColumnVarNameInTable="columnidServico" msprop:Generator_ColumnPropNameInRow="idServico" msprop:Generator_ColumnPropNameInTable="idServicoColumn" msprop:Generator_UserColumnName="idServico" type="xs:int" />
+              <xs:element name="idServico" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnidServico" msprop:Generator_ColumnPropNameInRow="idServico" msprop:Generator_ColumnPropNameInTable="idServicoColumn" msprop:Generator_UserColumnName="idServico" type="xs:int" />
               <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -598,9 +598,9 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_tbOrdemProduto_idOS" msdata:parent="tbOS" msdata:child="tbOrdemProduto" msdata:parentkey="idOS" msdata:childkey="idOS" msprop:Generator_UserChildTable="tbOrdemProduto" msprop:Generator_ChildPropName="GettbOrdemProdutoRows" msprop:Generator_UserRelationName="FK_tbOrdemProduto_idOS" msprop:Generator_RelationVarName="relationFK_tbOrdemProduto_idOS" msprop:Generator_UserParentTable="tbOS" msprop:Generator_ParentPropName="tbOSRow" />
-      <msdata:Relationship name="FK_tbServico_idServico" msdata:parent="tbServico" msdata:child="tbOrdemProduto" msdata:parentkey="idServico" msdata:childkey="idServico" msprop:Generator_UserChildTable="tbOrdemProduto" msprop:Generator_ChildPropName="GettbOrdemProdutoRows" msprop:Generator_UserRelationName="FK_tbServico_idServico" msprop:Generator_RelationVarName="relationFK_tbServico_idServico" msprop:Generator_UserParentTable="tbServico" msprop:Generator_ParentPropName="tbServicoRow" />
-      <msdata:Relationship name="FK_tbOS_tbCliente_idCliente" msdata:parent="tbCliente" msdata:child="tbOS" msdata:parentkey="idCliente" msdata:childkey="idCliente" msprop:Generator_UserChildTable="tbOS" msprop:Generator_ChildPropName="GettbOSRows" msprop:Generator_UserRelationName="FK_tbOS_tbCliente_idCliente" msprop:Generator_ParentPropName="tbClienteRow" msprop:Generator_RelationVarName="relationFK_tbOS_tbCliente_idCliente" msprop:Generator_UserParentTable="tbCliente" />
+      <msdata:Relationship name="FK_tbOrdemProduto_idOS" msdata:parent="tbOS" msdata:child="tbOrdemProduto" msdata:parentkey="idOS" msdata:childkey="idOS" msprop:Generator_UserChildTable="tbOrdemProduto" msprop:Generator_ChildPropName="GettbOrdemProdutoRows" msprop:Generator_UserRelationName="FK_tbOrdemProduto_idOS" msprop:Generator_ParentPropName="tbOSRow" msprop:Generator_RelationVarName="relationFK_tbOrdemProduto_idOS" msprop:Generator_UserParentTable="tbOS" />
+      <msdata:Relationship name="FK_tbServico_idServico" msdata:parent="tbServico" msdata:child="tbOrdemProduto" msdata:parentkey="idServico" msdata:childkey="idServico" msprop:Generator_UserChildTable="tbOrdemProduto" msprop:Generator_ChildPropName="GettbOrdemProdutoRows" msprop:Generator_UserRelationName="FK_tbServico_idServico" msprop:Generator_ParentPropName="tbServicoRow" msprop:Generator_RelationVarName="relationFK_tbServico_idServico" msprop:Generator_UserParentTable="tbServico" />
+      <msdata:Relationship name="FK_tbOS_tbCliente_idCliente" msdata:parent="tbCliente" msdata:child="tbOS" msdata:parentkey="idCliente" msdata:childkey="idCliente" msprop:Generator_UserChildTable="tbOS" msprop:Generator_ChildPropName="GettbOSRows" msprop:Generator_UserRelationName="FK_tbOS_tbCliente_idCliente" msprop:Generator_RelationVarName="relationFK_tbOS_tbCliente_idCliente" msprop:Generator_UserParentTable="tbCliente" msprop:Generator_ParentPropName="tbClienteRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

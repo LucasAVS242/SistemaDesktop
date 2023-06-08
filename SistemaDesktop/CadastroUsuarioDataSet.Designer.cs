@@ -640,10 +640,10 @@ namespace SistemaDesktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbClienteRow AddtbClienteRow(int idCliente, string nome, string cnpj, string email, string telefone, string logradouro, string numero, string bairro, string cidade, string cep, string estado, string dataCadastro, string cadastradoPor) {
+            public tbClienteRow AddtbClienteRow(string nome, string cnpj, string email, string telefone, string logradouro, string numero, string bairro, string cidade, string cep, string estado, string dataCadastro, string cadastradoPor) {
                 tbClienteRow rowtbClienteRow = ((tbClienteRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        idCliente,
+                        null,
                         nome,
                         cnpj,
                         email,
@@ -731,6 +731,7 @@ namespace SistemaDesktop {
                 base.Columns.Add(this.columncadastradoPor);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnidCliente}, true));
+                this.columnidCliente.AutoIncrement = true;
                 this.columnidCliente.AllowDBNull = false;
                 this.columnidCliente.Unique = true;
                 this.columnnome.AllowDBNull = false;
@@ -743,6 +744,7 @@ namespace SistemaDesktop {
                 this.columnnumero.MaxLength = 6;
                 this.columnbairro.MaxLength = 100;
                 this.columncidade.MaxLength = 100;
+                this.columncep.AutoIncrementSeed = 1;
                 this.columncep.MaxLength = 10;
                 this.columnestado.MaxLength = 100;
                 this.columndataCadastro.MaxLength = 15;
@@ -1010,10 +1012,10 @@ namespace SistemaDesktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbUsuarioRow AddtbUsuarioRow(int idUsuario, string nomeUsuario, string senha, string nivelAcesso, string dataCadastro, string cadastradoPor) {
+            public tbUsuarioRow AddtbUsuarioRow(string nomeUsuario, string senha, string nivelAcesso, string dataCadastro, string cadastradoPor) {
                 tbUsuarioRow rowtbUsuarioRow = ((tbUsuarioRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        idUsuario,
+                        null,
                         nomeUsuario,
                         senha,
                         nivelAcesso,
@@ -1073,6 +1075,8 @@ namespace SistemaDesktop {
                 base.Columns.Add(this.columncadastradoPor);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnidUsuario}, true));
+                this.columnidUsuario.AutoIncrement = true;
+                this.columnidUsuario.AutoIncrementSeed = 1;
                 this.columnidUsuario.AllowDBNull = false;
                 this.columnidUsuario.Unique = true;
                 this.columnnomeUsuario.AllowDBNull = false;
@@ -1592,10 +1596,10 @@ namespace SistemaDesktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbOSRow AddtbOSRow(int idOS, tbClienteRow parenttbClienteRowByFK_tbOS_tbCliente_idCliente, string dataCadastro, string cadastradoPor) {
+            public tbOSRow AddtbOSRow(tbClienteRow parenttbClienteRowByFK_tbOS_tbCliente_idCliente, string dataCadastro, string cadastradoPor) {
                 tbOSRow rowtbOSRow = ((tbOSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        idOS,
+                        null,
                         null,
                         dataCadastro,
                         cadastradoPor};
@@ -1650,6 +1654,8 @@ namespace SistemaDesktop {
                 base.Columns.Add(this.columncadastradoPor);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnidOS}, true));
+                this.columnidOS.AutoIncrement = true;
+                this.columnidOS.AutoIncrementSeed = 1;
                 this.columnidOS.AllowDBNull = false;
                 this.columnidOS.Unique = true;
                 this.columnidCliente.AllowDBNull = false;
@@ -1928,10 +1934,10 @@ namespace SistemaDesktop {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tbServicoRow AddtbServicoRow(int idServico, string nome, string descricao, string observacao, decimal valor, string dataCadastro, string cadastradoPor) {
+            public tbServicoRow AddtbServicoRow(string nome, string descricao, string observacao, decimal valor, string dataCadastro, string cadastradoPor) {
                 tbServicoRow rowtbServicoRow = ((tbServicoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        idServico,
+                        null,
                         nome,
                         descricao,
                         observacao,
@@ -1995,6 +2001,8 @@ namespace SistemaDesktop {
                 base.Columns.Add(this.columncadastradoPor);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnidServico}, true));
+                this.columnidServico.AutoIncrement = true;
+                this.columnidServico.AutoIncrementSeed = 1;
                 this.columnidServico.AllowDBNull = false;
                 this.columnidServico.Unique = true;
                 this.columnnome.AllowDBNull = false;
