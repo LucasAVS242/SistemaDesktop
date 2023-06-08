@@ -46,10 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroUsuarioDataSet.Designer.cs">
+    <Compile Include="..\..\..\..\..\Desktop\CadastroUsuarioDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CadastroUsuarioDataSet.xsd</DependentUpon>
+      <Link>CadastroUsuarioDataSet.Designer.cs</Link>
     </Compile>
     <Compile Include="frmCliente.cs">
       <SubType>Form</SubType>
@@ -140,7 +141,6 @@
     </None>
     <None Include="CadastroUsuarioDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CadastroUsuarioDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="CadastroUsuarioDataSet.xss">
