@@ -92,5 +92,12 @@ namespace SistemaDesktop
         {
             Application.Exit();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            frmUsuario usu = new frmUsuario();
+            usu.Show();
+
+        }
     }
 }

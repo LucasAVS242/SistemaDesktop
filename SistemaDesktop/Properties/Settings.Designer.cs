@@ -26,8 +26,8 @@ namespace SistemaDesktop.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CadastroUsuario.mssql.somee.com;Initial Catalog=CadastroUsuario;User " +
-            "ID=lucas_avsoares_SQLLogin_1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CadastroUsuario.mssql.somee.com;Initial Catalog=CadastroUsuario;Persi" +
+            "st Security Info=True;User ID=lucas_avsoares_SQLLogin_1;Password=e5roxr4efe")]
         public string CadastroUsuarioConnectionString {
             get {
                 return ((string)(this["CadastroUsuarioConnectionString"]));
