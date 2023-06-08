@@ -1,7 +1,7 @@
 ﻿
 namespace SistemaDesktop
 {
-    partial class frnCliente
+    partial class frmCliente
     {
         /// <summary>
         /// Required designer variable.

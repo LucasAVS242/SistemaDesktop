@@ -12,9 +12,9 @@ using System.Data.SqlClient;
 
 namespace SistemaDesktop
 {
-    public partial class frnCliente : Form
+    public partial class frmCliente : Form
     {
-        public frnCliente()
+        public frmCliente()
         {
             InitializeComponent();
         }
