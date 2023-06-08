@@ -331,5 +331,83 @@ namespace SistemaDesktop
                     "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void tsbServico_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmServico servico = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmServico)
+                    {
+                        servico = (frmServico)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (servico == null)
+                {
+                    servico = new frmServico();
+                    servico.MdiParent = this;
+                    servico.Show();
+                }
+                servico.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void tsbOS_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmOS os = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmOS)
+                    {
+                        os = (frmOS)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (os == null)
+                {
+                    os = new frmOS();
+                    os.MdiParent = this;
+                    os.Show();
+                }
+                os.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void tsbLogoff_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void frmTelaPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

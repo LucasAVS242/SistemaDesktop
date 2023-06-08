@@ -171,6 +171,7 @@ namespace SistemaDesktop
             this.tsbServico.Name = "tsbServico";
             this.tsbServico.Size = new System.Drawing.Size(23, 22);
             this.tsbServico.Text = "Cliente";
+            this.tsbServico.Click += new System.EventHandler(this.tsbServico_Click);
             // 
             // tsbOS
             // 
@@ -180,6 +181,7 @@ namespace SistemaDesktop
             this.tsbOS.Name = "tsbOS";
             this.tsbOS.Size = new System.Drawing.Size(23, 22);
             this.tsbOS.Text = "OS";
+            this.tsbOS.Click += new System.EventHandler(this.tsbOS_Click);
             // 
             // tsbLogoff
             // 
@@ -189,6 +191,7 @@ namespace SistemaDesktop
             this.tsbLogoff.Name = "tsbLogoff";
             this.tsbLogoff.Size = new System.Drawing.Size(23, 22);
             this.tsbLogoff.Text = "Logoff";
+            this.tsbLogoff.Click += new System.EventHandler(this.tsbLogoff_Click);
             // 
             // statusStrip1
             // 
@@ -256,6 +259,7 @@ namespace SistemaDesktop
             this.Name = "frmTelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTelaPrincipal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTelaPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.frmTelaPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
