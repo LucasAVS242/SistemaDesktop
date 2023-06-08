@@ -374,7 +374,7 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
         <xs:element name="tbCliente" msprop:Generator_TableClassName="tbClienteDataTable" msprop:Generator_TableVarName="tabletbCliente" msprop:Generator_TablePropName="tbCliente" msprop:Generator_RowDeletingName="tbClienteRowDeleting" msprop:Generator_RowChangingName="tbClienteRowChanging" msprop:Generator_RowEvHandlerName="tbClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="tbClienteRowDeleted" msprop:Generator_UserTableName="tbCliente" msprop:Generator_RowChangedName="tbClienteRowChanged" msprop:Generator_RowEvArgName="tbClienteRowChangeEvent" msprop:Generator_RowClassName="tbClienteRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="idCliente" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnidCliente" msprop:Generator_ColumnPropNameInRow="idCliente" msprop:Generator_ColumnPropNameInTable="idClienteColumn" msprop:Generator_UserColumnName="idCliente" type="xs:int" />
+              <xs:element name="idCliente" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnidCliente" msprop:Generator_ColumnPropNameInRow="idCliente" msprop:Generator_ColumnPropNameInTable="idClienteColumn" msprop:Generator_UserColumnName="idCliente" type="xs:int" />
               <xs:element name="nome" msprop:Generator_ColumnVarNameInTable="columnnome" msprop:Generator_ColumnPropNameInRow="nome" msprop:Generator_ColumnPropNameInTable="nomeColumn" msprop:Generator_UserColumnName="nome">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -448,7 +448,7 @@ SELECT idServico, nome, descricao, observacao, valor, dataCadastro, cadastradoPo
               <xs:element name="dataCadastro" msprop:Generator_ColumnVarNameInTable="columndataCadastro" msprop:Generator_ColumnPropNameInRow="dataCadastro" msprop:Generator_ColumnPropNameInTable="dataCadastroColumn" msprop:Generator_UserColumnName="dataCadastro" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="15" />
+                    <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
