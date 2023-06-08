@@ -198,7 +198,138 @@ namespace SistemaDesktop
 
         private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                frmrelatCliente relatcliente = null;
 
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmrelatCliente)
+                    {
+                        relatcliente = (frmrelatCliente)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (relatcliente == null)
+                {
+                    relatcliente = new frmrelatCliente();
+                    relatcliente.MdiParent = this;
+                    relatcliente.Show();
+                }
+                relatcliente.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void serviçoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmrelatServico relatservico = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmrelatServico)
+                    {
+                        relatservico = (frmrelatServico)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (relatservico == null)
+                {
+                    relatservico = new frmrelatServico();
+                    relatservico.MdiParent = this;
+                    relatservico.Show();
+                }
+                relatservico.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void ordemDeServiçoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmrelatOS relatos = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmrelatOS)
+                    {
+                        relatos = (frmrelatOS)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (relatos == null)
+                {
+                    relatos = new frmrelatOS();
+                    relatos.MdiParent = this;
+                    relatos.Show();
+                }
+                relatos.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void tsbCliente_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmCliente cliente = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmCliente)
+                    {
+                        cliente = (frmCliente)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (cliente == null)
+                {
+                    cliente = new frmCliente();
+                    cliente.MdiParent = this;
+                    cliente.Show();
+                }
+                cliente.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

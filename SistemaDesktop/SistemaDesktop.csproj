@@ -69,6 +69,24 @@
     <Compile Include="frmOS.Designer.cs">
       <DependentUpon>frmOS.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmrelatCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrelatCliente.Designer.cs">
+      <DependentUpon>frmrelatCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrelatOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrelatOS.Designer.cs">
+      <DependentUpon>frmrelatOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrelatServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrelatServico.Designer.cs">
+      <DependentUpon>frmrelatServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmServico.cs">
       <SubType>Form</SubType>
     </Compile>
