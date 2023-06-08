@@ -199,6 +199,7 @@ namespace SistemaDesktop
             this.senhaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUsuarioBindingSource, "senha", true));
             this.senhaTextBox.Location = new System.Drawing.Point(116, 108);
             this.senhaTextBox.Name = "senhaTextBox";
+            this.senhaTextBox.PasswordChar = '*';
             this.senhaTextBox.Size = new System.Drawing.Size(121, 25);
             this.senhaTextBox.TabIndex = 17;
             // 
