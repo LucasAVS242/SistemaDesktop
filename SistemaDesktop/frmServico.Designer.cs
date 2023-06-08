@@ -104,6 +104,7 @@ namespace SistemaDesktop
             this.groupBox1.Controls.Add(this.dataCadastroTextBox);
             this.groupBox1.Controls.Add(cadastradoPorLabel);
             this.groupBox1.Controls.Add(this.cadastradoPorTextBox);
+            this.groupBox1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(25, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(577, 410);
@@ -272,9 +273,9 @@ namespace SistemaDesktop
             // idServicoTextBox
             // 
             this.idServicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "idServico", true));
-            this.idServicoTextBox.Location = new System.Drawing.Point(49, 23);
+            this.idServicoTextBox.Location = new System.Drawing.Point(49, 20);
             this.idServicoTextBox.Name = "idServicoTextBox";
-            this.idServicoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idServicoTextBox.Size = new System.Drawing.Size(100, 25);
             this.idServicoTextBox.TabIndex = 1;
             // 
             // nomeLabel
@@ -290,9 +291,9 @@ namespace SistemaDesktop
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(220, 23);
+            this.nomeTextBox.Location = new System.Drawing.Point(220, 20);
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nomeTextBox.Size = new System.Drawing.Size(100, 25);
             this.nomeTextBox.TabIndex = 3;
             // 
             // descricaoLabel
@@ -348,9 +349,9 @@ namespace SistemaDesktop
             // valorTextBox
             // 
             this.valorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "valor", true));
-            this.valorTextBox.Location = new System.Drawing.Point(61, 269);
+            this.valorTextBox.Location = new System.Drawing.Point(61, 267);
             this.valorTextBox.Name = "valorTextBox";
-            this.valorTextBox.Size = new System.Drawing.Size(100, 20);
+            this.valorTextBox.Size = new System.Drawing.Size(100, 25);
             this.valorTextBox.TabIndex = 9;
             // 
             // dataCadastroLabel
@@ -366,9 +367,9 @@ namespace SistemaDesktop
             // dataCadastroTextBox
             // 
             this.dataCadastroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "dataCadastro", true));
-            this.dataCadastroTextBox.Location = new System.Drawing.Point(362, 320);
+            this.dataCadastroTextBox.Location = new System.Drawing.Point(362, 317);
             this.dataCadastroTextBox.Name = "dataCadastroTextBox";
-            this.dataCadastroTextBox.Size = new System.Drawing.Size(100, 20);
+            this.dataCadastroTextBox.Size = new System.Drawing.Size(100, 25);
             this.dataCadastroTextBox.TabIndex = 11;
             // 
             // cadastradoPorLabel
@@ -384,14 +385,15 @@ namespace SistemaDesktop
             // cadastradoPorTextBox
             // 
             this.cadastradoPorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "cadastradoPor", true));
-            this.cadastradoPorTextBox.Location = new System.Drawing.Point(362, 269);
+            this.cadastradoPorTextBox.Location = new System.Drawing.Point(362, 267);
             this.cadastradoPorTextBox.Name = "cadastradoPorTextBox";
-            this.cadastradoPorTextBox.Size = new System.Drawing.Size(100, 20);
+            this.cadastradoPorTextBox.Size = new System.Drawing.Size(100, 25);
             this.cadastradoPorTextBox.TabIndex = 13;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tbServicoDataGridView);
+            this.groupBox2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(625, 28);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(603, 410);
@@ -415,10 +417,10 @@ namespace SistemaDesktop
             this.dataGridViewTextBoxColumn7});
             this.tbServicoDataGridView.DataSource = this.tbServicoBindingSource;
             this.tbServicoDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbServicoDataGridView.Location = new System.Drawing.Point(3, 16);
+            this.tbServicoDataGridView.Location = new System.Drawing.Point(3, 21);
             this.tbServicoDataGridView.Name = "tbServicoDataGridView";
             this.tbServicoDataGridView.ReadOnly = true;
-            this.tbServicoDataGridView.Size = new System.Drawing.Size(597, 391);
+            this.tbServicoDataGridView.Size = new System.Drawing.Size(597, 386);
             this.tbServicoDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -456,11 +458,12 @@ namespace SistemaDesktop
             this.dataGridViewTextBoxColumn5.HeaderText = "Valor";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 75;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "dataCadastro";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Data Cadastro";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Data de Cadastro";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
@@ -480,7 +483,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.tbServicoBindingNavigator);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmServico";
-            this.Text = "frmServico";
+            this.Text = "Cadastro de Serviço";
             this.Load += new System.EventHandler(this.frmServico_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
