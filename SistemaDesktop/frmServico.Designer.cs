@@ -30,7 +30,6 @@ namespace SistemaDesktop
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmServico));
             System.Windows.Forms.Label idServicoLabel;
             System.Windows.Forms.Label nomeLabel;
             System.Windows.Forms.Label descricaoLabel;
@@ -38,31 +37,32 @@ namespace SistemaDesktop
             System.Windows.Forms.Label valorLabel;
             System.Windows.Forms.Label dataCadastroLabel;
             System.Windows.Forms.Label cadastradoPorLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmServico));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cadastroUsuarioDataSet = new SistemaDesktop.CadastroUsuarioDataSet();
-            this.tbServicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbServicoTableAdapter = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.tbServicoTableAdapter();
-            this.tableAdapterManager = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.TableAdapterManager();
-            this.tbServicoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.tbServicoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.idServicoTextBox = new System.Windows.Forms.TextBox();
+            this.tbServicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cadastroUsuarioDataSet = new SistemaDesktop.CadastroUsuarioDataSet();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.descricaoTextBox = new System.Windows.Forms.TextBox();
             this.observacaoTextBox = new System.Windows.Forms.TextBox();
             this.valorTextBox = new System.Windows.Forms.TextBox();
             this.dataCadastroTextBox = new System.Windows.Forms.TextBox();
             this.cadastradoPorTextBox = new System.Windows.Forms.TextBox();
+            this.tbServicoTableAdapter = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.tbServicoTableAdapter();
+            this.tableAdapterManager = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.TableAdapterManager();
+            this.tbServicoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tbServicoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbServicoDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,13 +80,83 @@ namespace SistemaDesktop
             dataCadastroLabel = new System.Windows.Forms.Label();
             cadastradoPorLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbServicoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbServicoBindingNavigator)).BeginInit();
             this.tbServicoBindingNavigator.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbServicoDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // idServicoLabel
+            // 
+            idServicoLabel.AutoSize = true;
+            idServicoLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            idServicoLabel.Location = new System.Drawing.Point(18, 23);
+            idServicoLabel.Name = "idServicoLabel";
+            idServicoLabel.Size = new System.Drawing.Size(25, 17);
+            idServicoLabel.TabIndex = 0;
+            idServicoLabel.Text = "ID:";
+            // 
+            // nomeLabel
+            // 
+            nomeLabel.AutoSize = true;
+            nomeLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            nomeLabel.Location = new System.Drawing.Point(166, 23);
+            nomeLabel.Name = "nomeLabel";
+            nomeLabel.Size = new System.Drawing.Size(48, 17);
+            nomeLabel.TabIndex = 2;
+            nomeLabel.Text = "Nome:";
+            // 
+            // descricaoLabel
+            // 
+            descricaoLabel.AutoSize = true;
+            descricaoLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            descricaoLabel.Location = new System.Drawing.Point(22, 57);
+            descricaoLabel.Name = "descricaoLabel";
+            descricaoLabel.Size = new System.Drawing.Size(70, 17);
+            descricaoLabel.TabIndex = 4;
+            descricaoLabel.Text = "Descrição:";
+            // 
+            // observacaoLabel
+            // 
+            observacaoLabel.AutoSize = true;
+            observacaoLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            observacaoLabel.Location = new System.Drawing.Point(22, 152);
+            observacaoLabel.Name = "observacaoLabel";
+            observacaoLabel.Size = new System.Drawing.Size(82, 17);
+            observacaoLabel.TabIndex = 6;
+            observacaoLabel.Text = "Observação:";
+            // 
+            // valorLabel
+            // 
+            valorLabel.AutoSize = true;
+            valorLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            valorLabel.Location = new System.Drawing.Point(11, 270);
+            valorLabel.Name = "valorLabel";
+            valorLabel.Size = new System.Drawing.Size(44, 17);
+            valorLabel.TabIndex = 8;
+            valorLabel.Text = "Valor:";
+            // 
+            // dataCadastroLabel
+            // 
+            dataCadastroLabel.AutoSize = true;
+            dataCadastroLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            dataCadastroLabel.Location = new System.Drawing.Point(237, 320);
+            dataCadastroLabel.Name = "dataCadastroLabel";
+            dataCadastroLabel.Size = new System.Drawing.Size(119, 17);
+            dataCadastroLabel.TabIndex = 10;
+            dataCadastroLabel.Text = "Data de Cadastro:";
+            // 
+            // cadastradoPorLabel
+            // 
+            cadastradoPorLabel.AutoSize = true;
+            cadastradoPorLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            cadastradoPorLabel.Location = new System.Drawing.Point(237, 270);
+            cadastradoPorLabel.Name = "cadastradoPorLabel";
+            cadastradoPorLabel.Size = new System.Drawing.Size(106, 17);
+            cadastradoPorLabel.TabIndex = 12;
+            cadastradoPorLabel.Text = "Cadastrado Por:";
             // 
             // groupBox1
             // 
@@ -112,15 +182,77 @@ namespace SistemaDesktop
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados";
             // 
-            // cadastroUsuarioDataSet
+            // idServicoTextBox
             // 
-            this.cadastroUsuarioDataSet.DataSetName = "CadastroUsuarioDataSet";
-            this.cadastroUsuarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.idServicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "idServico", true));
+            this.idServicoTextBox.Location = new System.Drawing.Point(49, 20);
+            this.idServicoTextBox.Name = "idServicoTextBox";
+            this.idServicoTextBox.Size = new System.Drawing.Size(100, 25);
+            this.idServicoTextBox.TabIndex = 1;
             // 
             // tbServicoBindingSource
             // 
             this.tbServicoBindingSource.DataMember = "tbServico";
             this.tbServicoBindingSource.DataSource = this.cadastroUsuarioDataSet;
+            // 
+            // cadastroUsuarioDataSet
+            // 
+            this.cadastroUsuarioDataSet.DataSetName = "CadastroUsuarioDataSet";
+            this.cadastroUsuarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nomeTextBox
+            // 
+            this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "nome", true));
+            this.nomeTextBox.Location = new System.Drawing.Point(220, 20);
+            this.nomeTextBox.Name = "nomeTextBox";
+            this.nomeTextBox.Size = new System.Drawing.Size(100, 25);
+            this.nomeTextBox.TabIndex = 3;
+            // 
+            // descricaoTextBox
+            // 
+            this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "descricao", true));
+            this.descricaoTextBox.Location = new System.Drawing.Point(25, 77);
+            this.descricaoTextBox.Multiline = true;
+            this.descricaoTextBox.Name = "descricaoTextBox";
+            this.descricaoTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.descricaoTextBox.Size = new System.Drawing.Size(523, 65);
+            this.descricaoTextBox.TabIndex = 5;
+            // 
+            // observacaoTextBox
+            // 
+            this.observacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "observacao", true));
+            this.observacaoTextBox.Location = new System.Drawing.Point(25, 172);
+            this.observacaoTextBox.Multiline = true;
+            this.observacaoTextBox.Name = "observacaoTextBox";
+            this.observacaoTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.observacaoTextBox.Size = new System.Drawing.Size(523, 65);
+            this.observacaoTextBox.TabIndex = 7;
+            // 
+            // valorTextBox
+            // 
+            this.valorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "valor", true));
+            this.valorTextBox.Location = new System.Drawing.Point(61, 267);
+            this.valorTextBox.Name = "valorTextBox";
+            this.valorTextBox.Size = new System.Drawing.Size(100, 25);
+            this.valorTextBox.TabIndex = 9;
+            // 
+            // dataCadastroTextBox
+            // 
+            this.dataCadastroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "dataCadastro", true));
+            this.dataCadastroTextBox.Enabled = false;
+            this.dataCadastroTextBox.Location = new System.Drawing.Point(362, 317);
+            this.dataCadastroTextBox.Name = "dataCadastroTextBox";
+            this.dataCadastroTextBox.Size = new System.Drawing.Size(100, 25);
+            this.dataCadastroTextBox.TabIndex = 11;
+            // 
+            // cadastradoPorTextBox
+            // 
+            this.cadastradoPorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "cadastradoPor", true));
+            this.cadastradoPorTextBox.Enabled = false;
+            this.cadastradoPorTextBox.Location = new System.Drawing.Point(362, 267);
+            this.cadastradoPorTextBox.Name = "cadastradoPorTextBox";
+            this.cadastradoPorTextBox.Size = new System.Drawing.Size(100, 25);
+            this.cadastradoPorTextBox.TabIndex = 13;
             // 
             // tbServicoTableAdapter
             // 
@@ -166,6 +298,31 @@ namespace SistemaDesktop
             this.tbServicoBindingNavigator.TabIndex = 1;
             this.tbServicoBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -198,17 +355,10 @@ namespace SistemaDesktop
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -216,7 +366,7 @@ namespace SistemaDesktop
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -225,170 +375,22 @@ namespace SistemaDesktop
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // tbServicoBindingNavigatorSaveItem
             // 
             this.tbServicoBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tbServicoBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tbServicoBindingNavigatorSaveItem.Image")));
             this.tbServicoBindingNavigatorSaveItem.Name = "tbServicoBindingNavigatorSaveItem";
-            this.tbServicoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.tbServicoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.tbServicoBindingNavigatorSaveItem.Text = "Save Data";
             this.tbServicoBindingNavigatorSaveItem.Click += new System.EventHandler(this.tbServicoBindingNavigatorSaveItem_Click_1);
-            // 
-            // idServicoLabel
-            // 
-            idServicoLabel.AutoSize = true;
-            idServicoLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            idServicoLabel.Location = new System.Drawing.Point(18, 23);
-            idServicoLabel.Name = "idServicoLabel";
-            idServicoLabel.Size = new System.Drawing.Size(25, 17);
-            idServicoLabel.TabIndex = 0;
-            idServicoLabel.Text = "ID:";
-            // 
-            // idServicoTextBox
-            // 
-            this.idServicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "idServico", true));
-            this.idServicoTextBox.Location = new System.Drawing.Point(49, 20);
-            this.idServicoTextBox.Name = "idServicoTextBox";
-            this.idServicoTextBox.Size = new System.Drawing.Size(100, 25);
-            this.idServicoTextBox.TabIndex = 1;
-            // 
-            // nomeLabel
-            // 
-            nomeLabel.AutoSize = true;
-            nomeLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            nomeLabel.Location = new System.Drawing.Point(166, 23);
-            nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(48, 17);
-            nomeLabel.TabIndex = 2;
-            nomeLabel.Text = "Nome:";
-            // 
-            // nomeTextBox
-            // 
-            this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(220, 20);
-            this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(100, 25);
-            this.nomeTextBox.TabIndex = 3;
-            // 
-            // descricaoLabel
-            // 
-            descricaoLabel.AutoSize = true;
-            descricaoLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            descricaoLabel.Location = new System.Drawing.Point(22, 57);
-            descricaoLabel.Name = "descricaoLabel";
-            descricaoLabel.Size = new System.Drawing.Size(70, 17);
-            descricaoLabel.TabIndex = 4;
-            descricaoLabel.Text = "Descrição:";
-            // 
-            // descricaoTextBox
-            // 
-            this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "descricao", true));
-            this.descricaoTextBox.Location = new System.Drawing.Point(25, 77);
-            this.descricaoTextBox.Multiline = true;
-            this.descricaoTextBox.Name = "descricaoTextBox";
-            this.descricaoTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descricaoTextBox.Size = new System.Drawing.Size(523, 65);
-            this.descricaoTextBox.TabIndex = 5;
-            // 
-            // observacaoLabel
-            // 
-            observacaoLabel.AutoSize = true;
-            observacaoLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            observacaoLabel.Location = new System.Drawing.Point(22, 152);
-            observacaoLabel.Name = "observacaoLabel";
-            observacaoLabel.Size = new System.Drawing.Size(82, 17);
-            observacaoLabel.TabIndex = 6;
-            observacaoLabel.Text = "Observação:";
-            // 
-            // observacaoTextBox
-            // 
-            this.observacaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "observacao", true));
-            this.observacaoTextBox.Location = new System.Drawing.Point(25, 172);
-            this.observacaoTextBox.Multiline = true;
-            this.observacaoTextBox.Name = "observacaoTextBox";
-            this.observacaoTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.observacaoTextBox.Size = new System.Drawing.Size(523, 65);
-            this.observacaoTextBox.TabIndex = 7;
-            // 
-            // valorLabel
-            // 
-            valorLabel.AutoSize = true;
-            valorLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            valorLabel.Location = new System.Drawing.Point(11, 270);
-            valorLabel.Name = "valorLabel";
-            valorLabel.Size = new System.Drawing.Size(44, 17);
-            valorLabel.TabIndex = 8;
-            valorLabel.Text = "Valor:";
-            // 
-            // valorTextBox
-            // 
-            this.valorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "valor", true));
-            this.valorTextBox.Location = new System.Drawing.Point(61, 267);
-            this.valorTextBox.Name = "valorTextBox";
-            this.valorTextBox.Size = new System.Drawing.Size(100, 25);
-            this.valorTextBox.TabIndex = 9;
-            // 
-            // dataCadastroLabel
-            // 
-            dataCadastroLabel.AutoSize = true;
-            dataCadastroLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            dataCadastroLabel.Location = new System.Drawing.Point(237, 320);
-            dataCadastroLabel.Name = "dataCadastroLabel";
-            dataCadastroLabel.Size = new System.Drawing.Size(119, 17);
-            dataCadastroLabel.TabIndex = 10;
-            dataCadastroLabel.Text = "Data de Cadastro:";
-            // 
-            // dataCadastroTextBox
-            // 
-            this.dataCadastroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "dataCadastro", true));
-            this.dataCadastroTextBox.Location = new System.Drawing.Point(362, 317);
-            this.dataCadastroTextBox.Name = "dataCadastroTextBox";
-            this.dataCadastroTextBox.Size = new System.Drawing.Size(100, 25);
-            this.dataCadastroTextBox.TabIndex = 11;
-            // 
-            // cadastradoPorLabel
-            // 
-            cadastradoPorLabel.AutoSize = true;
-            cadastradoPorLabel.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            cadastradoPorLabel.Location = new System.Drawing.Point(237, 270);
-            cadastradoPorLabel.Name = "cadastradoPorLabel";
-            cadastradoPorLabel.Size = new System.Drawing.Size(106, 17);
-            cadastradoPorLabel.TabIndex = 12;
-            cadastradoPorLabel.Text = "Cadastrado Por:";
-            // 
-            // cadastradoPorTextBox
-            // 
-            this.cadastradoPorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "cadastradoPor", true));
-            this.cadastradoPorTextBox.Location = new System.Drawing.Point(362, 267);
-            this.cadastradoPorTextBox.Name = "cadastradoPorTextBox";
-            this.cadastradoPorTextBox.Size = new System.Drawing.Size(100, 25);
-            this.cadastradoPorTextBox.TabIndex = 13;
             // 
             // groupBox2
             // 
@@ -487,8 +489,8 @@ namespace SistemaDesktop
             this.Load += new System.EventHandler(this.frmServico_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbServicoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroUsuarioDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbServicoBindingNavigator)).EndInit();
             this.tbServicoBindingNavigator.ResumeLayout(false);
             this.tbServicoBindingNavigator.PerformLayout();
