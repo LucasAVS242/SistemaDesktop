@@ -121,21 +121,21 @@ namespace SistemaDesktop
             // clienteToolStripMenuItem1
             // 
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
-            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.clienteToolStripMenuItem1.Text = "Cliente";
             this.clienteToolStripMenuItem1.Click += new System.EventHandler(this.clienteToolStripMenuItem1_Click);
             // 
             // serviçoToolStripMenuItem1
             // 
             this.serviçoToolStripMenuItem1.Name = "serviçoToolStripMenuItem1";
-            this.serviçoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.serviçoToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.serviçoToolStripMenuItem1.Text = "Serviço";
             this.serviçoToolStripMenuItem1.Click += new System.EventHandler(this.serviçoToolStripMenuItem1_Click);
             // 
             // ordemDeServiçoToolStripMenuItem1
             // 
             this.ordemDeServiçoToolStripMenuItem1.Name = "ordemDeServiçoToolStripMenuItem1";
-            this.ordemDeServiçoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ordemDeServiçoToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.ordemDeServiçoToolStripMenuItem1.Text = "Ordem de serviço";
             this.ordemDeServiçoToolStripMenuItem1.Click += new System.EventHandler(this.ordemDeServiçoToolStripMenuItem1_Click);
             // 
@@ -249,7 +249,6 @@ namespace SistemaDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SistemaDesktop.Properties.Resources.loginbackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1008, 746);
             this.Controls.Add(this.statusStrip1);
