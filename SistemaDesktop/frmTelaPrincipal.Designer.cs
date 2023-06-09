@@ -83,28 +83,28 @@ namespace SistemaDesktop
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // serviçoToolStripMenuItem
             // 
             this.serviçoToolStripMenuItem.Name = "serviçoToolStripMenuItem";
-            this.serviçoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.serviçoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.serviçoToolStripMenuItem.Text = "Serviço";
             this.serviçoToolStripMenuItem.Click += new System.EventHandler(this.serviçoToolStripMenuItem_Click);
             // 
             // ordemDeServiçoToolStripMenuItem
             // 
             this.ordemDeServiçoToolStripMenuItem.Name = "ordemDeServiçoToolStripMenuItem";
-            this.ordemDeServiçoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.ordemDeServiçoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ordemDeServiçoToolStripMenuItem.Text = "Ordem de serviço";
             this.ordemDeServiçoToolStripMenuItem.Click += new System.EventHandler(this.ordemDeServiçoToolStripMenuItem_Click);
             // 
@@ -121,26 +121,27 @@ namespace SistemaDesktop
             // clienteToolStripMenuItem1
             // 
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
-            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.clienteToolStripMenuItem1.Text = "Cliente";
             this.clienteToolStripMenuItem1.Click += new System.EventHandler(this.clienteToolStripMenuItem1_Click);
             // 
             // serviçoToolStripMenuItem1
             // 
             this.serviçoToolStripMenuItem1.Name = "serviçoToolStripMenuItem1";
-            this.serviçoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.serviçoToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.serviçoToolStripMenuItem1.Text = "Serviço";
             this.serviçoToolStripMenuItem1.Click += new System.EventHandler(this.serviçoToolStripMenuItem1_Click);
             // 
             // ordemDeServiçoToolStripMenuItem1
             // 
             this.ordemDeServiçoToolStripMenuItem1.Name = "ordemDeServiçoToolStripMenuItem1";
-            this.ordemDeServiçoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ordemDeServiçoToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.ordemDeServiçoToolStripMenuItem1.Text = "Ordem de serviço";
             this.ordemDeServiçoToolStripMenuItem1.Click += new System.EventHandler(this.ordemDeServiçoToolStripMenuItem1_Click);
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbCliente,
             this.tsbServico,
@@ -160,6 +161,7 @@ namespace SistemaDesktop
             this.tsbCliente.Name = "tsbCliente";
             this.tsbCliente.Size = new System.Drawing.Size(23, 22);
             this.tsbCliente.Text = "Cliente";
+            this.tsbCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbCliente.ToolTipText = "Cliente";
             this.tsbCliente.Click += new System.EventHandler(this.tsbCliente_Click);
             // 
@@ -170,7 +172,7 @@ namespace SistemaDesktop
             this.tsbServico.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbServico.Name = "tsbServico";
             this.tsbServico.Size = new System.Drawing.Size(23, 22);
-            this.tsbServico.Text = "Cliente";
+            this.tsbServico.Text = "Serviço";
             this.tsbServico.Click += new System.EventHandler(this.tsbServico_Click);
             // 
             // tsbOS

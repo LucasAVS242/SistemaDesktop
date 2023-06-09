@@ -14,8 +14,6 @@ namespace SistemaDesktop
 {
     public partial class frmCliente : Form
     {
-        SqlConnection cn = new SqlConnection(Properties.Settings.Default.CadastroUsuarioConnectionString);
-
         public frmCliente()
         {
             InitializeComponent();
@@ -23,41 +21,9 @@ namespace SistemaDesktop
 
         private void tbClienteBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if ((idClienteTextBox.Text != "") && (cnpjTextBox.Text != "") && (emailTextBox.Text != "") && (telefoneTextBox.Text != "") && (logradouroTextBox.Text != "") && (numeroTextBox.Text != "") && (bairroTextBox.Text != "") && (cidadeTextBox.Text != "") && (cepTextBox.Text != "") && (estadoTextBox.Text != ""))
-                {
-                        if (dataCadastroTextBox.Text == "")
-                        {
-                            dataCadastroTextBox.Text = DateTime.Now.ToString();
-
-                        }
-
-                        if (cadastradoPorTextBox.Text == "")
-                        {
-                            cadastradoPorTextBox.Text = frmLogin.usuarioConectado;
-
-
-                        }
-                        this.Validate();
-                        this.tbClienteBindingSource.EndEdit();
-                        MessageBox.Show("Cadastro realizado com sucesso");
-                        this.tbClienteTableAdapter.Update(this.cadastroUsuarioDataSet.tbCliente);
-                }
-                else
-                {
-                    MessageBox.Show("Todos os campos não podem ficar " + "vazio");
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possivel salvar pelo seguinte motivo: " + ex.Message);
-            }
-
-            //this.Validate();
-            //this.tbClienteBindingSource.EndEdit();
-            //this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
+            this.Validate();
+            this.tbClienteBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
 
         }
 
@@ -66,41 +32,6 @@ namespace SistemaDesktop
             // TODO: This line of code loads data into the 'cadastroUsuarioDataSet.tbCliente' table. You can move, or remove it, as needed.
             this.tbClienteTableAdapter.Fill(this.cadastroUsuarioDataSet.tbCliente);
 
-        }
-
-        private void LimparCampo()
-        {
-            idClienteTextBox.Clear();
-            nomeTextBox.Clear();
-            cnpjTextBox.Clear();
-            emailTextBox.Clear();
-            telefoneTextBox.Clear();
-            logradouroTextBox.Clear();
-            numeroTextBox.Clear();
-            bairroTextBox.Clear();
-            cidadeTextBox.Clear();
-            cepTextBox.Clear();
-            estadoTextBox.Clear();
-            dataCadastroTextBox.Clear();
-            cadastradoPorTextBox.Clear();
-        }
-
-        private void tbClienteDataGridView_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            LimparCampo();
-            idClienteTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            nomeTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cnpjTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            emailTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            telefoneTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            logradouroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            numeroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            bairroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cidadeTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cepTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            estadoTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            dataCadastroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cadastradoPorTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
         }
     }
 }
