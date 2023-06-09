@@ -65,7 +65,8 @@ namespace SistemaDesktop
             this.relatóriosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1008, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1028, 27);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -76,35 +77,36 @@ namespace SistemaDesktop
             this.clienteToolStripMenuItem,
             this.serviçoToolStripMenuItem,
             this.ordemDeServiçoToolStripMenuItem});
+            this.cadastroToolStripMenuItem.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(74, 21);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             // 
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // serviçoToolStripMenuItem
             // 
             this.serviçoToolStripMenuItem.Name = "serviçoToolStripMenuItem";
-            this.serviçoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.serviçoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.serviçoToolStripMenuItem.Text = "Serviço";
             this.serviçoToolStripMenuItem.Click += new System.EventHandler(this.serviçoToolStripMenuItem_Click);
             // 
             // ordemDeServiçoToolStripMenuItem
             // 
             this.ordemDeServiçoToolStripMenuItem.Name = "ordemDeServiçoToolStripMenuItem";
-            this.ordemDeServiçoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.ordemDeServiçoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.ordemDeServiçoToolStripMenuItem.Text = "Ordem de serviço";
             this.ordemDeServiçoToolStripMenuItem.Click += new System.EventHandler(this.ordemDeServiçoToolStripMenuItem_Click);
             // 
@@ -114,28 +116,29 @@ namespace SistemaDesktop
             this.clienteToolStripMenuItem1,
             this.serviçoToolStripMenuItem1,
             this.ordemDeServiçoToolStripMenuItem1});
+            this.relatóriosToolStripMenuItem.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(82, 21);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
             // clienteToolStripMenuItem1
             // 
             this.clienteToolStripMenuItem1.Name = "clienteToolStripMenuItem1";
-            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
+            this.clienteToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.clienteToolStripMenuItem1.Text = "Cliente";
             this.clienteToolStripMenuItem1.Click += new System.EventHandler(this.clienteToolStripMenuItem1_Click);
             // 
             // serviçoToolStripMenuItem1
             // 
             this.serviçoToolStripMenuItem1.Name = "serviçoToolStripMenuItem1";
-            this.serviçoToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
+            this.serviçoToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.serviçoToolStripMenuItem1.Text = "Serviço";
             this.serviçoToolStripMenuItem1.Click += new System.EventHandler(this.serviçoToolStripMenuItem1_Click);
             // 
             // ordemDeServiçoToolStripMenuItem1
             // 
             this.ordemDeServiçoToolStripMenuItem1.Name = "ordemDeServiçoToolStripMenuItem1";
-            this.ordemDeServiçoToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
+            this.ordemDeServiçoToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.ordemDeServiçoToolStripMenuItem1.Text = "Ordem de serviço";
             this.ordemDeServiçoToolStripMenuItem1.Click += new System.EventHandler(this.ordemDeServiçoToolStripMenuItem1_Click);
             // 
@@ -146,15 +149,16 @@ namespace SistemaDesktop
             this.tsbServico,
             this.tsbOS,
             this.tsbLogoff});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 27);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1008, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // tsbCliente
             // 
             this.tsbCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCliente.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.tsbCliente.Image = ((System.Drawing.Image)(resources.GetObject("tsbCliente.Image")));
             this.tsbCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCliente.Name = "tsbCliente";
@@ -166,6 +170,7 @@ namespace SistemaDesktop
             // tsbServico
             // 
             this.tsbServico.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbServico.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.tsbServico.Image = ((System.Drawing.Image)(resources.GetObject("tsbServico.Image")));
             this.tsbServico.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbServico.Name = "tsbServico";
@@ -176,6 +181,7 @@ namespace SistemaDesktop
             // tsbOS
             // 
             this.tsbOS.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbOS.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.tsbOS.Image = ((System.Drawing.Image)(resources.GetObject("tsbOS.Image")));
             this.tsbOS.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbOS.Name = "tsbOS";
@@ -186,6 +192,7 @@ namespace SistemaDesktop
             // tsbLogoff
             // 
             this.tsbLogoff.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbLogoff.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.tsbLogoff.Image = ((System.Drawing.Image)(resources.GetObject("tsbLogoff.Image")));
             this.tsbLogoff.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbLogoff.Name = "tsbLogoff";
@@ -201,9 +208,10 @@ namespace SistemaDesktop
             this.tsslNomePC,
             this.tsslData,
             this.tsslHora});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 724);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 727);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1008, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1028, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -247,15 +255,17 @@ namespace SistemaDesktop
             // 
             // frmTelaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1008, 746);
+            this.ClientSize = new System.Drawing.Size(1028, 749);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmTelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmTelaPrincipal";

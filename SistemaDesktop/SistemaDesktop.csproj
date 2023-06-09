@@ -64,6 +64,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroUsuarioDataSet.cs">
+      <DependentUpon>CadastroUsuarioDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CadastroUsuarioDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
