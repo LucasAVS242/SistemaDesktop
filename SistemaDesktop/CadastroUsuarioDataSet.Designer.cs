@@ -732,6 +732,7 @@ namespace SistemaDesktop {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnidCliente}, true));
                 this.columnidCliente.AutoIncrement = true;
+                this.columnidCliente.AutoIncrementSeed = 1;
                 this.columnidCliente.AllowDBNull = false;
                 this.columnidCliente.Unique = true;
                 this.columnnome.AllowDBNull = false;

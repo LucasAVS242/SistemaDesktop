@@ -135,6 +135,15 @@
     <EmbeddedResource Include="frmOS.resx">
       <DependentUpon>frmOS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmrelatCliente.resx">
+      <DependentUpon>frmrelatCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrelatOS.resx">
+      <DependentUpon>frmrelatOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrelatServico.resx">
+      <DependentUpon>frmrelatServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmServico.resx">
       <DependentUpon>frmServico.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +163,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rltCliente.rdlc" />
+    <EmbeddedResource Include="rltOS.rdlc" />
+    <EmbeddedResource Include="rltServico.rdlc" />
     <None Include="CadastroUsuarioDataSet.xsc">
       <DependentUpon>CadastroUsuarioDataSet.xsd</DependentUpon>
     </None>
