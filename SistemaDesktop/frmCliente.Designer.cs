@@ -143,7 +143,7 @@ namespace SistemaDesktop
             this.groupBox1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(12, 52);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(295, 473);
+            this.groupBox1.Size = new System.Drawing.Size(366, 473);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
@@ -198,7 +198,7 @@ namespace SistemaDesktop
             this.tbClienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tbClienteBindingNavigator.Name = "tbClienteBindingNavigator";
             this.tbClienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tbClienteBindingNavigator.Size = new System.Drawing.Size(922, 25);
+            this.tbClienteBindingNavigator.Size = new System.Drawing.Size(1043, 25);
             this.tbClienteBindingNavigator.TabIndex = 1;
             this.tbClienteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -312,7 +312,7 @@ namespace SistemaDesktop
             this.idClienteTextBox.Location = new System.Drawing.Point(131, 49);
             this.idClienteTextBox.Name = "idClienteTextBox";
             this.idClienteTextBox.ReadOnly = true;
-            this.idClienteTextBox.Size = new System.Drawing.Size(100, 25);
+            this.idClienteTextBox.Size = new System.Drawing.Size(178, 25);
             this.idClienteTextBox.TabIndex = 1;
             // 
             // nomeLabel
@@ -329,7 +329,7 @@ namespace SistemaDesktop
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "nome", true));
             this.nomeTextBox.Location = new System.Drawing.Point(131, 80);
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(100, 25);
+            this.nomeTextBox.Size = new System.Drawing.Size(178, 25);
             this.nomeTextBox.TabIndex = 3;
             // 
             // cnpjLabel
@@ -346,7 +346,7 @@ namespace SistemaDesktop
             this.cnpjTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cnpj", true));
             this.cnpjTextBox.Location = new System.Drawing.Point(131, 111);
             this.cnpjTextBox.Name = "cnpjTextBox";
-            this.cnpjTextBox.Size = new System.Drawing.Size(100, 25);
+            this.cnpjTextBox.Size = new System.Drawing.Size(178, 25);
             this.cnpjTextBox.TabIndex = 5;
             // 
             // emailLabel
@@ -363,7 +363,7 @@ namespace SistemaDesktop
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "email", true));
             this.emailTextBox.Location = new System.Drawing.Point(131, 142);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(100, 25);
+            this.emailTextBox.Size = new System.Drawing.Size(178, 25);
             this.emailTextBox.TabIndex = 7;
             // 
             // telefoneLabel
@@ -380,7 +380,7 @@ namespace SistemaDesktop
             this.telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "telefone", true));
             this.telefoneTextBox.Location = new System.Drawing.Point(131, 173);
             this.telefoneTextBox.Name = "telefoneTextBox";
-            this.telefoneTextBox.Size = new System.Drawing.Size(100, 25);
+            this.telefoneTextBox.Size = new System.Drawing.Size(178, 25);
             this.telefoneTextBox.TabIndex = 9;
             // 
             // logradouroLabel
@@ -397,13 +397,13 @@ namespace SistemaDesktop
             this.logradouroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "logradouro", true));
             this.logradouroTextBox.Location = new System.Drawing.Point(131, 204);
             this.logradouroTextBox.Name = "logradouroTextBox";
-            this.logradouroTextBox.Size = new System.Drawing.Size(100, 25);
+            this.logradouroTextBox.Size = new System.Drawing.Size(178, 25);
             this.logradouroTextBox.TabIndex = 11;
             // 
             // numeroLabel
             // 
             numeroLabel.AutoSize = true;
-            numeroLabel.Location = new System.Drawing.Point(64, 238);
+            numeroLabel.Location = new System.Drawing.Point(64, 362);
             numeroLabel.Name = "numeroLabel";
             numeroLabel.Size = new System.Drawing.Size(61, 17);
             numeroLabel.TabIndex = 12;
@@ -412,15 +412,15 @@ namespace SistemaDesktop
             // numeroTextBox
             // 
             this.numeroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "numero", true));
-            this.numeroTextBox.Location = new System.Drawing.Point(131, 235);
+            this.numeroTextBox.Location = new System.Drawing.Point(131, 359);
             this.numeroTextBox.Name = "numeroTextBox";
-            this.numeroTextBox.Size = new System.Drawing.Size(100, 25);
+            this.numeroTextBox.Size = new System.Drawing.Size(178, 25);
             this.numeroTextBox.TabIndex = 13;
             // 
             // bairroLabel
             // 
             bairroLabel.AutoSize = true;
-            bairroLabel.Location = new System.Drawing.Point(77, 269);
+            bairroLabel.Location = new System.Drawing.Point(77, 331);
             bairroLabel.Name = "bairroLabel";
             bairroLabel.Size = new System.Drawing.Size(48, 17);
             bairroLabel.TabIndex = 14;
@@ -429,15 +429,15 @@ namespace SistemaDesktop
             // bairroTextBox
             // 
             this.bairroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "bairro", true));
-            this.bairroTextBox.Location = new System.Drawing.Point(131, 266);
+            this.bairroTextBox.Location = new System.Drawing.Point(131, 328);
             this.bairroTextBox.Name = "bairroTextBox";
-            this.bairroTextBox.Size = new System.Drawing.Size(100, 25);
+            this.bairroTextBox.Size = new System.Drawing.Size(178, 25);
             this.bairroTextBox.TabIndex = 15;
             // 
             // cidadeLabel
             // 
             cidadeLabel.AutoSize = true;
-            cidadeLabel.Location = new System.Drawing.Point(72, 300);
+            cidadeLabel.Location = new System.Drawing.Point(72, 269);
             cidadeLabel.Name = "cidadeLabel";
             cidadeLabel.Size = new System.Drawing.Size(53, 17);
             cidadeLabel.TabIndex = 16;
@@ -446,15 +446,15 @@ namespace SistemaDesktop
             // cidadeTextBox
             // 
             this.cidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cidade", true));
-            this.cidadeTextBox.Location = new System.Drawing.Point(131, 297);
+            this.cidadeTextBox.Location = new System.Drawing.Point(131, 266);
             this.cidadeTextBox.Name = "cidadeTextBox";
-            this.cidadeTextBox.Size = new System.Drawing.Size(100, 25);
+            this.cidadeTextBox.Size = new System.Drawing.Size(178, 25);
             this.cidadeTextBox.TabIndex = 17;
             // 
             // cepLabel
             // 
             cepLabel.AutoSize = true;
-            cepLabel.Location = new System.Drawing.Point(91, 331);
+            cepLabel.Location = new System.Drawing.Point(91, 300);
             cepLabel.Name = "cepLabel";
             cepLabel.Size = new System.Drawing.Size(34, 17);
             cepLabel.TabIndex = 18;
@@ -463,15 +463,15 @@ namespace SistemaDesktop
             // cepTextBox
             // 
             this.cepTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cep", true));
-            this.cepTextBox.Location = new System.Drawing.Point(131, 328);
+            this.cepTextBox.Location = new System.Drawing.Point(131, 297);
             this.cepTextBox.Name = "cepTextBox";
-            this.cepTextBox.Size = new System.Drawing.Size(100, 25);
+            this.cepTextBox.Size = new System.Drawing.Size(178, 25);
             this.cepTextBox.TabIndex = 19;
             // 
             // estadoLabel
             // 
             estadoLabel.AutoSize = true;
-            estadoLabel.Location = new System.Drawing.Point(73, 362);
+            estadoLabel.Location = new System.Drawing.Point(73, 238);
             estadoLabel.Name = "estadoLabel";
             estadoLabel.Size = new System.Drawing.Size(52, 17);
             estadoLabel.TabIndex = 20;
@@ -480,9 +480,9 @@ namespace SistemaDesktop
             // estadoTextBox
             // 
             this.estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "estado", true));
-            this.estadoTextBox.Location = new System.Drawing.Point(131, 359);
+            this.estadoTextBox.Location = new System.Drawing.Point(131, 235);
             this.estadoTextBox.Name = "estadoTextBox";
-            this.estadoTextBox.Size = new System.Drawing.Size(100, 25);
+            this.estadoTextBox.Size = new System.Drawing.Size(178, 25);
             this.estadoTextBox.TabIndex = 21;
             // 
             // dataCadastroLabel
@@ -497,9 +497,10 @@ namespace SistemaDesktop
             // dataCadastroTextBox
             // 
             this.dataCadastroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "dataCadastro", true));
+            this.dataCadastroTextBox.Enabled = false;
             this.dataCadastroTextBox.Location = new System.Drawing.Point(131, 390);
             this.dataCadastroTextBox.Name = "dataCadastroTextBox";
-            this.dataCadastroTextBox.Size = new System.Drawing.Size(100, 25);
+            this.dataCadastroTextBox.Size = new System.Drawing.Size(178, 25);
             this.dataCadastroTextBox.TabIndex = 23;
             // 
             // cadastradoPorLabel
@@ -514,16 +515,17 @@ namespace SistemaDesktop
             // cadastradoPorTextBox
             // 
             this.cadastradoPorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cadastradoPor", true));
+            this.cadastradoPorTextBox.Enabled = false;
             this.cadastradoPorTextBox.Location = new System.Drawing.Point(131, 421);
             this.cadastradoPorTextBox.Name = "cadastradoPorTextBox";
-            this.cadastradoPorTextBox.Size = new System.Drawing.Size(100, 25);
+            this.cadastradoPorTextBox.Size = new System.Drawing.Size(178, 25);
             this.cadastradoPorTextBox.TabIndex = 25;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tbClienteDataGridView);
             this.groupBox2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(313, 52);
+            this.groupBox2.Location = new System.Drawing.Point(384, 52);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(597, 473);
             this.groupBox2.TabIndex = 2;
@@ -557,6 +559,7 @@ namespace SistemaDesktop
             this.tbClienteDataGridView.ReadOnly = true;
             this.tbClienteDataGridView.Size = new System.Drawing.Size(591, 449);
             this.tbClienteDataGridView.TabIndex = 0;
+            this.tbClienteDataGridView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbClienteDataGridView_MouseDoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -654,7 +657,7 @@ namespace SistemaDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 574);
+            this.ClientSize = new System.Drawing.Size(1043, 574);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.tbClienteBindingNavigator);
             this.Controls.Add(this.groupBox1);
