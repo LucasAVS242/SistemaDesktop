@@ -30,11 +30,63 @@ namespace SistemaDesktop
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.CadastroUsuarioDataSet = new SistemaDesktop.CadastroUsuarioDataSet();
+            this.tbClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbClienteTableAdapter = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.tbClienteTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.CadastroUsuarioDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbClienteBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSetCliente";
+            reportDataSource1.Value = this.tbClienteBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SistemaDesktop.rltCliente.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(599, 368);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // CadastroUsuarioDataSet
+            // 
+            this.CadastroUsuarioDataSet.DataSetName = "CadastroUsuarioDataSet";
+            this.CadastroUsuarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbClienteBindingSource
+            // 
+            this.tbClienteBindingSource.DataMember = "tbCliente";
+            this.tbClienteBindingSource.DataSource = this.CadastroUsuarioDataSet;
+            // 
+            // tbClienteTableAdapter
+            // 
+            this.tbClienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // frmrelatCliente
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmrelatCliente";
+            this.ClientSize = new System.Drawing.Size(599, 368);
+            this.Controls.Add(this.reportViewer1);
+            this.Name = "frmrelatCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Relatório de Cliente";
+            this.Load += new System.EventHandler(this.frmrelatCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.CadastroUsuarioDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbClienteBindingSource)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource tbClienteBindingSource;
+        private CadastroUsuarioDataSet CadastroUsuarioDataSet;
+        private CadastroUsuarioDataSetTableAdapters.tbClienteTableAdapter tbClienteTableAdapter;
     }
 }

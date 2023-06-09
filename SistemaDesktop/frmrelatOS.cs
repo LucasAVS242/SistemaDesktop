@@ -16,5 +16,18 @@ namespace SistemaDesktop
         {
             InitializeComponent();
         }
+
+        private void frmrelatOS_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'CadastroUsuarioDataSet.tbOS' table. You can move, or remove it, as needed.
+            this.tbOSTableAdapter.Fill(this.CadastroUsuarioDataSet.tbOS);
+
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
