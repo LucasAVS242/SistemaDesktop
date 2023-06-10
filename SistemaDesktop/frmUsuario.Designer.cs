@@ -193,7 +193,7 @@ namespace SistemaDesktop
             this.repitasenhaTextBox.Name = "repitasenhaTextBox";
             this.repitasenhaTextBox.PasswordChar = '*';
             this.repitasenhaTextBox.Size = new System.Drawing.Size(121, 25);
-            this.repitasenhaTextBox.TabIndex = 24;
+            this.repitasenhaTextBox.TabIndex = 4;
             // 
             // tbUsuarioBindingSource
             // 
@@ -213,7 +213,7 @@ namespace SistemaDesktop
             this.idUsuarioTextBox.Name = "idUsuarioTextBox";
             this.idUsuarioTextBox.ReadOnly = true;
             this.idUsuarioTextBox.Size = new System.Drawing.Size(121, 25);
-            this.idUsuarioTextBox.TabIndex = 13;
+            this.idUsuarioTextBox.TabIndex = 1;
             // 
             // nomeUsuarioTextBox
             // 
@@ -221,7 +221,7 @@ namespace SistemaDesktop
             this.nomeUsuarioTextBox.Location = new System.Drawing.Point(116, 77);
             this.nomeUsuarioTextBox.Name = "nomeUsuarioTextBox";
             this.nomeUsuarioTextBox.Size = new System.Drawing.Size(121, 25);
-            this.nomeUsuarioTextBox.TabIndex = 15;
+            this.nomeUsuarioTextBox.TabIndex = 2;
             // 
             // senhaTextBox
             // 
@@ -230,7 +230,7 @@ namespace SistemaDesktop
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.PasswordChar = '*';
             this.senhaTextBox.Size = new System.Drawing.Size(121, 25);
-            this.senhaTextBox.TabIndex = 17;
+            this.senhaTextBox.TabIndex = 3;
             // 
             // nivelAcessoComboBox
             // 
@@ -244,7 +244,7 @@ namespace SistemaDesktop
             this.nivelAcessoComboBox.Location = new System.Drawing.Point(116, 170);
             this.nivelAcessoComboBox.Name = "nivelAcessoComboBox";
             this.nivelAcessoComboBox.Size = new System.Drawing.Size(121, 25);
-            this.nivelAcessoComboBox.TabIndex = 19;
+            this.nivelAcessoComboBox.TabIndex = 5;
             // 
             // dataCadastroTextBox
             // 
@@ -253,7 +253,7 @@ namespace SistemaDesktop
             this.dataCadastroTextBox.Location = new System.Drawing.Point(116, 201);
             this.dataCadastroTextBox.Name = "dataCadastroTextBox";
             this.dataCadastroTextBox.Size = new System.Drawing.Size(121, 25);
-            this.dataCadastroTextBox.TabIndex = 21;
+            this.dataCadastroTextBox.TabIndex = 6;
             // 
             // cadastradoPorTextBox
             // 
@@ -262,7 +262,7 @@ namespace SistemaDesktop
             this.cadastradoPorTextBox.Location = new System.Drawing.Point(116, 237);
             this.cadastradoPorTextBox.Name = "cadastradoPorTextBox";
             this.cadastradoPorTextBox.Size = new System.Drawing.Size(121, 25);
-            this.cadastradoPorTextBox.TabIndex = 23;
+            this.cadastradoPorTextBox.TabIndex = 7;
             // 
             // tbUsuarioBindingNavigator
             // 
@@ -409,7 +409,7 @@ namespace SistemaDesktop
             this.tbUsuarioDataGridView.Name = "tbUsuarioDataGridView";
             this.tbUsuarioDataGridView.ReadOnly = true;
             this.tbUsuarioDataGridView.Size = new System.Drawing.Size(462, 238);
-            this.tbUsuarioDataGridView.TabIndex = 2;
+            this.tbUsuarioDataGridView.TabIndex = 0;
             this.tbUsuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbUsuarioDataGridView_CellContentClick);
             this.tbUsuarioDataGridView.DoubleClick += new System.EventHandler(this.tbUsuarioDataGridView_DoubleClick);
             // 

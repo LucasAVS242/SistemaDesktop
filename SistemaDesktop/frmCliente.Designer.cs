@@ -272,9 +272,9 @@ namespace SistemaDesktop
             this.groupBox1.Controls.Add(this.cadastradoPorTextBox);
             this.groupBox1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(16, 68);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(488, 619);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -285,7 +285,7 @@ namespace SistemaDesktop
             this.idClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "idCliente", true));
             this.idClienteTextBox.Enabled = false;
             this.idClienteTextBox.Location = new System.Drawing.Point(175, 64);
-            this.idClienteTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idClienteTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idClienteTextBox.Name = "idClienteTextBox";
             this.idClienteTextBox.ReadOnly = true;
             this.idClienteTextBox.Size = new System.Drawing.Size(236, 25);
@@ -305,111 +305,111 @@ namespace SistemaDesktop
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "nome", true));
             this.nomeTextBox.Location = new System.Drawing.Point(175, 105);
-            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nomeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nomeTextBox.Name = "nomeTextBox";
             this.nomeTextBox.Size = new System.Drawing.Size(236, 25);
-            this.nomeTextBox.TabIndex = 3;
+            this.nomeTextBox.TabIndex = 2;
             // 
             // cnpjTextBox
             // 
             this.cnpjTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cnpj", true));
             this.cnpjTextBox.Location = new System.Drawing.Point(175, 145);
-            this.cnpjTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cnpjTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cnpjTextBox.Name = "cnpjTextBox";
             this.cnpjTextBox.Size = new System.Drawing.Size(236, 25);
-            this.cnpjTextBox.TabIndex = 5;
+            this.cnpjTextBox.TabIndex = 3;
             // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "email", true));
             this.emailTextBox.Location = new System.Drawing.Point(175, 186);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(236, 25);
-            this.emailTextBox.TabIndex = 7;
+            this.emailTextBox.TabIndex = 4;
             // 
             // telefoneTextBox
             // 
             this.telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "telefone", true));
             this.telefoneTextBox.Location = new System.Drawing.Point(175, 226);
-            this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.telefoneTextBox.Name = "telefoneTextBox";
             this.telefoneTextBox.Size = new System.Drawing.Size(236, 25);
-            this.telefoneTextBox.TabIndex = 9;
+            this.telefoneTextBox.TabIndex = 5;
             // 
             // logradouroTextBox
             // 
             this.logradouroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "logradouro", true));
             this.logradouroTextBox.Location = new System.Drawing.Point(175, 267);
-            this.logradouroTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logradouroTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.logradouroTextBox.Name = "logradouroTextBox";
             this.logradouroTextBox.Size = new System.Drawing.Size(236, 25);
-            this.logradouroTextBox.TabIndex = 11;
+            this.logradouroTextBox.TabIndex = 6;
             // 
             // numeroTextBox
             // 
             this.numeroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "numero", true));
             this.numeroTextBox.Location = new System.Drawing.Point(175, 469);
-            this.numeroTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numeroTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.numeroTextBox.Name = "numeroTextBox";
             this.numeroTextBox.Size = new System.Drawing.Size(236, 25);
-            this.numeroTextBox.TabIndex = 13;
+            this.numeroTextBox.TabIndex = 11;
             // 
             // bairroTextBox
             // 
             this.bairroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "bairro", true));
             this.bairroTextBox.Location = new System.Drawing.Point(175, 429);
-            this.bairroTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bairroTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.bairroTextBox.Name = "bairroTextBox";
             this.bairroTextBox.Size = new System.Drawing.Size(236, 25);
-            this.bairroTextBox.TabIndex = 15;
+            this.bairroTextBox.TabIndex = 10;
             // 
             // cidadeTextBox
             // 
             this.cidadeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cidade", true));
             this.cidadeTextBox.Location = new System.Drawing.Point(175, 348);
-            this.cidadeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cidadeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cidadeTextBox.Name = "cidadeTextBox";
             this.cidadeTextBox.Size = new System.Drawing.Size(236, 25);
-            this.cidadeTextBox.TabIndex = 17;
+            this.cidadeTextBox.TabIndex = 8;
             // 
             // cepTextBox
             // 
             this.cepTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cep", true));
             this.cepTextBox.Location = new System.Drawing.Point(175, 388);
-            this.cepTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cepTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cepTextBox.Name = "cepTextBox";
             this.cepTextBox.Size = new System.Drawing.Size(236, 25);
-            this.cepTextBox.TabIndex = 19;
+            this.cepTextBox.TabIndex = 9;
             // 
             // estadoTextBox
             // 
             this.estadoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "estado", true));
             this.estadoTextBox.Location = new System.Drawing.Point(175, 307);
-            this.estadoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.estadoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.estadoTextBox.Name = "estadoTextBox";
             this.estadoTextBox.Size = new System.Drawing.Size(236, 25);
-            this.estadoTextBox.TabIndex = 21;
+            this.estadoTextBox.TabIndex = 7;
             // 
             // dataCadastroTextBox
             // 
             this.dataCadastroTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "dataCadastro", true));
             this.dataCadastroTextBox.Enabled = false;
             this.dataCadastroTextBox.Location = new System.Drawing.Point(175, 510);
-            this.dataCadastroTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataCadastroTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.dataCadastroTextBox.Name = "dataCadastroTextBox";
             this.dataCadastroTextBox.Size = new System.Drawing.Size(236, 25);
-            this.dataCadastroTextBox.TabIndex = 23;
+            this.dataCadastroTextBox.TabIndex = 12;
             // 
             // cadastradoPorTextBox
             // 
             this.cadastradoPorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cadastradoPor", true));
             this.cadastradoPorTextBox.Enabled = false;
             this.cadastradoPorTextBox.Location = new System.Drawing.Point(175, 551);
-            this.cadastradoPorTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cadastradoPorTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.cadastradoPorTextBox.Name = "cadastradoPorTextBox";
             this.cadastradoPorTextBox.Size = new System.Drawing.Size(236, 25);
-            this.cadastradoPorTextBox.TabIndex = 25;
+            this.cadastradoPorTextBox.TabIndex = 13;
             // 
             // tbClienteTableAdapter
             // 
@@ -555,9 +555,9 @@ namespace SistemaDesktop
             this.groupBox2.Controls.Add(this.tbClienteDataGridView);
             this.groupBox2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(512, 68);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(796, 619);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -585,11 +585,11 @@ namespace SistemaDesktop
             this.dataGridViewTextBoxColumn13});
             this.tbClienteDataGridView.DataSource = this.tbClienteBindingSource;
             this.tbClienteDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbClienteDataGridView.Location = new System.Drawing.Point(4, 27);
-            this.tbClienteDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbClienteDataGridView.Location = new System.Drawing.Point(4, 22);
+            this.tbClienteDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.tbClienteDataGridView.Name = "tbClienteDataGridView";
             this.tbClienteDataGridView.ReadOnly = true;
-            this.tbClienteDataGridView.Size = new System.Drawing.Size(788, 587);
+            this.tbClienteDataGridView.Size = new System.Drawing.Size(788, 593);
             this.tbClienteDataGridView.TabIndex = 0;
             this.tbClienteDataGridView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbClienteDataGridView_MouseDoubleClick);
             // 
@@ -694,7 +694,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.tbClienteBindingNavigator);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCliente";
             this.Text = "Cadastro de Cliente";
             this.Load += new System.EventHandler(this.frmCliente_Load);
