@@ -185,6 +185,7 @@ namespace SistemaDesktop
             // idServicoTextBox
             // 
             this.idServicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbServicoBindingSource, "idServico", true));
+            this.idServicoTextBox.Enabled = false;
             this.idServicoTextBox.Location = new System.Drawing.Point(49, 20);
             this.idServicoTextBox.Name = "idServicoTextBox";
             this.idServicoTextBox.Size = new System.Drawing.Size(100, 25);
@@ -350,6 +351,7 @@ namespace SistemaDesktop
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -390,7 +392,7 @@ namespace SistemaDesktop
             this.tbServicoBindingNavigatorSaveItem.Name = "tbServicoBindingNavigatorSaveItem";
             this.tbServicoBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.tbServicoBindingNavigatorSaveItem.Text = "Save Data";
-            this.tbServicoBindingNavigatorSaveItem.Click += new System.EventHandler(this.tbServicoBindingNavigatorSaveItem_Click_1);
+            this.tbServicoBindingNavigatorSaveItem.Click += new System.EventHandler(this.tbServicoBindingNavigatorSaveItem_Click);
             // 
             // groupBox2
             // 

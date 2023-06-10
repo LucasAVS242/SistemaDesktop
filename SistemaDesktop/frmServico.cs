@@ -44,9 +44,9 @@ namespace SistemaDesktop
 
                     if (dataCadastroTextBox.Text == "")
                     {
-                        dataCadastroTextBox.Text =
-                       DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+                        dataCadastroTextBox.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
                     }
+
                     if (cadastradoPorTextBox.Text == "")
                     {
                         cadastradoPorTextBox.Text =
@@ -71,14 +71,6 @@ namespace SistemaDesktop
             //this.Validate();
             //this.tbServicoBindingSource.EndEdit();
             //this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
-
-        }
-
-        private void tbServicoBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.tbServicoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.cadastroUsuarioDataSet);
 
         }
 
