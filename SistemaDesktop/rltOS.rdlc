@@ -157,7 +157,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>id OS</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -187,7 +190,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>id Cliente</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -446,7 +452,10 @@
               <TextRuns>
                 <TextRun>
                   <Value>Relatório de Ordem de serviço</Value>
-                  <Style />
+                  <Style>
+                    <FontFamily>Malgun Gothic</FontFamily>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
