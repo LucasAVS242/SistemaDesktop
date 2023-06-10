@@ -29,7 +29,7 @@ namespace SistemaDesktop
                 {
                         if (dataCadastroTextBox.Text == "")
                         {
-                            dataCadastroTextBox.Text = DateTime.Now.ToString();
+                            dataCadastroTextBox.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
                         }
 
