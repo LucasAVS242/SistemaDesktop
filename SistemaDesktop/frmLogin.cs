@@ -85,13 +85,13 @@ namespace SistemaDesktop
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("Select * from tbUsuario WHERE nivelAcesso = 'Administrador'", conn);
-                int result = (int)cmd.ExecuteScalar();
+            
+            conn.Open();
+                SqlCommand cmd = new SqlCommand("Select nomeUsuario from tbUsuario WHERE nivelAcesso = 'Administrador'", conn);
+                string result = (string)cmd.ExecuteScalar();
                 conn.Close();
 
-            if (result != 0)
+            if (result != null)
             {
                 btnCadastrar.Enabled = false;
             }
