@@ -741,14 +741,14 @@ namespace SistemaDesktop {
                 this.columncnpj.MaxLength = 14;
                 this.columnemail.MaxLength = 50;
                 this.columntelefone.MaxLength = 13;
-                this.columnlogradouro.MaxLength = 2147483647;
+                this.columnlogradouro.MaxLength = 120;
                 this.columnnumero.MaxLength = 6;
                 this.columnbairro.MaxLength = 100;
                 this.columncidade.MaxLength = 100;
                 this.columncep.AutoIncrementSeed = 1;
                 this.columncep.MaxLength = 10;
                 this.columnestado.MaxLength = 100;
-                this.columndataCadastro.MaxLength = 15;
+                this.columndataCadastro.MaxLength = 20;
                 this.columncadastradoPor.MaxLength = 50;
             }
             
@@ -3316,7 +3316,7 @@ namespace SistemaDesktop.CadastroUsuarioDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbCliente] WHERE (([idCliente] = @Original_idCliente) AND ([nome] = @Original_nome) AND ([cnpj] = @Original_cnpj) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_telefone = 1 AND [telefone] IS NULL) OR ([telefone] = @Original_telefone)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_bairro = 1 AND [bairro] IS NULL) OR ([bairro] = @Original_bairro)) AND ((@IsNull_cidade = 1 AND [cidade] IS NULL) OR ([cidade] = @Original_cidade)) AND ((@IsNull_cep = 1 AND [cep] IS NULL) OR ([cep] = @Original_cep)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_dataCadastro = 1 AND [dataCadastro] IS NULL) OR ([dataCadastro] = @Original_dataCadastro)) AND ((@IsNull_cadastradoPor = 1 AND [cadastradoPor] IS NULL) OR ([cadastradoPor] = @Original_cadastradoPor)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbCliente] WHERE (([idCliente] = @Original_idCliente) AND ([nome] = @Original_nome) AND ([cnpj] = @Original_cnpj) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_telefone = 1 AND [telefone] IS NULL) OR ([telefone] = @Original_telefone)) AND ((@IsNull_logradouro = 1 AND [logradouro] IS NULL) OR ([logradouro] = @Original_logradouro)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_bairro = 1 AND [bairro] IS NULL) OR ([bairro] = @Original_bairro)) AND ((@IsNull_cidade = 1 AND [cidade] IS NULL) OR ([cidade] = @Original_cidade)) AND ((@IsNull_cep = 1 AND [cep] IS NULL) OR ([cep] = @Original_cep)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_dataCadastro = 1 AND [dataCadastro] IS NULL) OR ([dataCadastro] = @Original_dataCadastro)) AND ((@IsNull_cadastradoPor = 1 AND [cadastradoPor] IS NULL) OR ([cadastradoPor] = @Original_cadastradoPor)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idCliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idCliente", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nome", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nome", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -3325,6 +3325,8 @@ namespace SistemaDesktop.CadastroUsuarioDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_telefone", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefone", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_telefone", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_logradouro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "logradouro", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_logradouro", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "logradouro", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_numero", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "numero", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_numero", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "numero", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_bairro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "bairro", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -3359,7 +3361,7 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cadastradoPor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cadastradoPor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbCliente] SET [idCliente] = @idCliente, [nome] = @nome, [cnpj] = @cnpj, [email] = @email, [telefone] = @telefone, [logradouro] = @logradouro, [numero] = @numero, [bairro] = @bairro, [cidade] = @cidade, [cep] = @cep, [estado] = @estado, [dataCadastro] = @dataCadastro, [cadastradoPor] = @cadastradoPor WHERE (([idCliente] = @Original_idCliente) AND ([nome] = @Original_nome) AND ([cnpj] = @Original_cnpj) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_telefone = 1 AND [telefone] IS NULL) OR ([telefone] = @Original_telefone)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_bairro = 1 AND [bairro] IS NULL) OR ([bairro] = @Original_bairro)) AND ((@IsNull_cidade = 1 AND [cidade] IS NULL) OR ([cidade] = @Original_cidade)) AND ((@IsNull_cep = 1 AND [cep] IS NULL) OR ([cep] = @Original_cep)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_dataCadastro = 1 AND [dataCadastro] IS NULL) OR ([dataCadastro] = @Original_dataCadastro)) AND ((@IsNull_cadastradoPor = 1 AND [cadastradoPor] IS NULL) OR ([cadastradoPor] = @Original_cadastradoPor)));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbCliente] SET [idCliente] = @idCliente, [nome] = @nome, [cnpj] = @cnpj, [email] = @email, [telefone] = @telefone, [logradouro] = @logradouro, [numero] = @numero, [bairro] = @bairro, [cidade] = @cidade, [cep] = @cep, [estado] = @estado, [dataCadastro] = @dataCadastro, [cadastradoPor] = @cadastradoPor WHERE (([idCliente] = @Original_idCliente) AND ([nome] = @Original_nome) AND ([cnpj] = @Original_cnpj) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_telefone = 1 AND [telefone] IS NULL) OR ([telefone] = @Original_telefone)) AND ((@IsNull_logradouro = 1 AND [logradouro] IS NULL) OR ([logradouro] = @Original_logradouro)) AND ((@IsNull_numero = 1 AND [numero] IS NULL) OR ([numero] = @Original_numero)) AND ((@IsNull_bairro = 1 AND [bairro] IS NULL) OR ([bairro] = @Original_bairro)) AND ((@IsNull_cidade = 1 AND [cidade] IS NULL) OR ([cidade] = @Original_cidade)) AND ((@IsNull_cep = 1 AND [cep] IS NULL) OR ([cep] = @Original_cep)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)) AND ((@IsNull_dataCadastro = 1 AND [dataCadastro] IS NULL) OR ([dataCadastro] = @Original_dataCadastro)) AND ((@IsNull_cadastradoPor = 1 AND [cadastradoPor] IS NULL) OR ([cadastradoPor] = @Original_cadastradoPor)));
 SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidade, cep, estado, dataCadastro, cadastradoPor FROM tbCliente WHERE (idCliente = @idCliente)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idCliente", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idCliente", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3382,6 +3384,8 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_telefone", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefone", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_telefone", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "telefone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_logradouro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "logradouro", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_logradouro", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "logradouro", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_numero", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "numero", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_numero", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "numero", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_bairro", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "bairro", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -3473,7 +3477,7 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_idCliente, string Original_nome, string Original_cnpj, string Original_email, string Original_telefone, string Original_numero, string Original_bairro, string Original_cidade, string Original_cep, string Original_estado, string Original_dataCadastro, string Original_cadastradoPor) {
+        public virtual int Delete(int Original_idCliente, string Original_nome, string Original_cnpj, string Original_email, string Original_telefone, string Original_logradouro, string Original_numero, string Original_bairro, string Original_cidade, string Original_cep, string Original_estado, string Original_dataCadastro, string Original_cadastradoPor) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_idCliente));
             if ((Original_nome == null)) {
                 throw new global::System.ArgumentNullException("Original_nome");
@@ -3503,61 +3507,69 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_telefone));
             }
-            if ((Original_numero == null)) {
+            if ((Original_logradouro == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_numero));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_logradouro));
             }
-            if ((Original_bairro == null)) {
+            if ((Original_numero == null)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_bairro));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_numero));
             }
-            if ((Original_cidade == null)) {
+            if ((Original_bairro == null)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_cidade));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_bairro));
             }
-            if ((Original_cep == null)) {
+            if ((Original_cidade == null)) {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_cep));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_cidade));
             }
-            if ((Original_estado == null)) {
+            if ((Original_cep == null)) {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_estado));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_cep));
             }
-            if ((Original_dataCadastro == null)) {
+            if ((Original_estado == null)) {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_dataCadastro));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_estado));
             }
-            if ((Original_cadastradoPor == null)) {
+            if ((Original_dataCadastro == null)) {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_cadastradoPor));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_dataCadastro));
+            }
+            if ((Original_cadastradoPor == null)) {
+                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_cadastradoPor));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -3692,6 +3704,7 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
                     string Original_cnpj, 
                     string Original_email, 
                     string Original_telefone, 
+                    string Original_logradouro, 
                     string Original_numero, 
                     string Original_bairro, 
                     string Original_cidade, 
@@ -3801,61 +3814,69 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
                 this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_telefone));
             }
-            if ((Original_numero == null)) {
+            if ((Original_logradouro == null)) {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_numero));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_logradouro));
             }
-            if ((Original_bairro == null)) {
+            if ((Original_numero == null)) {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_bairro));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_numero));
             }
-            if ((Original_cidade == null)) {
+            if ((Original_bairro == null)) {
                 this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_cidade));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_bairro));
             }
-            if ((Original_cep == null)) {
+            if ((Original_cidade == null)) {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_cep));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_cidade));
             }
-            if ((Original_estado == null)) {
+            if ((Original_cep == null)) {
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_estado));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_cep));
             }
-            if ((Original_dataCadastro == null)) {
+            if ((Original_estado == null)) {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_dataCadastro));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_estado));
             }
-            if ((Original_cadastradoPor == null)) {
+            if ((Original_dataCadastro == null)) {
                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_cadastradoPor));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_dataCadastro));
+            }
+            if ((Original_cadastradoPor == null)) {
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_cadastradoPor));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -3895,6 +3916,7 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
                     string Original_cnpj, 
                     string Original_email, 
                     string Original_telefone, 
+                    string Original_logradouro, 
                     string Original_numero, 
                     string Original_bairro, 
                     string Original_cidade, 
@@ -3902,7 +3924,7 @@ SELECT idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidad
                     string Original_estado, 
                     string Original_dataCadastro, 
                     string Original_cadastradoPor) {
-            return this.Update(Original_idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidade, cep, estado, dataCadastro, cadastradoPor, Original_idCliente, Original_nome, Original_cnpj, Original_email, Original_telefone, Original_numero, Original_bairro, Original_cidade, Original_cep, Original_estado, Original_dataCadastro, Original_cadastradoPor);
+            return this.Update(Original_idCliente, nome, cnpj, email, telefone, logradouro, numero, bairro, cidade, cep, estado, dataCadastro, cadastradoPor, Original_idCliente, Original_nome, Original_cnpj, Original_email, Original_telefone, Original_logradouro, Original_numero, Original_bairro, Original_cidade, Original_cep, Original_estado, Original_dataCadastro, Original_cadastradoPor);
         }
     }
     
