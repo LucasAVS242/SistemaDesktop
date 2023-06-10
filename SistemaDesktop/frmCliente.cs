@@ -102,5 +102,10 @@ namespace SistemaDesktop
             dataCadastroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[11].Value.ToString();
             cadastradoPorTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[12].Value.ToString();
         }
+
+        private void dataCadastroTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
