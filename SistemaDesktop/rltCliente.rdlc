@@ -35,7 +35,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>ID</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -53,7 +56,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -66,7 +68,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Nome</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -96,7 +101,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>CNPJ</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -126,7 +134,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>email</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -156,7 +167,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Telefone</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -191,7 +205,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!idCliente.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -221,7 +238,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!nome.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -251,7 +271,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!cnpj.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -281,7 +304,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!email.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -311,7 +337,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!telefone.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -329,6 +358,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -387,7 +417,11 @@
               <TextRuns>
                 <TextRun>
                   <Value>Relatório de Cliente</Value>
-                  <Style />
+                  <Style>
+                    <FontFamily>Malgun Gothic</FontFamily>
+                    <FontSize>20pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
               <Style>
@@ -396,8 +430,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox16</rd:DefaultName>
-          <Top>0.3425in</Top>
-          <Height>0.36458in</Height>
+          <Top>0.29042in</Top>
+          <Height>0.41666in</Height>
           <Width>5.5in</Width>
           <Style>
             <Border>

@@ -12,10 +12,10 @@
               <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.27083in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.125in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -156,7 +156,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>id OS</Value>
+                              <Value>ID OS</Value>
                               <Style>
                                 <FontFamily>Malgun Gothic</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -189,7 +189,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>id Cliente</Value>
+                              <Value>ID Cliente</Value>
                               <Style>
                                 <FontFamily>Malgun Gothic</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -222,8 +222,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>data Cadastro</Value>
-                              <Style />
+                              <Value>Data  de Cadastro</Value>
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -252,8 +255,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>cadastrado Por</Value>
-                              <Style />
+                              <Value>Cadastrado Por</Value>
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -288,7 +294,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!idOS.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -318,7 +327,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!idCliente.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -348,7 +360,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!dataCadastro.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -378,7 +393,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!cadastradoPor.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Malgun Gothic</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -426,7 +444,7 @@
         <DataSetName>DataSetOS</DataSetName>
         <Left>1.36333in</Left>
         <Height>0.75in</Height>
-        <Width>4in</Width>
+        <Width>4.39583in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -454,6 +472,7 @@
                   <Value>Relatório de Ordem de serviço</Value>
                   <Style>
                     <FontFamily>Malgun Gothic</FontFamily>
+                    <FontSize>20pt</FontSize>
                     <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
@@ -464,8 +483,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox13</rd:DefaultName>
-          <Top>0.53in</Top>
-          <Height>0.25in</Height>
+          <Top>0.2175in</Top>
+          <Height>0.5625in</Height>
           <Width>6.5in</Width>
           <Style>
             <Border>
