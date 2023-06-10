@@ -496,6 +496,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.tbUsuarioBindingNavigator);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUsuario";
             this.Text = "Cadastro de Usuário";
             this.Load += new System.EventHandler(this.frmUsuario_Load);

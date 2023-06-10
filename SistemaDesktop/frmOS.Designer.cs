@@ -384,6 +384,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.tbOSBindingNavigator);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmOS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar OS";
