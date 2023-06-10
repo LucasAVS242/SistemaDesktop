@@ -53,6 +53,7 @@ namespace SistemaDesktop
             this.tsslData = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tsbCalc = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -148,6 +149,7 @@ namespace SistemaDesktop
             this.tsbCliente,
             this.tsbServico,
             this.tsbOS,
+            this.tsbCalc,
             this.tsbLogoff});
             this.toolStrip1.Location = new System.Drawing.Point(0, 27);
             this.toolStrip1.Name = "toolStrip1";
@@ -253,6 +255,16 @@ namespace SistemaDesktop
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // tsbCalc
+            // 
+            this.tsbCalc.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCalc.Image = ((System.Drawing.Image)(resources.GetObject("tsbCalc.Image")));
+            this.tsbCalc.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCalc.Name = "tsbCalc";
+            this.tsbCalc.Size = new System.Drawing.Size(23, 22);
+            this.tsbCalc.Text = "toolStripButton1";
+            this.tsbCalc.Click += new System.EventHandler(this.tsbCalc_Click);
+            // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -308,5 +320,6 @@ namespace SistemaDesktop
         private System.Windows.Forms.ToolStripStatusLabel tsslData;
         private System.Windows.Forms.ToolStripStatusLabel tsslHora;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripButton tsbCalc;
     }
 }

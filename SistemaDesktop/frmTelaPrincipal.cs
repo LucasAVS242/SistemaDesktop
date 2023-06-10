@@ -410,5 +410,42 @@ namespace SistemaDesktop
         {
             Application.Exit();
         }
+
+        private void tsbCalc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmCalc calc = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmCalc)
+                    {
+                        calc = (frmCalc)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (calc == null)
+                {
+                    calc = new frmCalc();
+                    calc.MdiParent = this;
+                    calc.Show();
+                }
+                calc.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
     }
 }
+
