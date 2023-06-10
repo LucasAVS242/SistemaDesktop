@@ -89,18 +89,18 @@ namespace SistemaDesktop
         {
             LimparCampo();
             idClienteTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            nomeTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cnpjTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            emailTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            telefoneTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            logradouroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            numeroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            bairroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cidadeTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cepTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            estadoTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            dataCadastroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
-            cadastradoPorTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[0].Value.ToString();
+            nomeTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[1].Value.ToString();
+            cnpjTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[2].Value.ToString();
+            emailTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[3].Value.ToString();
+            telefoneTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[4].Value.ToString();
+            logradouroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[5].Value.ToString();
+            numeroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[6].Value.ToString();
+            bairroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[7].Value.ToString();
+            cidadeTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[8].Value.ToString();
+            cepTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[9].Value.ToString();
+            estadoTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[10].Value.ToString();
+            dataCadastroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[11].Value.ToString();
+            cadastradoPorTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[12].Value.ToString();
         }
     }
 }
