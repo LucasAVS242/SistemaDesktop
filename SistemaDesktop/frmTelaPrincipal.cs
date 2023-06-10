@@ -55,7 +55,8 @@ namespace SistemaDesktop
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            tsslData.Text = DateTime.Now.ToString("HH:mm");
+            tsslData.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            tsslHora.Text = DateTime.Now.ToString("HH:mm");
         }
 
         private void usuárioToolStripMenuItem_Click(object sender, EventArgs e)

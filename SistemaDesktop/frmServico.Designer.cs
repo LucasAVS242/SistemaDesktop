@@ -487,6 +487,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.tbServicoBindingNavigator);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmServico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Serviço";
             this.Load += new System.EventHandler(this.frmServico_Load);
             this.groupBox1.ResumeLayout(false);
