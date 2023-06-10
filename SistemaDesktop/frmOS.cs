@@ -33,7 +33,6 @@ namespace SistemaDesktop
         {
             try
             {
-                //Desabilita o botão excluir para quem tiver nivel de acesso Operador
                 if (frmLogin.nivelAcesso == "Usuario")
                 {
                     bindingNavigatorDeleteItem.Enabled = false;
@@ -45,6 +44,7 @@ namespace SistemaDesktop
                         dataCadastroTextBox.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
                     }
+
                     if (cadastradoPorTextBox.Text == "")
                     {
                         cadastradoPorTextBox.Text =

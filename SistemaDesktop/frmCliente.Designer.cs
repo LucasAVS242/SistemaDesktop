@@ -315,6 +315,7 @@ namespace SistemaDesktop
             this.cnpjTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "cnpj", true));
             this.cnpjTextBox.Location = new System.Drawing.Point(175, 145);
             this.cnpjTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.cnpjTextBox.MaxLength = 14;
             this.cnpjTextBox.Name = "cnpjTextBox";
             this.cnpjTextBox.Size = new System.Drawing.Size(236, 25);
             this.cnpjTextBox.TabIndex = 3;
@@ -333,6 +334,7 @@ namespace SistemaDesktop
             this.telefoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbClienteBindingSource, "telefone", true));
             this.telefoneTextBox.Location = new System.Drawing.Point(175, 226);
             this.telefoneTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.telefoneTextBox.MaxLength = 13;
             this.telefoneTextBox.Name = "telefoneTextBox";
             this.telefoneTextBox.Size = new System.Drawing.Size(236, 25);
             this.telefoneTextBox.TabIndex = 5;
@@ -508,7 +510,6 @@ namespace SistemaDesktop
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 23);
             this.bindingNavigatorPositionItem.Text = "0";
