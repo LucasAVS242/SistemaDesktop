@@ -45,7 +45,7 @@ namespace SistemaDesktop
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(68, 45);
+            this.lblUsuario.Location = new System.Drawing.Point(90, 44);
             this.lblUsuario.Margin = new System.Windows.Forms.Padding(0);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(59, 17);
@@ -57,7 +57,7 @@ namespace SistemaDesktop
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblSenha.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblSenha.Location = new System.Drawing.Point(79, 85);
+            this.lblSenha.Location = new System.Drawing.Point(101, 84);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(48, 17);
             this.lblSenha.TabIndex = 1;
@@ -65,18 +65,18 @@ namespace SistemaDesktop
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(133, 44);
+            this.txtUsuario.Location = new System.Drawing.Point(155, 44);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(156, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(181, 22);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(133, 84);
+            this.txtSenha.Location = new System.Drawing.Point(155, 84);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(156, 20);
+            this.txtSenha.Size = new System.Drawing.Size(181, 22);
             this.txtSenha.TabIndex = 3;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
@@ -84,9 +84,9 @@ namespace SistemaDesktop
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnLogin.Location = new System.Drawing.Point(227, 176);
+            this.btnLogin.Location = new System.Drawing.Point(265, 176);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(62, 35);
+            this.btnLogin.Size = new System.Drawing.Size(72, 35);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -95,9 +95,9 @@ namespace SistemaDesktop
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnCadastrar.Location = new System.Drawing.Point(133, 176);
+            this.btnCadastrar.Location = new System.Drawing.Point(155, 176);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 35);
+            this.btnCadastrar.Size = new System.Drawing.Size(87, 35);
             this.btnCadastrar.TabIndex = 5;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@ namespace SistemaDesktop
             this.lblNivelAcesso.AutoSize = true;
             this.lblNivelAcesso.BackColor = System.Drawing.Color.Transparent;
             this.lblNivelAcesso.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblNivelAcesso.Location = new System.Drawing.Point(17, 126);
+            this.lblNivelAcesso.Location = new System.Drawing.Point(39, 125);
             this.lblNivelAcesso.Name = "lblNivelAcesso";
             this.lblNivelAcesso.Size = new System.Drawing.Size(110, 17);
             this.lblNivelAcesso.TabIndex = 7;
@@ -122,17 +122,17 @@ namespace SistemaDesktop
             "",
             "Administrador",
             "Usuario"});
-            this.cbmNivelAcesso.Location = new System.Drawing.Point(133, 125);
+            this.cbmNivelAcesso.Location = new System.Drawing.Point(155, 125);
             this.cbmNivelAcesso.Name = "cbmNivelAcesso";
-            this.cbmNivelAcesso.Size = new System.Drawing.Size(156, 21);
+            this.cbmNivelAcesso.Size = new System.Drawing.Size(181, 21);
             this.cbmNivelAcesso.TabIndex = 8;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(389, 245);
+            this.ClientSize = new System.Drawing.Size(408, 245);
             this.Controls.Add(this.cbmNivelAcesso);
             this.Controls.Add(this.lblNivelAcesso);
             this.Controls.Add(this.btnCadastrar);
@@ -141,6 +141,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblUsuario);
+            this.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
