@@ -115,7 +115,7 @@ namespace SistemaDesktop
             // idClienteLabel
             // 
             idClienteLabel.AutoSize = true;
-            idClienteLabel.Location = new System.Drawing.Point(133, 68);
+            idClienteLabel.Location = new System.Drawing.Point(142, 67);
             idClienteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idClienteLabel.Name = "idClienteLabel";
             idClienteLabel.Size = new System.Drawing.Size(25, 17);
@@ -125,7 +125,7 @@ namespace SistemaDesktop
             // nomeLabel
             // 
             nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(103, 109);
+            nomeLabel.Location = new System.Drawing.Point(119, 108);
             nomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nomeLabel.Name = "nomeLabel";
             nomeLabel.Size = new System.Drawing.Size(48, 17);
@@ -135,7 +135,7 @@ namespace SistemaDesktop
             // cnpjLabel
             // 
             cnpjLabel.AutoSize = true;
-            cnpjLabel.Location = new System.Drawing.Point(109, 149);
+            cnpjLabel.Location = new System.Drawing.Point(124, 148);
             cnpjLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             cnpjLabel.Name = "cnpjLabel";
             cnpjLabel.Size = new System.Drawing.Size(43, 17);
@@ -145,7 +145,7 @@ namespace SistemaDesktop
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(109, 190);
+            emailLabel.Location = new System.Drawing.Point(122, 189);
             emailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(45, 17);
@@ -155,7 +155,7 @@ namespace SistemaDesktop
             // telefoneLabel
             // 
             telefoneLabel.AutoSize = true;
-            telefoneLabel.Location = new System.Drawing.Point(80, 230);
+            telefoneLabel.Location = new System.Drawing.Point(102, 229);
             telefoneLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             telefoneLabel.Name = "telefoneLabel";
             telefoneLabel.Size = new System.Drawing.Size(65, 17);
@@ -165,7 +165,7 @@ namespace SistemaDesktop
             // logradouroLabel
             // 
             logradouroLabel.AutoSize = true;
-            logradouroLabel.Location = new System.Drawing.Point(56, 271);
+            logradouroLabel.Location = new System.Drawing.Point(84, 270);
             logradouroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             logradouroLabel.Name = "logradouroLabel";
             logradouroLabel.Size = new System.Drawing.Size(83, 17);
@@ -175,7 +175,7 @@ namespace SistemaDesktop
             // numeroLabel
             // 
             numeroLabel.AutoSize = true;
-            numeroLabel.Location = new System.Drawing.Point(85, 473);
+            numeroLabel.Location = new System.Drawing.Point(106, 472);
             numeroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             numeroLabel.Name = "numeroLabel";
             numeroLabel.Size = new System.Drawing.Size(61, 17);
@@ -185,7 +185,7 @@ namespace SistemaDesktop
             // bairroLabel
             // 
             bairroLabel.AutoSize = true;
-            bairroLabel.Location = new System.Drawing.Point(103, 433);
+            bairroLabel.Location = new System.Drawing.Point(119, 432);
             bairroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             bairroLabel.Name = "bairroLabel";
             bairroLabel.Size = new System.Drawing.Size(48, 17);
@@ -195,7 +195,7 @@ namespace SistemaDesktop
             // cidadeLabel
             // 
             cidadeLabel.AutoSize = true;
-            cidadeLabel.Location = new System.Drawing.Point(96, 352);
+            cidadeLabel.Location = new System.Drawing.Point(114, 351);
             cidadeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             cidadeLabel.Name = "cidadeLabel";
             cidadeLabel.Size = new System.Drawing.Size(53, 17);
@@ -205,7 +205,7 @@ namespace SistemaDesktop
             // cepLabel
             // 
             cepLabel.AutoSize = true;
-            cepLabel.Location = new System.Drawing.Point(121, 392);
+            cepLabel.Location = new System.Drawing.Point(133, 391);
             cepLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             cepLabel.Name = "cepLabel";
             cepLabel.Size = new System.Drawing.Size(34, 17);
@@ -215,7 +215,7 @@ namespace SistemaDesktop
             // estadoLabel
             // 
             estadoLabel.AutoSize = true;
-            estadoLabel.Location = new System.Drawing.Point(97, 311);
+            estadoLabel.Location = new System.Drawing.Point(115, 310);
             estadoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             estadoLabel.Name = "estadoLabel";
             estadoLabel.Size = new System.Drawing.Size(52, 17);
@@ -225,7 +225,7 @@ namespace SistemaDesktop
             // dataCadastroLabel
             // 
             dataCadastroLabel.AutoSize = true;
-            dataCadastroLabel.Location = new System.Drawing.Point(8, 514);
+            dataCadastroLabel.Location = new System.Drawing.Point(48, 513);
             dataCadastroLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             dataCadastroLabel.Name = "dataCadastroLabel";
             dataCadastroLabel.Size = new System.Drawing.Size(119, 17);
@@ -235,7 +235,7 @@ namespace SistemaDesktop
             // cadastradoPorLabel
             // 
             cadastradoPorLabel.AutoSize = true;
-            cadastradoPorLabel.Location = new System.Drawing.Point(25, 554);
+            cadastradoPorLabel.Location = new System.Drawing.Point(61, 554);
             cadastradoPorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             cadastradoPorLabel.Name = "cadastradoPorLabel";
             cadastradoPorLabel.Size = new System.Drawing.Size(106, 17);
@@ -692,6 +692,7 @@ namespace SistemaDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1028, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.tbClienteBindingNavigator);
