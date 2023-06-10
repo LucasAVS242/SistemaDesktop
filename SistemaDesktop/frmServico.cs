@@ -44,9 +44,10 @@ namespace SistemaDesktop
 
                     if (dataCadastroTextBox.Text == "")
                     {
-                        dataCadastroTextBox.Text =
-                       DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+                        dataCadastroTextBox.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+
                     }
+                
                     if (cadastradoPorTextBox.Text == "")
                     {
                         cadastradoPorTextBox.Text =
