@@ -85,9 +85,18 @@ namespace SistemaDesktop
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            //Possivel problema
-           // SqlCommand adm = new SqlCommand("Select * from tbUsuario WHERE nivelAcesso = Administrador",conn);
 
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("Select * from tbUsuario WHERE nivelAcesso = 'Administrador'", conn);
+                int result = (int)cmd.ExecuteScalar();
+                conn.Close();
+
+            if (result != 0)
+            {
+                btnCadastrar.Enabled = false;
+            }
+           
+            
         }
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)

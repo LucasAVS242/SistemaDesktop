@@ -1,1 +1,1 @@
-﻿select * from tbServico;
+﻿select * from tbUsuario;
