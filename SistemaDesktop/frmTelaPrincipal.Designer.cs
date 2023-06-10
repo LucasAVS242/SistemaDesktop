@@ -175,7 +175,7 @@ namespace SistemaDesktop
             this.tsbServico.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbServico.Name = "tsbServico";
             this.tsbServico.Size = new System.Drawing.Size(23, 22);
-            this.tsbServico.Text = "Cliente";
+            this.tsbServico.Text = "Serviço";
             this.tsbServico.Click += new System.EventHandler(this.tsbServico_Click);
             // 
             // tsbOS
@@ -269,7 +269,7 @@ namespace SistemaDesktop
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmTelaPrincipal";
+            this.Text = "Tela Principal";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmTelaPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.frmTelaPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
