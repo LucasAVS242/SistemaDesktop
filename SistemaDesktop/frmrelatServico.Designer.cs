@@ -31,13 +31,23 @@ namespace SistemaDesktop
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.CadastroUsuarioDataSet = new SistemaDesktop.CadastroUsuarioDataSet();
             this.tbServicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.CadastroUsuarioDataSet = new SistemaDesktop.CadastroUsuarioDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tbServicoTableAdapter = new SistemaDesktop.CadastroUsuarioDataSetTableAdapters.tbServicoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.CadastroUsuarioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbServicoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CadastroUsuarioDataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tbServicoBindingSource
+            // 
+            this.tbServicoBindingSource.DataMember = "tbServico";
+            this.tbServicoBindingSource.DataSource = this.CadastroUsuarioDataSet;
+            // 
+            // CadastroUsuarioDataSet
+            // 
+            this.CadastroUsuarioDataSet.DataSetName = "CadastroUsuarioDataSet";
+            this.CadastroUsuarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -52,16 +62,6 @@ namespace SistemaDesktop
             this.reportViewer1.Size = new System.Drawing.Size(599, 368);
             this.reportViewer1.TabIndex = 0;
             // 
-            // CadastroUsuarioDataSet
-            // 
-            this.CadastroUsuarioDataSet.DataSetName = "CadastroUsuarioDataSet";
-            this.CadastroUsuarioDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbServicoBindingSource
-            // 
-            this.tbServicoBindingSource.DataMember = "tbServico";
-            this.tbServicoBindingSource.DataSource = this.CadastroUsuarioDataSet;
-            // 
             // tbServicoTableAdapter
             // 
             this.tbServicoTableAdapter.ClearBeforeFill = true;
@@ -74,10 +74,10 @@ namespace SistemaDesktop
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmrelatServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmrelatServico";
+            this.Text = "Relatório de Serviço";
             this.Load += new System.EventHandler(this.frmrelatServico_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CadastroUsuarioDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbServicoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CadastroUsuarioDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
