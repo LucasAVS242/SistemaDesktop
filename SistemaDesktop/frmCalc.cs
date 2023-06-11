@@ -37,6 +37,8 @@ namespace SistemaDesktop
             txt3faixa.Clear();
             txt4faixa.Clear();
             txtINSStotal.Clear();
+            txtINSSsal.Clear();
+           
 
         }
 
@@ -73,12 +75,12 @@ namespace SistemaDesktop
         private void btLimpar_Click(object sender, EventArgs e)
         {
             Limpar();
-            btCalc.Enabled = true;
+           
         }
 
         private void btCalc_Click(object sender, EventArgs e)
         {
-            btCalc.Enabled = false;
+           
             if (cbCalc.Text == "FGTS")
             {
                 double fgtsSal, fgtsMes;
