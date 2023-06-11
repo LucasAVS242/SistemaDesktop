@@ -87,7 +87,7 @@ namespace SistemaDesktop
                     {
                         R = inssSal * 0.075;
                     }
-                    if (inssSal >1320 && inssSal < 2571.30)
+                    if (inssSal >= 1321 && inssSal <= 2571.29)
                     {
                         R = (inssSal - 1320) * 0.09;
                         txt1faixa.Text = "99,00";
@@ -96,7 +96,7 @@ namespace SistemaDesktop
                         txtINSStotal.Text = (R + 99).ToString();
 
                     }
-                    if (inssSal >= 2571.30 && inssSal < 3856.95)
+                    if (inssSal >= 2571.30 && inssSal <= 3856.94)
                     {
                         R = (inssSal - 2571.29) * 0.12;
 
