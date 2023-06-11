@@ -83,12 +83,15 @@ namespace SistemaDesktop
             {
                 double fgtsSal, fgtsMes;
 
+           
 
                 fgtsSal = double.Parse(txtFGTSsal.Text);
-                fgtsMes = int.Parse(txtFGTSmes.Text);
+                fgtsMes = double.Parse(txtFGTSmes.Text);
+
+               
                 R = (fgtsMes * fgtsSal) * 0.08;
 
-                txtResult.Text = R.ToString();
+                txtResult.Text = string.Format("{0:c}", R);
             }
 
             if (cbCalc.Text == "INSS")
@@ -103,52 +106,54 @@ namespace SistemaDesktop
                 {
                     double inssSal;
 
+                    txtINSSsal.Text.Replace(",", ".");
+
                     inssSal = double.Parse(txtINSSsal.Text);
 
                     if (inssSal <= 1320)
                     {
                         R = inssSal * 0.075;
-                        txt1faixa.Text = R.ToString();
+                        txt1faixa.Text = string.Format("{0:c}", R);
 
-                        txtINSStotal.Text = R.ToString();
+                        txtINSStotal.Text = string.Format("{0:c}", R);
                     }
                     if (inssSal >= 1321 && inssSal <= 2571.29)
                     {
                         R = (inssSal - 1320) * 0.09;
-                        txt1faixa.Text = "99,00";
+                        txt1faixa.Text = "$99,00";
                         txt2faixa.Text = R.ToString();
 
-                        txtINSStotal.Text = (R + 99).ToString();
+                        txtINSStotal.Text = string.Format("{0:c}", (R + 99));
 
                     }
                     if (inssSal >= 2571.30 && inssSal <= 3856.94)
                     {
                         R = (inssSal - 2571.29) * 0.12;
-                        txt1faixa.Text = "99,00";
-                        txt2faixa.Text = "112,62";
-                        txt3faixa.Text = R.ToString();
+                        txt1faixa.Text = "$99,00";
+                        txt2faixa.Text = "$112,62";
+                        txt3faixa.Text = string.Format("{0:c}", R);
 
-                        txtINSStotal.Text = (R + 99 + 112.62).ToString();
+                        txtINSStotal.Text = string.Format("{0:c}", (R + 99 + 112.62));
 
                     }
                     if (inssSal >= 3856.95 && inssSal <= 7507.49)
                     {
                         R = (inssSal - 3856.94) * 0.14;
-                        txt1faixa.Text = "99,00";
-                        txt2faixa.Text = "112,62";
-                        txt3faixa.Text = "154,28";
-                        txt4faixa.Text = R.ToString();
+                        txt1faixa.Text = "$99,00";
+                        txt2faixa.Text = "$112,62";
+                        txt3faixa.Text = "$154,28";
+                        txt4faixa.Text = string.Format("{0:c}", R);
 
-                        txtINSStotal.Text = (R + 99 + 112.62 + 154.28).ToString();
+                        txtINSStotal.Text = string.Format("{0:c}",(R + 99 + 112.62 + 154.28));
                     }
                     if (inssSal >= 7507.50)
                     {
-                        txt1faixa.Text = "99,00";
-                        txt2faixa.Text = "112,62";
-                        txt3faixa.Text = "154,28";
-                        txt4faixa.Text = "511,07";
+                        txt1faixa.Text = "$99,00";
+                        txt2faixa.Text = "$112,62";
+                        txt3faixa.Text = "$154,28";
+                        txt4faixa.Text = "$511,07";
 
-                        txtINSStotal.Text = "876,97";
+                        txtINSStotal.Text = "$876,97";
 
                     }
 
