@@ -43,12 +43,14 @@ namespace SistemaDesktop
         private void frmCalc_Load(object sender, EventArgs e)
         {
             Vis();
+           
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Vis();
             Limpar();
+            Vis();
+            
             if (cbCalc.Text == "FGTS")
             {
                 FGTS.Visible = true;
@@ -105,6 +107,9 @@ namespace SistemaDesktop
                     if (inssSal <= 1320)
                     {
                         R = inssSal * 0.075;
+                        txt1faixa.Text = R.ToString();
+
+                        txtINSStotal.Text = R.ToString();
                     }
                     if (inssSal >= 1321 && inssSal <= 2571.29)
                     {
@@ -152,6 +157,16 @@ namespace SistemaDesktop
             }
 
 
+        }
+
+        private void txtFGTSsal_TextChanged(object sender, EventArgs e)
+        {
+            Limpar();
+        }
+
+        private void txtINSSsal_TextChanged(object sender, EventArgs e)
+        {
+            Limpar();
         }
     }
 }

@@ -413,28 +413,34 @@ namespace SistemaDesktop
 
         private void tsbCalc_Click(object sender, EventArgs e)
         {
+          
+
+        }
+
+        private void tsbCalcular_Click(object sender, EventArgs e)
+        {
             try
             {
-                frmCalc calc = null;
+                frmCalc cal = null;
 
                 foreach (Form frm in this.MdiChildren)
                 {
                     if (frm is frmCalc)
                     {
-                        calc = (frmCalc)frm;
+                        cal = (frmCalc)frm;
                         break;
 
                     }
 
 
                 }
-                if (calc == null)
+                if (cal == null)
                 {
-                    calc = new frmCalc();
-                    calc.MdiParent = this;
-                    calc.Show();
+                    cal = new frmCalc();
+                    cal.MdiParent = this;
+                    cal.Show();
                 }
-                calc.Focus();
+                cal.Focus();
 
 
             }
@@ -445,7 +451,6 @@ namespace SistemaDesktop
             }
 
         }
-
     }
 }
 

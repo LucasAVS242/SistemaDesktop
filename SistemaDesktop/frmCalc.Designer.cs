@@ -75,6 +75,7 @@ namespace SistemaDesktop
             this.txtFGTSsal.Size = new System.Drawing.Size(75, 20);
             this.txtFGTSsal.TabIndex = 1;
             this.txtFGTSsal.Text = "0,00";
+            this.txtFGTSsal.TextChanged += new System.EventHandler(this.txtFGTSsal_TextChanged);
             // 
             // label2
             // 
@@ -280,6 +281,7 @@ namespace SistemaDesktop
             this.txtINSSsal.Size = new System.Drawing.Size(83, 20);
             this.txtINSSsal.TabIndex = 1;
             this.txtINSSsal.Text = "0,00";
+            this.txtINSSsal.TextChanged += new System.EventHandler(this.txtINSSsal_TextChanged);
             // 
             // label6
             // 
@@ -301,7 +303,8 @@ namespace SistemaDesktop
             // 
             // btLimpar
             // 
-            this.btLimpar.Location = new System.Drawing.Point(334, 16);
+            this.btLimpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btLimpar.Location = new System.Drawing.Point(326, 16);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(75, 23);
             this.btLimpar.TabIndex = 10;
@@ -311,7 +314,7 @@ namespace SistemaDesktop
             // 
             // btCalc
             // 
-            this.btCalc.Location = new System.Drawing.Point(253, 16);
+            this.btCalc.Location = new System.Drawing.Point(248, 16);
             this.btCalc.Name = "btCalc";
             this.btCalc.Size = new System.Drawing.Size(75, 23);
             this.btCalc.TabIndex = 11;
@@ -331,7 +334,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.label4);
             this.Controls.Add(this.FGTS);
             this.Name = "frmCalc";
-            this.Text = "frmCalcFGTS";
+            this.Text = "Calculos";
             this.Load += new System.EventHandler(this.frmCalc_Load);
             this.FGTS.ResumeLayout(false);
             this.FGTS.PerformLayout();
