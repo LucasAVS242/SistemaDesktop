@@ -51,7 +51,9 @@ namespace SistemaDesktop
             this.txt2faixa = new System.Windows.Forms.TextBox();
             this.txt3faixa = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtINSStotal = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt4faixa = new System.Windows.Forms.TextBox();
             this.FGTS.SuspendLayout();
             this.INSS.SuspendLayout();
             this.SuspendLayout();
@@ -155,7 +157,9 @@ namespace SistemaDesktop
             // 
             // INSS
             // 
-            this.INSS.Controls.Add(this.textBox4);
+            this.INSS.Controls.Add(this.txt4faixa);
+            this.INSS.Controls.Add(this.label11);
+            this.INSS.Controls.Add(this.txtINSStotal);
             this.INSS.Controls.Add(this.label10);
             this.INSS.Controls.Add(this.txt3faixa);
             this.INSS.Controls.Add(this.txt2faixa);
@@ -169,7 +173,7 @@ namespace SistemaDesktop
             this.INSS.Controls.Add(this.label7);
             this.INSS.Location = new System.Drawing.Point(167, 18);
             this.INSS.Name = "INSS";
-            this.INSS.Size = new System.Drawing.Size(201, 252);
+            this.INSS.Size = new System.Drawing.Size(201, 287);
             this.INSS.TabIndex = 9;
             this.INSS.TabStop = false;
             this.INSS.Text = "INSS";
@@ -269,7 +273,7 @@ namespace SistemaDesktop
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(44, 225);
+            this.label10.Location = new System.Drawing.Point(44, 248);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(34, 13);
             this.label10.TabIndex = 11;
@@ -277,14 +281,32 @@ namespace SistemaDesktop
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // textBox4
+            // txtINSStotal
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(84, 222);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(83, 20);
-            this.textBox4.TabIndex = 12;
-            this.textBox4.Text = "0,00";
+            this.txtINSStotal.Enabled = false;
+            this.txtINSStotal.Location = new System.Drawing.Point(84, 248);
+            this.txtINSStotal.Name = "txtINSStotal";
+            this.txtINSStotal.Size = new System.Drawing.Size(83, 20);
+            this.txtINSStotal.TabIndex = 12;
+            this.txtINSStotal.Text = "0,00";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(39, 209);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 13);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "4ª Faixa:";
+            // 
+            // txt4faixa
+            // 
+            this.txt4faixa.Enabled = false;
+            this.txt4faixa.Location = new System.Drawing.Point(84, 206);
+            this.txt4faixa.Name = "txt4faixa";
+            this.txt4faixa.Size = new System.Drawing.Size(83, 20);
+            this.txt4faixa.TabIndex = 14;
+            this.txt4faixa.Text = "0,00";
             // 
             // frmCalc
             // 
@@ -325,7 +347,7 @@ namespace SistemaDesktop
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbINSStab;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtINSStotal;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt3faixa;
         private System.Windows.Forms.TextBox txt2faixa;
@@ -333,5 +355,7 @@ namespace SistemaDesktop
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt4faixa;
+        private System.Windows.Forms.Label label11;
     }
 }
