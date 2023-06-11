@@ -29,16 +29,16 @@ namespace SistemaDesktop
         private void Limpar()
         {
 
-            txtFGTSmes.Clear();
-            txtResult.Clear();
-            txtFGTSsal.Clear();
-            txt1faixa.Clear();
-            txt2faixa.Clear();
-            txt3faixa.Clear();
-            txt4faixa.Clear();
-            txtINSStotal.Clear();
-            txtINSSsal.Clear();
-           
+            txtFGTSmes.Text = "0";
+            txtResult.Text = "0,00";
+            txtFGTSsal.Text = "0,00";
+            txt1faixa.Text = "0,00";
+            txt2faixa.Text = "0,00";
+            txt3faixa.Text = "0,00";
+            txt4faixa.Text = "0,00";
+            txtINSStotal.Text = "0,00";
+            txtINSSsal.Text = "0,00";
+
 
         }
 
@@ -83,17 +83,20 @@ namespace SistemaDesktop
            
             if (cbCalc.Text == "FGTS")
             {
+                 
                 double fgtsSal, fgtsMes;
 
-           
+                if (txtFGTSsal.Text != "" && txtFGTSmes.Text != "")
+                {
 
-                fgtsSal = double.Parse(txtFGTSsal.Text);
-                fgtsMes = double.Parse(txtFGTSmes.Text);
+                    fgtsSal = double.Parse(txtFGTSsal.Text);
+                    fgtsMes = double.Parse(txtFGTSmes.Text);
 
-               
-                R = (fgtsMes * fgtsSal) * 0.08;
 
-                txtResult.Text = string.Format("{0:c}", R);
+                    R = (fgtsMes * fgtsSal) * 0.08;
+
+                    txtResult.Text = string.Format("{0:c}", R);
+                }
             }
 
             if (cbCalc.Text == "INSS")
@@ -109,58 +112,60 @@ namespace SistemaDesktop
                     double inssSal;
 
                     txtINSSsal.Text.Replace(",", ".");
-
-                    inssSal = double.Parse(txtINSSsal.Text);
-
-                    if (inssSal <= 1320)
+                    if (txtINSSsal.Text != "")
                     {
-                        R = inssSal * 0.075;
-                        txt1faixa.Text = string.Format("{0:c}", R);
+                        inssSal = double.Parse(txtINSSsal.Text);
 
-                        txtINSStotal.Text = string.Format("{0:c}", R);
+
+                        if (inssSal <= 1320)
+                        {
+                            R = inssSal * 0.075;
+                            txt1faixa.Text = string.Format("{0:c}", R);
+
+                            txtINSStotal.Text = string.Format("{0:c}", R);
+                        }
+                        if (inssSal >= 1321 && inssSal <= 2571.29)
+                        {
+                            R = (inssSal - 1320) * 0.09;
+                            txt1faixa.Text = "$99,00";
+                            txt2faixa.Text = R.ToString();
+
+                            txtINSStotal.Text = string.Format("{0:c}", (R + 99));
+
+                        }
+                        if (inssSal >= 2571.30 && inssSal <= 3856.94)
+                        {
+                            R = (inssSal - 2571.29) * 0.12;
+                            txt1faixa.Text = "$99,00";
+                            txt2faixa.Text = "$112,62";
+                            txt3faixa.Text = string.Format("{0:c}", R);
+
+                            txtINSStotal.Text = string.Format("{0:c}", (R + 99 + 112.62));
+
+                        }
+                        if (inssSal >= 3856.95 && inssSal <= 7507.49)
+                        {
+                            R = (inssSal - 3856.94) * 0.14;
+                            txt1faixa.Text = "$99,00";
+                            txt2faixa.Text = "$112,62";
+                            txt3faixa.Text = "$154,28";
+                            txt4faixa.Text = string.Format("{0:c}", R);
+
+                            txtINSStotal.Text = string.Format("{0:c}", (R + 99 + 112.62 + 154.28));
+                        }
+                        if (inssSal >= 7507.50)
+                        {
+                            txt1faixa.Text = "$99,00";
+                            txt2faixa.Text = "$112,62";
+                            txt3faixa.Text = "$154,28";
+                            txt4faixa.Text = "$511,07";
+
+                            txtINSStotal.Text = "$876,97";
+
+                        }
+
+
                     }
-                    if (inssSal >= 1321 && inssSal <= 2571.29)
-                    {
-                        R = (inssSal - 1320) * 0.09;
-                        txt1faixa.Text = "$99,00";
-                        txt2faixa.Text = R.ToString();
-
-                        txtINSStotal.Text = string.Format("{0:c}", (R + 99));
-
-                    }
-                    if (inssSal >= 2571.30 && inssSal <= 3856.94)
-                    {
-                        R = (inssSal - 2571.29) * 0.12;
-                        txt1faixa.Text = "$99,00";
-                        txt2faixa.Text = "$112,62";
-                        txt3faixa.Text = string.Format("{0:c}", R);
-
-                        txtINSStotal.Text = string.Format("{0:c}", (R + 99 + 112.62));
-
-                    }
-                    if (inssSal >= 3856.95 && inssSal <= 7507.49)
-                    {
-                        R = (inssSal - 3856.94) * 0.14;
-                        txt1faixa.Text = "$99,00";
-                        txt2faixa.Text = "$112,62";
-                        txt3faixa.Text = "$154,28";
-                        txt4faixa.Text = string.Format("{0:c}", R);
-
-                        txtINSStotal.Text = string.Format("{0:c}",(R + 99 + 112.62 + 154.28));
-                    }
-                    if (inssSal >= 7507.50)
-                    {
-                        txt1faixa.Text = "$99,00";
-                        txt2faixa.Text = "$112,62";
-                        txt3faixa.Text = "$154,28";
-                        txt4faixa.Text = "$511,07";
-
-                        txtINSStotal.Text = "$876,97";
-
-                    }
-
-
-
                 }
             }
 
@@ -178,6 +183,11 @@ namespace SistemaDesktop
         }
 
         private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFGTSmes_TextChanged(object sender, EventArgs e)
         {
 
         }

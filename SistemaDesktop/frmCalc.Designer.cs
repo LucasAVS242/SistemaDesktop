@@ -29,6 +29,7 @@ namespace SistemaDesktop
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalc));
             this.label1 = new System.Windows.Forms.Label();
             this.txtFGTSsal = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,9 +93,12 @@ namespace SistemaDesktop
             this.txtFGTSmes.Name = "txtFGTSmes";
             this.txtFGTSmes.Size = new System.Drawing.Size(75, 25);
             this.txtFGTSmes.TabIndex = 4;
+            this.txtFGTSmes.Text = "0";
+            this.txtFGTSmes.TextChanged += new System.EventHandler(this.txtFGTSmes_TextChanged);
             // 
             // FGTS
             // 
+            this.FGTS.BackColor = System.Drawing.Color.Transparent;
             this.FGTS.Controls.Add(this.label3);
             this.FGTS.Controls.Add(this.txtFGTSsal);
             this.FGTS.Controls.Add(this.label2);
@@ -120,10 +124,12 @@ namespace SistemaDesktop
             // 
             // txtResult
             // 
+            this.txtResult.Enabled = false;
             this.txtResult.Location = new System.Drawing.Point(146, 180);
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(75, 25);
             this.txtResult.TabIndex = 5;
+            this.txtResult.Text = "0,00";
             // 
             // label4
             // 
@@ -341,6 +347,7 @@ namespace SistemaDesktop
             this.Controls.Add(this.cbCalc);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.FGTS);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCalc";
             this.Text = "Calculos";
             this.Load += new System.EventHandler(this.frmCalc_Load);
