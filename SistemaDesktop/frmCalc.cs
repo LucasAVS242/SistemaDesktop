@@ -16,18 +16,78 @@ namespace SistemaDesktop
         {
             InitializeComponent();
         }
+        public double R;
+
+        private void Vis()
+        {
+            FGTS.Visible = false;
+            INSS.Visible = false;
+        }
+        private void Limpar()
+        {
+
+            txtFGTSmes.Clear();
+            txtResult.Clear();
+            txtFGTSsal.Clear();
+        }
 
         private void frmCalc_Load(object sender, EventArgs e)
         {
-            FGTS.Visible = false;
+            Vis();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Vis();
             if (cbCalc.Text == "FGTS")
             {
                 FGTS.Visible = true;
             }
+            if (cbCalc.Text == "INSS")
+            {
+                FGTS.Visible = true;
+            }
+        }
+
+        private void btFGTScalc_Click(object sender, EventArgs e)
+        {
+            if (cbCalc.Text == "FGTS")
+            {
+                double fgtsSal, fgtsMes;
+
+
+                fgtsSal = double.Parse(txtFGTSsal.Text);
+                fgtsMes = int.Parse(txtFGTSmes.Text);
+                R = (fgtsMes * fgtsSal) * 0.08;
+
+                txtResult.Text = R.ToString("R$ ");
+            }
+
+            if (cbCalc.Text == "INSS")
+            {
+                if (cbINSStab.Text == "05/2023")
+                {
+                    double inssSal;
+
+                    inssSal = double.Parse(txtINSSsal.Text);
+
+                    if (inssSal <= 1320)
+                    {
+                        R = inssSal * 0.075;
+                    }
+                    if (inssSal >1320 && inssSal < 2571.30)
+                    {
+                        R = (inssSal - 1320) * 0.09;
+
+                    }
+
+
+
+                }
+            }
+
+
+
         }
     }
 }
