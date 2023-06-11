@@ -15,7 +15,7 @@ namespace SistemaDesktop
     public partial class frmOP : Form
     {
         SqlConnection cn = new SqlConnection(Properties.Settings.Default.CadastroUsuarioConnectionString);
-        SqlCommand cmd = null;
+       // SqlCommand cmd = null;
 
         public frmOP()
         {
