@@ -26,7 +26,7 @@ namespace SistemaDesktop
                 usuárioToolStripMenuItem.Visible = false;
 
             }
-            tsslUsuario.Text = "Usuario: " + frmLogin.usuarioConectado;
+            tsslUsuario.Text = "Usuário: " + frmLogin.usuarioConectado;
 
             string myHost = System.Net.Dns.GetHostName();
             tsslNomePC.Text = "Nome do PC: " + myHost;
@@ -35,10 +35,10 @@ namespace SistemaDesktop
 
             foreach (System.Net.IPAddress myIP in myIPs.AddressList)
             {
-                tsslIP.Text = "IP" + myIP;
+                tsslIP.Text = "IP: " + myIP;
             }
 
-
+            tsslNivelAcesso.Text = "Nivel de Acesso: " + frmLogin.nivelAcesso;
 
 
         }
