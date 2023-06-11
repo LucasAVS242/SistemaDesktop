@@ -269,12 +269,13 @@ namespace SistemaDesktop
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(39, 225);
+            this.label10.Location = new System.Drawing.Point(44, 225);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(34, 13);
             this.label10.TabIndex = 11;
             this.label10.Text = "Total:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // textBox4
             // 
