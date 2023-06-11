@@ -40,20 +40,20 @@ namespace SistemaDesktop
             this.label4 = new System.Windows.Forms.Label();
             this.cbCalc = new System.Windows.Forms.ComboBox();
             this.INSS = new System.Windows.Forms.GroupBox();
+            this.txt4faixa = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtINSStotal = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt3faixa = new System.Windows.Forms.TextBox();
+            this.txt2faixa = new System.Windows.Forms.TextBox();
+            this.txt1faixa = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbINSStab = new System.Windows.Forms.ComboBox();
             this.txtINSSsal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbINSStab = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt1faixa = new System.Windows.Forms.TextBox();
-            this.txt2faixa = new System.Windows.Forms.TextBox();
-            this.txt3faixa = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtINSStotal = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txt4faixa = new System.Windows.Forms.TextBox();
             this.FGTS.SuspendLayout();
             this.INSS.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +77,7 @@ namespace SistemaDesktop
             // 
             // btCalc
             // 
-            this.btCalc.Location = new System.Drawing.Point(12, 282);
+            this.btCalc.Location = new System.Drawing.Point(253, 16);
             this.btCalc.Name = "btCalc";
             this.btCalc.Size = new System.Drawing.Size(75, 23);
             this.btCalc.TabIndex = 2;
@@ -171,12 +171,116 @@ namespace SistemaDesktop
             this.INSS.Controls.Add(this.txtINSSsal);
             this.INSS.Controls.Add(this.label6);
             this.INSS.Controls.Add(this.label7);
-            this.INSS.Location = new System.Drawing.Point(167, 18);
+            this.INSS.Location = new System.Drawing.Point(284, 57);
             this.INSS.Name = "INSS";
             this.INSS.Size = new System.Drawing.Size(201, 287);
             this.INSS.TabIndex = 9;
             this.INSS.TabStop = false;
             this.INSS.Text = "INSS";
+            // 
+            // txt4faixa
+            // 
+            this.txt4faixa.Enabled = false;
+            this.txt4faixa.Location = new System.Drawing.Point(84, 206);
+            this.txt4faixa.Name = "txt4faixa";
+            this.txt4faixa.Size = new System.Drawing.Size(83, 20);
+            this.txt4faixa.TabIndex = 14;
+            this.txt4faixa.Text = "0,00";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(39, 209);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 13);
+            this.label11.TabIndex = 13;
+            this.label11.Text = "4ª Faixa:";
+            // 
+            // txtINSStotal
+            // 
+            this.txtINSStotal.Enabled = false;
+            this.txtINSStotal.Location = new System.Drawing.Point(84, 248);
+            this.txtINSStotal.Name = "txtINSStotal";
+            this.txtINSStotal.Size = new System.Drawing.Size(83, 20);
+            this.txtINSStotal.TabIndex = 12;
+            this.txtINSStotal.Text = "0,00";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(44, 248);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Total:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // txt3faixa
+            // 
+            this.txt3faixa.Enabled = false;
+            this.txt3faixa.Location = new System.Drawing.Point(84, 180);
+            this.txt3faixa.Name = "txt3faixa";
+            this.txt3faixa.Size = new System.Drawing.Size(83, 20);
+            this.txt3faixa.TabIndex = 10;
+            this.txt3faixa.Text = "0,00";
+            // 
+            // txt2faixa
+            // 
+            this.txt2faixa.Enabled = false;
+            this.txt2faixa.Location = new System.Drawing.Point(84, 155);
+            this.txt2faixa.Name = "txt2faixa";
+            this.txt2faixa.Size = new System.Drawing.Size(83, 20);
+            this.txt2faixa.TabIndex = 9;
+            this.txt2faixa.Text = "0,00";
+            // 
+            // txt1faixa
+            // 
+            this.txt1faixa.Enabled = false;
+            this.txt1faixa.Location = new System.Drawing.Point(84, 130);
+            this.txt1faixa.Name = "txt1faixa";
+            this.txt1faixa.Size = new System.Drawing.Size(83, 20);
+            this.txt1faixa.TabIndex = 8;
+            this.txt1faixa.Text = "0,00";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(39, 183);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "3ª Faixa:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(39, 158);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(48, 13);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "2ª Faixa:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(39, 133);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "1ª Faixa:";
+            // 
+            // cbINSStab
+            // 
+            this.cbINSStab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbINSStab.FormattingEnabled = true;
+            this.cbINSStab.Items.AddRange(new object[] {
+            "",
+            "05/2023"});
+            this.cbINSStab.Location = new System.Drawing.Point(112, 77);
+            this.cbINSStab.Name = "cbINSStab";
+            this.cbINSStab.Size = new System.Drawing.Size(83, 21);
+            this.cbINSStab.TabIndex = 4;
             // 
             // txtINSSsal
             // 
@@ -204,115 +308,11 @@ namespace SistemaDesktop
             this.label7.TabIndex = 0;
             this.label7.Text = "Salário Bruto:";
             // 
-            // cbINSStab
-            // 
-            this.cbINSStab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbINSStab.FormattingEnabled = true;
-            this.cbINSStab.Items.AddRange(new object[] {
-            "",
-            "05/2023"});
-            this.cbINSStab.Location = new System.Drawing.Point(112, 77);
-            this.cbINSStab.Name = "cbINSStab";
-            this.cbINSStab.Size = new System.Drawing.Size(83, 21);
-            this.cbINSStab.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "1ª Faixa:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(39, 158);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "2ª Faixa:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(39, 183);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "3ª Faixa:";
-            // 
-            // txt1faixa
-            // 
-            this.txt1faixa.Enabled = false;
-            this.txt1faixa.Location = new System.Drawing.Point(84, 130);
-            this.txt1faixa.Name = "txt1faixa";
-            this.txt1faixa.Size = new System.Drawing.Size(83, 20);
-            this.txt1faixa.TabIndex = 8;
-            this.txt1faixa.Text = "0,00";
-            // 
-            // txt2faixa
-            // 
-            this.txt2faixa.Enabled = false;
-            this.txt2faixa.Location = new System.Drawing.Point(84, 155);
-            this.txt2faixa.Name = "txt2faixa";
-            this.txt2faixa.Size = new System.Drawing.Size(83, 20);
-            this.txt2faixa.TabIndex = 9;
-            this.txt2faixa.Text = "0,00";
-            // 
-            // txt3faixa
-            // 
-            this.txt3faixa.Enabled = false;
-            this.txt3faixa.Location = new System.Drawing.Point(84, 180);
-            this.txt3faixa.Name = "txt3faixa";
-            this.txt3faixa.Size = new System.Drawing.Size(83, 20);
-            this.txt3faixa.TabIndex = 10;
-            this.txt3faixa.Text = "0,00";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(44, 248);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 13);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "Total:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // txtINSStotal
-            // 
-            this.txtINSStotal.Enabled = false;
-            this.txtINSStotal.Location = new System.Drawing.Point(84, 248);
-            this.txtINSStotal.Name = "txtINSStotal";
-            this.txtINSStotal.Size = new System.Drawing.Size(83, 20);
-            this.txtINSStotal.TabIndex = 12;
-            this.txtINSStotal.Text = "0,00";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(39, 209);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 13);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "4ª Faixa:";
-            // 
-            // txt4faixa
-            // 
-            this.txt4faixa.Enabled = false;
-            this.txt4faixa.Location = new System.Drawing.Point(84, 206);
-            this.txt4faixa.Name = "txt4faixa";
-            this.txt4faixa.Size = new System.Drawing.Size(83, 20);
-            this.txt4faixa.TabIndex = 14;
-            this.txt4faixa.Text = "0,00";
-            // 
             // frmCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 364);
+            this.ClientSize = new System.Drawing.Size(490, 364);
             this.Controls.Add(this.btCalc);
             this.Controls.Add(this.INSS);
             this.Controls.Add(this.cbCalc);

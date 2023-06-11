@@ -22,6 +22,9 @@ namespace SistemaDesktop
         {
             FGTS.Visible = false;
             INSS.Visible = false;
+
+            FGTS.Location = new Point(284, 57);
+            INSS.Location = new Point(284, 57);
         }
         private void Limpar()
         {
@@ -39,13 +42,16 @@ namespace SistemaDesktop
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Vis();
+            Limpar();
             if (cbCalc.Text == "FGTS")
             {
                 FGTS.Visible = true;
+                FGTS.Location = new Point(15, 57);
             }
             if (cbCalc.Text == "INSS")
             {
-                FGTS.Visible = true;
+                INSS.Visible = true;
+                INSS.Location = new Point(15, 57);
             }
         }
 
