@@ -402,7 +402,6 @@ namespace SistemaDesktop
             this.dataCadastroTextBox.Name = "dataCadastroTextBox";
             this.dataCadastroTextBox.Size = new System.Drawing.Size(236, 25);
             this.dataCadastroTextBox.TabIndex = 12;
-            this.dataCadastroTextBox.TextChanged += new System.EventHandler(this.dataCadastroTextBox_TextChanged);
             // 
             // cadastradoPorTextBox
             // 

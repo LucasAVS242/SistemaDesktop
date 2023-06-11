@@ -61,7 +61,11 @@ namespace SistemaDesktop
                 }
                 else
                 {
-                    MessageBox.Show("Todos os campos são obrigatórios");
+                    MessageBox.Show(
+                        "Todos os campos são obrigatórios",
+                        "Atenção!",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)

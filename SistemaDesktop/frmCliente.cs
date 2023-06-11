@@ -46,7 +46,11 @@ namespace SistemaDesktop
                 }
                 else
                 {
-                    MessageBox.Show("Todos os campos não podem ficar " + "vazio");
+                    MessageBox.Show(
+                        "Nenhum campo pode ficar vazio",
+                        "Atenção!",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
 
                 }
             }
@@ -105,11 +109,6 @@ namespace SistemaDesktop
             estadoTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[10].Value.ToString();
             dataCadastroTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[11].Value.ToString();
             cadastradoPorTextBox.Text = tbClienteDataGridView.CurrentRow.Cells[12].Value.ToString();
-        }
-
-        private void dataCadastroTextBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

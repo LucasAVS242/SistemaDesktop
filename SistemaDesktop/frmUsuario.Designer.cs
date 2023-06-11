@@ -106,7 +106,6 @@ namespace SistemaDesktop
             nomeUsuarioLabel.Size = new System.Drawing.Size(48, 17);
             nomeUsuarioLabel.TabIndex = 14;
             nomeUsuarioLabel.Text = "Nome:";
-            nomeUsuarioLabel.Click += new System.EventHandler(this.nomeUsuarioLabel1_Click);
             // 
             // senhaLabel1
             // 
@@ -184,7 +183,6 @@ namespace SistemaDesktop
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cadastro";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // repitasenhaTextBox
             // 
@@ -410,8 +408,8 @@ namespace SistemaDesktop
             this.tbUsuarioDataGridView.ReadOnly = true;
             this.tbUsuarioDataGridView.Size = new System.Drawing.Size(462, 238);
             this.tbUsuarioDataGridView.TabIndex = 0;
-            this.tbUsuarioDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbUsuarioDataGridView_CellContentClick);
             this.tbUsuarioDataGridView.DoubleClick += new System.EventHandler(this.tbUsuarioDataGridView_DoubleClick);
+            this.tbUsuarioDataGridView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbUsuarioDataGridView_MouseDoubleClick);
             // 
             // idUsuarioDataGridViewTextBoxColumn
             // 

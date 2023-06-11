@@ -50,13 +50,21 @@ namespace SistemaDesktop
                     }
                     else
                     {
-                        MessageBox.Show("As senhas precisam ser iguais");
+                        MessageBox.Show(
+                            "As senhas precisam ser iguais",
+                            "Atenção!",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
                     }
 
                 }
                 else
                 {
-                    MessageBox.Show("Todos os campos não podem ficar " + "vazio");
+                    MessageBox.Show(
+                        "Nenhum campo pode ficar vazio",
+                        "Atenção!",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
 
                 }
             }
@@ -95,6 +103,19 @@ namespace SistemaDesktop
             }
         }
 
+        private void LimparCampo()
+        {
+            idUsuarioTextBox.Clear();
+            nomeUsuarioTextBox.Clear();
+            senhaTextBox.Clear();
+            repitasenhaTextBox.Clear();
+            nivelAcessoComboBox.SelectedIndex = -1;
+            dataCadastroTextBox.Clear();
+            cadastradoPorTextBox.Clear();
+        }
+
+
+
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -118,6 +139,17 @@ namespace SistemaDesktop
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbUsuarioDataGridView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            LimparCampo();
+            idUsuarioTextBox.Text = tbUsuarioDataGridView.CurrentRow.Cells[0].Value.ToString();
+            nomeUsuarioTextBox.Text = tbUsuarioDataGridView.CurrentRow.Cells[1].Value.ToString();
+            senhaTextBox.Text = tbUsuarioDataGridView.CurrentRow.Cells[2].Value.ToString();
+            nivelAcessoComboBox.Text = tbUsuarioDataGridView.CurrentRow.Cells[3].Value.ToString();
+            dataCadastroTextBox.Text = tbUsuarioDataGridView.CurrentRow.Cells[4].Value.ToString();
+            cadastradoPorTextBox.Text = tbUsuarioDataGridView.CurrentRow.Cells[5].Value.ToString();
         }
     }
 }

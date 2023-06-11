@@ -60,7 +60,11 @@ namespace SistemaDesktop
 
                 else
                 {
-                    MessageBox.Show("O Campo nome não pode ficar vazio");
+                    MessageBox.Show(
+                        "O Campo nome não pode ficar vazio",
+                        "Atenção!",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
