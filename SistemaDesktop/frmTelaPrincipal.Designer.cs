@@ -45,15 +45,16 @@ namespace SistemaDesktop
             this.tsbCliente = new System.Windows.Forms.ToolStripButton();
             this.tsbServico = new System.Windows.Forms.ToolStripButton();
             this.tsbOS = new System.Windows.Forms.ToolStripButton();
+            this.tsbCalc = new System.Windows.Forms.ToolStripButton();
             this.tsbLogoff = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tsslUsuario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslNivelAcesso = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslIP = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslNomePC = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslData = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tsslHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tsbCalc = new System.Windows.Forms.ToolStripButton();
+            this.tsslHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -191,6 +192,16 @@ namespace SistemaDesktop
             this.tsbOS.Text = "OS";
             this.tsbOS.Click += new System.EventHandler(this.tsbOS_Click);
             // 
+            // tsbCalc
+            // 
+            this.tsbCalc.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCalc.Image = ((System.Drawing.Image)(resources.GetObject("tsbCalc.Image")));
+            this.tsbCalc.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbCalc.Name = "tsbCalc";
+            this.tsbCalc.Size = new System.Drawing.Size(23, 22);
+            this.tsbCalc.Text = "Calculadora";
+            this.tsbCalc.Click += new System.EventHandler(this.tsbCalc_Click);
+            // 
             // tsbLogoff
             // 
             this.tsbLogoff.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -207,6 +218,7 @@ namespace SistemaDesktop
             this.statusStrip1.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsslUsuario,
+            this.tsslNivelAcesso,
             this.tsslIP,
             this.tsslNomePC,
             this.tsslData,
@@ -224,6 +236,12 @@ namespace SistemaDesktop
             this.tsslUsuario.Name = "tsslUsuario";
             this.tsslUsuario.Size = new System.Drawing.Size(4, 17);
             // 
+            // tsslNivelAcesso
+            // 
+            this.tsslNivelAcesso.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
+            this.tsslNivelAcesso.Name = "tsslNivelAcesso";
+            this.tsslNivelAcesso.Size = new System.Drawing.Size(4, 17);
+            // 
             // tsslIP
             // 
             this.tsslIP.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
@@ -235,20 +253,14 @@ namespace SistemaDesktop
             this.tsslNomePC.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
             this.tsslNomePC.Name = "tsslNomePC";
             this.tsslNomePC.Size = new System.Drawing.Size(4, 17);
+            this.tsslNomePC.Click += new System.EventHandler(this.tsslData_Click);
             // 
             // tsslData
             // 
             this.tsslData.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
             this.tsslData.Name = "tsslData";
             this.tsslData.Size = new System.Drawing.Size(4, 17);
-            this.tsslData.Click += new System.EventHandler(this.tsslData_Click);
-            // 
-            // tsslHora
-            // 
-            this.tsslHora.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
-            this.tsslHora.Name = "tsslHora";
-            this.tsslHora.Size = new System.Drawing.Size(4, 17);
-            this.tsslHora.Click += new System.EventHandler(this.toolStripStatusLabel5_Click);
+            this.tsslData.Click += new System.EventHandler(this.toolStripStatusLabel5_Click);
             // 
             // timer1
             // 
@@ -256,15 +268,10 @@ namespace SistemaDesktop
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // tsbCalc
+            // tsslHora
             // 
-            this.tsbCalc.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbCalc.Image = ((System.Drawing.Image)(resources.GetObject("tsbCalc.Image")));
-            this.tsbCalc.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbCalc.Name = "tsbCalc";
-            this.tsbCalc.Size = new System.Drawing.Size(23, 22);
-            this.tsbCalc.Text = "toolStripButton1";
-            this.tsbCalc.Click += new System.EventHandler(this.tsbCalc_Click);
+            this.tsslHora.Name = "tsslHora";
+            this.tsslHora.Size = new System.Drawing.Size(0, 17);
             // 
             // frmTelaPrincipal
             // 
@@ -317,11 +324,12 @@ namespace SistemaDesktop
         private System.Windows.Forms.ToolStripButton tsbLogoff;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tsslUsuario;
+        private System.Windows.Forms.ToolStripStatusLabel tsslNivelAcesso;
         private System.Windows.Forms.ToolStripStatusLabel tsslIP;
         private System.Windows.Forms.ToolStripStatusLabel tsslNomePC;
         private System.Windows.Forms.ToolStripStatusLabel tsslData;
-        private System.Windows.Forms.ToolStripStatusLabel tsslHora;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripButton tsbCalc;
+        private System.Windows.Forms.ToolStripStatusLabel tsslHora;
     }
 }
