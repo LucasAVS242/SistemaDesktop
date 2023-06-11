@@ -413,12 +413,6 @@ namespace SistemaDesktop
 
         private void tsbCalc_Click(object sender, EventArgs e)
         {
-          
-
-        }
-
-        private void tsbCalcular_Click(object sender, EventArgs e)
-        {
             try
             {
                 frmCalc cal = null;
@@ -449,6 +443,12 @@ namespace SistemaDesktop
                 MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
                     "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+        }
+
+        private void tsbCalcular_Click(object sender, EventArgs e)
+        {
+            
 
         }
     }

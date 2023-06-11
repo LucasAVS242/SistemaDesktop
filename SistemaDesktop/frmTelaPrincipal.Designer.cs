@@ -53,8 +53,8 @@ namespace SistemaDesktop
             this.tsslIP = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslNomePC = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslData = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tsslHora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -262,16 +262,16 @@ namespace SistemaDesktop
             this.tsslData.Size = new System.Drawing.Size(4, 17);
             this.tsslData.Click += new System.EventHandler(this.toolStripStatusLabel5_Click);
             // 
+            // tsslHora
+            // 
+            this.tsslHora.Name = "tsslHora";
+            this.tsslHora.Size = new System.Drawing.Size(0, 17);
+            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // tsslHora
-            // 
-            this.tsslHora.Name = "tsslHora";
-            this.tsslHora.Size = new System.Drawing.Size(0, 17);
             // 
             // frmTelaPrincipal
             // 

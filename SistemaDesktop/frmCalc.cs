@@ -73,6 +73,7 @@ namespace SistemaDesktop
         private void btLimpar_Click(object sender, EventArgs e)
         {
             Limpar();
+            btCalc.Enabled = true;
         }
 
         private void btCalc_Click(object sender, EventArgs e)
@@ -161,12 +162,12 @@ namespace SistemaDesktop
 
         private void txtFGTSsal_TextChanged(object sender, EventArgs e)
         {
-            Limpar();
+          
         }
 
         private void txtINSSsal_TextChanged(object sender, EventArgs e)
         {
-            Limpar();
+           
         }
     }
 }
