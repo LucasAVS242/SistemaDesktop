@@ -123,7 +123,7 @@ namespace SistemaDesktop
                         txt3faixa.Text = "154,28";
                         txt4faixa.Text = "511,07";
 
-                        txtINSStotal.Text = (99 + 112.62 + 154.28 + 511.07).ToString();
+                        txtINSStotal.Text = "876,97";
 
                     }
 
