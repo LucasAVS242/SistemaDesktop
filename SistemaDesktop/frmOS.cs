@@ -43,21 +43,37 @@ namespace SistemaDesktop
                 }
                 if ((idClienteTextBox.Text != "") && (idOSTextBox.Text != ""))
                 {
-                    if (dataCadastroTextBox.Text == "")
+                    SqlCommand comm = new SqlCommand("Select idCliente From tbCliente Where idCliente = @idCliente", cn);
+                    comm.Parameters.Add("@idCliente", SqlDbType.Int).Value = idClienteTextBox.Text;
+                    cn.Open();
+                    SqlDataReader reader = null;
+                    reader = comm.ExecuteReader();
+                    if (reader.Read())
                     {
-                        dataCadastroTextBox.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
+                        if (dataCadastroTextBox.Text == "")
+                        {
+                            dataCadastroTextBox.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
 
+                        }
+
+                        if (cadastradoPorTextBox.Text == "")
+                        {
+                            cadastradoPorTextBox.Text =
+                           frmLogin.usuarioConectado;
+                        }
+                        this.Validate();
+                        this.tbOSBindingSource.EndEdit();
+                        this.tbOSTableAdapter.Update(this.cadastroUsuarioDataSet.tbOS);
+                        MessageBox.Show("Cadastro realizado com sucesso");
                     }
-
-                    if (cadastradoPorTextBox.Text == "")
+                    else
                     {
-                        cadastradoPorTextBox.Text =
-                       frmLogin.usuarioConectado;
+                        MessageBox.Show(
+                        "ID Cliente informado não existe nos registros",
+                        "Atenção!",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
                     }
-                    this.Validate();
-                    this.tbOSBindingSource.EndEdit();
-                    this.tbOSTableAdapter.Update(this.cadastroUsuarioDataSet.tbOS);
-                    MessageBox.Show("Cadastro realizado com sucesso");
                 }
                 else
                 {
