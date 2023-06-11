@@ -88,7 +88,7 @@ namespace SistemaDesktop
                 fgtsMes = int.Parse(txtFGTSmes.Text);
                 R = (fgtsMes * fgtsSal) * 0.08;
 
-                txtResult.Text = R.ToString("R$ ");
+                txtResult.Text = R.ToString();
             }
 
             if (cbCalc.Text == "INSS")
