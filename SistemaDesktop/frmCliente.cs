@@ -66,6 +66,10 @@ namespace SistemaDesktop
             // TODO: This line of code loads data into the 'cadastroUsuarioDataSet.tbCliente' table. You can move, or remove it, as needed.
             this.tbClienteTableAdapter.Fill(this.cadastroUsuarioDataSet.tbCliente);
 
+            if (frmLogin.nivelAcesso == "Usuario")
+            {
+                bindingNavigatorDeleteItem.Enabled = false;
+            }
         }
 
         private void LimparCampo()

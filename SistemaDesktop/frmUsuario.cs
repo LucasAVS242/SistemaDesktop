@@ -89,6 +89,10 @@ namespace SistemaDesktop
             // TODO: This line of code loads data into the 'cadastroUsuarioDataSet.tbUsuario' table. You can move, or remove it, as needed.
             this.tbUsuarioTableAdapter.Fill(this.cadastroUsuarioDataSet.tbUsuario);
 
+            if (frmLogin.nivelAcesso == "Usuario")
+            {
+                bindingNavigatorDeleteItem.Enabled = false;
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

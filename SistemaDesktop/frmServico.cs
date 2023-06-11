@@ -29,16 +29,16 @@ namespace SistemaDesktop
             // TODO: This line of code loads data into the 'cadastroUsuarioDataSet.tbServico' table. You can move, or remove it, as needed.
             this.tbServicoTableAdapter.Fill(this.cadastroUsuarioDataSet.tbServico);
 
+            if (frmLogin.nivelAcesso == "Usuario")
+            {
+                bindingNavigatorDeleteItem.Enabled = false;
+            }
         }
 
         private void tbServicoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             try
             {
-                if (frmLogin.nivelAcesso == "")
-                {
-                    bindingNavigatorDeleteItem.Enabled = false;
-                }
                 if (nomeTextBox.Text != "")
                 {
 
