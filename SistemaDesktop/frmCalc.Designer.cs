@@ -31,7 +31,6 @@ namespace SistemaDesktop
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtFGTSsal = new System.Windows.Forms.TextBox();
-            this.btCalc = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFGTSmes = new System.Windows.Forms.TextBox();
             this.FGTS = new System.Windows.Forms.GroupBox();
@@ -54,6 +53,8 @@ namespace SistemaDesktop
             this.txtINSSsal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btLimpar = new System.Windows.Forms.Button();
+            this.btCalc = new System.Windows.Forms.Button();
             this.FGTS.SuspendLayout();
             this.INSS.SuspendLayout();
             this.SuspendLayout();
@@ -74,16 +75,6 @@ namespace SistemaDesktop
             this.txtFGTSsal.Size = new System.Drawing.Size(75, 20);
             this.txtFGTSsal.TabIndex = 1;
             this.txtFGTSsal.Text = "0,00";
-            // 
-            // btCalc
-            // 
-            this.btCalc.Location = new System.Drawing.Point(253, 16);
-            this.btCalc.Name = "btCalc";
-            this.btCalc.Size = new System.Drawing.Size(75, 23);
-            this.btCalc.TabIndex = 2;
-            this.btCalc.Text = "Calcular";
-            this.btCalc.UseVisualStyleBackColor = true;
-            this.btCalc.Click += new System.EventHandler(this.btFGTScalc_Click);
             // 
             // label2
             // 
@@ -308,12 +299,33 @@ namespace SistemaDesktop
             this.label7.TabIndex = 0;
             this.label7.Text = "Salário Bruto:";
             // 
+            // btLimpar
+            // 
+            this.btLimpar.Location = new System.Drawing.Point(334, 16);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btLimpar.TabIndex = 10;
+            this.btLimpar.Text = "Limpar";
+            this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
+            // 
+            // btCalc
+            // 
+            this.btCalc.Location = new System.Drawing.Point(253, 16);
+            this.btCalc.Name = "btCalc";
+            this.btCalc.Size = new System.Drawing.Size(75, 23);
+            this.btCalc.TabIndex = 11;
+            this.btCalc.Text = "Calcular";
+            this.btCalc.UseVisualStyleBackColor = true;
+            this.btCalc.Click += new System.EventHandler(this.btCalc_Click);
+            // 
             // frmCalc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 364);
+            this.ClientSize = new System.Drawing.Size(536, 393);
             this.Controls.Add(this.btCalc);
+            this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.INSS);
             this.Controls.Add(this.cbCalc);
             this.Controls.Add(this.label4);
@@ -334,7 +346,6 @@ namespace SistemaDesktop
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtFGTSsal;
-        private System.Windows.Forms.Button btCalc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFGTSmes;
         private System.Windows.Forms.GroupBox FGTS;
@@ -357,5 +368,7 @@ namespace SistemaDesktop
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt4faixa;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btLimpar;
+        private System.Windows.Forms.Button btCalc;
     }
 }
