@@ -99,9 +99,21 @@ namespace SistemaDesktop
                     if (inssSal >= 2571.30 && inssSal <= 3856.94)
                     {
                         R = (inssSal - 2571.29) * 0.12;
+                        txt1faixa.Text = "99,00";
+                        txt2faixa.Text = "112,62";
+                        txt3faixa.Text = R.ToString();
 
+                        txtINSStotal.Text = (R + 99 + 112.62).ToString();
 
                     }
+                    if (inssSal >= 3856.95 && inssSal <= 7507.49)
+                        R = (inssSal - 3856.94) * 0.14;
+                    txt1faixa.Text = "99,00";
+                    txt2faixa.Text = "112,62";
+                    txt3faixa.Text = "154,28";
+                    txt4faixa.Text = R.ToString();
+
+                    txtINSStotal.Text = (R + 99 + 112.62 + 154.28).ToString();
 
 
 
