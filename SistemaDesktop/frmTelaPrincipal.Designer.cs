@@ -55,6 +55,8 @@ namespace SistemaDesktop
             this.tsslData = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ordemDeProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbOP = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -78,7 +80,8 @@ namespace SistemaDesktop
             this.usuárioToolStripMenuItem,
             this.clienteToolStripMenuItem,
             this.serviçoToolStripMenuItem,
-            this.ordemDeServiçoToolStripMenuItem});
+            this.ordemDeServiçoToolStripMenuItem,
+            this.ordemDeProdutoToolStripMenuItem});
             this.cadastroToolStripMenuItem.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(74, 21);
@@ -87,28 +90,28 @@ namespace SistemaDesktop
             // usuárioToolStripMenuItem
             // 
             this.usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.usuárioToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.usuárioToolStripMenuItem.Text = "Usuário";
             this.usuárioToolStripMenuItem.Click += new System.EventHandler(this.usuárioToolStripMenuItem_Click);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // serviçoToolStripMenuItem
             // 
             this.serviçoToolStripMenuItem.Name = "serviçoToolStripMenuItem";
-            this.serviçoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.serviçoToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.serviçoToolStripMenuItem.Text = "Serviço";
             this.serviçoToolStripMenuItem.Click += new System.EventHandler(this.serviçoToolStripMenuItem_Click);
             // 
             // ordemDeServiçoToolStripMenuItem
             // 
             this.ordemDeServiçoToolStripMenuItem.Name = "ordemDeServiçoToolStripMenuItem";
-            this.ordemDeServiçoToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.ordemDeServiçoToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.ordemDeServiçoToolStripMenuItem.Text = "Ordem de serviço";
             this.ordemDeServiçoToolStripMenuItem.Click += new System.EventHandler(this.ordemDeServiçoToolStripMenuItem_Click);
             // 
@@ -150,6 +153,7 @@ namespace SistemaDesktop
             this.tsbCliente,
             this.tsbServico,
             this.tsbOS,
+            this.tsbOP,
             this.tsbCalc,
             this.tsbLogoff});
             this.toolStrip1.Location = new System.Drawing.Point(0, 27);
@@ -195,6 +199,7 @@ namespace SistemaDesktop
             // tsbCalc
             // 
             this.tsbCalc.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbCalc.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.tsbCalc.Image = ((System.Drawing.Image)(resources.GetObject("tsbCalc.Image")));
             this.tsbCalc.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCalc.Name = "tsbCalc";
@@ -273,6 +278,24 @@ namespace SistemaDesktop
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // ordemDeProdutoToolStripMenuItem
+            // 
+            this.ordemDeProdutoToolStripMenuItem.Name = "ordemDeProdutoToolStripMenuItem";
+            this.ordemDeProdutoToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.ordemDeProdutoToolStripMenuItem.Text = "Ordem de produto";
+            this.ordemDeProdutoToolStripMenuItem.Click += new System.EventHandler(this.ordemDeProdutoToolStripMenuItem_Click);
+            // 
+            // tsbOP
+            // 
+            this.tsbOP.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbOP.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.tsbOP.Image = ((System.Drawing.Image)(resources.GetObject("tsbOP.Image")));
+            this.tsbOP.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbOP.Name = "tsbOP";
+            this.tsbOP.Size = new System.Drawing.Size(23, 22);
+            this.tsbOP.Text = "OP";
+            this.tsbOP.Click += new System.EventHandler(this.tsbOP_Click);
+            // 
             // frmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -331,5 +354,7 @@ namespace SistemaDesktop
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripButton tsbCalc;
         private System.Windows.Forms.ToolStripStatusLabel tsslHora;
+        private System.Windows.Forms.ToolStripMenuItem ordemDeProdutoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton tsbOP;
     }
 }

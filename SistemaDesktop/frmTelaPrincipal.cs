@@ -451,6 +451,74 @@ namespace SistemaDesktop
             
 
         }
+
+        private void ordemDeProdutoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmOP op = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmOP)
+                    {
+                        op = (frmOP)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (op == null)
+                {
+                    op = new frmOP();
+                    op.MdiParent = this;
+                    op.Show();
+                }
+                op.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void tsbOP_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmOP op = null;
+
+                foreach (Form frm in this.MdiChildren)
+                {
+                    if (frm is frmOP)
+                    {
+                        op = (frmOP)frm;
+                        break;
+
+                    }
+
+
+                }
+                if (op == null)
+                {
+                    op = new frmOP();
+                    op.MdiParent = this;
+                    op.Show();
+                }
+                op.Focus();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possivel se conectar ao formulário devido ao erro: " + ex.Message,
+                    "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
 
