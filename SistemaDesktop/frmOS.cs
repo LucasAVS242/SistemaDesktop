@@ -27,6 +27,10 @@ namespace SistemaDesktop
             // TODO: This line of code loads data into the 'cadastroUsuarioDataSet.tbOS' table. You can move, or remove it, as needed.
             this.tbOSTableAdapter.Fill(this.cadastroUsuarioDataSet.tbOS);
 
+            if (frmLogin.nivelAcesso == "Usuario")
+            {
+                bindingNavigatorDeleteItem.Enabled = false;
+            }
         }
 
         private void tbOSBindingNavigatorSaveItem_Click(object sender, EventArgs e)

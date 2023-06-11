@@ -454,7 +454,7 @@ namespace SistemaDesktop
             this.tbClienteBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tbClienteBindingNavigator.Name = "tbClienteBindingNavigator";
             this.tbClienteBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tbClienteBindingNavigator.Size = new System.Drawing.Size(1028, 25);
+            this.tbClienteBindingNavigator.Size = new System.Drawing.Size(1222, 25);
             this.tbClienteBindingNavigator.TabIndex = 1;
             this.tbClienteBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -561,7 +561,7 @@ namespace SistemaDesktop
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(796, 619);
+            this.groupBox2.Size = new System.Drawing.Size(694, 619);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cliente";
@@ -592,7 +592,7 @@ namespace SistemaDesktop
             this.tbClienteDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.tbClienteDataGridView.Name = "tbClienteDataGridView";
             this.tbClienteDataGridView.ReadOnly = true;
-            this.tbClienteDataGridView.Size = new System.Drawing.Size(788, 593);
+            this.tbClienteDataGridView.Size = new System.Drawing.Size(686, 593);
             this.tbClienteDataGridView.TabIndex = 0;
             this.tbClienteDataGridView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tbClienteDataGridView_MouseDoubleClick);
             // 
@@ -693,7 +693,7 @@ namespace SistemaDesktop
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1028, 749);
+            this.ClientSize = new System.Drawing.Size(1222, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.tbClienteBindingNavigator);
             this.Controls.Add(this.groupBox1);

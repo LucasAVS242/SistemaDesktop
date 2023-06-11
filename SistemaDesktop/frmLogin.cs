@@ -37,7 +37,6 @@ namespace SistemaDesktop
                     reader = comm.ExecuteReader();
                     if (reader.Read())
                     {
-                        //Será implementado mais adiante
                         usuarioConectado = txtUsuario.Text;
                         nivelAcesso = cbmNivelAcesso.Text;
                         frmTelaPrincipal p = new frmTelaPrincipal();
