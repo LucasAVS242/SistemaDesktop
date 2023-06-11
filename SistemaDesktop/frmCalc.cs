@@ -107,13 +107,25 @@ namespace SistemaDesktop
 
                     }
                     if (inssSal >= 3856.95 && inssSal <= 7507.49)
+                    {
                         R = (inssSal - 3856.94) * 0.14;
-                    txt1faixa.Text = "99,00";
-                    txt2faixa.Text = "112,62";
-                    txt3faixa.Text = "154,28";
-                    txt4faixa.Text = R.ToString();
+                        txt1faixa.Text = "99,00";
+                        txt2faixa.Text = "112,62";
+                        txt3faixa.Text = "154,28";
+                        txt4faixa.Text = R.ToString();
 
-                    txtINSStotal.Text = (R + 99 + 112.62 + 154.28).ToString();
+                        txtINSStotal.Text = (R + 99 + 112.62 + 154.28).ToString();
+                    }
+                    if (inssSal >= 7507.50)
+                    {
+                        txt1faixa.Text = "99,00";
+                        txt2faixa.Text = "112,62";
+                        txt3faixa.Text = "154,28";
+                        txt4faixa.Text = "511,07";
+
+                        txtINSStotal.Text = (99 + 112.62 + 154.28 + 511.07).ToString();
+
+                    }
 
 
 
