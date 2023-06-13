@@ -47,7 +47,7 @@ namespace SistemaDesktop
                     else
                     {
                         MessageBox.Show(
-                            "Usuário ou senha incorretos",
+                            "Informações incorretas",
                             "Atenção!",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);

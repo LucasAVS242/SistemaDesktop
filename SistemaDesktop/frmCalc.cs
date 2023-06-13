@@ -12,6 +12,8 @@ namespace SistemaDesktop
 {
     public partial class frmCalc : Form
     {
+
+
         public frmCalc()
         {
             InitializeComponent();
@@ -80,7 +82,8 @@ namespace SistemaDesktop
 
         private void btCalc_Click(object sender, EventArgs e)
         {
-           
+            
+
             if (cbCalc.Text == "FGTS")
             {
                  
@@ -128,7 +131,7 @@ namespace SistemaDesktop
                         {
                             R = (inssSal - 1320) * 0.09;
                             txt1faixa.Text = "$99,00";
-                            txt2faixa.Text = R.ToString();
+                            txt2faixa.Text = string.Format("{0:c}", R);
 
                             txtINSStotal.Text = string.Format("{0:c}", (R + 99));
 
