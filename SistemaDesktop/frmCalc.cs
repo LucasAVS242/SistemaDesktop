@@ -82,6 +82,20 @@ namespace SistemaDesktop
 
         private void btCalc_Click(object sender, EventArgs e)
         {
+            if (cbCalc.Text == "IRRF")
+            {
+                double irrfSal, irrfDep = 0, irrfPA = 0, irrfOD = 0;
+
+                if (txtIRRFsal.Text != "")
+                {
+                    if (cbIRFFtab.Text == "05/2023")
+                    {
+
+
+                    }
+                }
+            }
+
             
 
             if (cbCalc.Text == "FGTS")
@@ -114,7 +128,7 @@ namespace SistemaDesktop
                 {
                     double inssSal;
 
-                    txtINSSsal.Text.Replace(",", ".");
+                   
                     if (txtINSSsal.Text != "")
                     {
                         inssSal = double.Parse(txtINSSsal.Text);
@@ -191,6 +205,11 @@ namespace SistemaDesktop
         }
 
         private void txtFGTSmes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }
