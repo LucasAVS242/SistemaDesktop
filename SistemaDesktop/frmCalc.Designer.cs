@@ -74,6 +74,8 @@ namespace SistemaDesktop
             this.txtIRRFsal = new System.Windows.Forms.TextBox();
             this.txtIRRFres = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.txtIRRFbas = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.FGTS.SuspendLayout();
             this.INSS.SuspendLayout();
             this.IRRF.SuspendLayout();
@@ -358,6 +360,8 @@ namespace SistemaDesktop
             // IRRF
             // 
             this.IRRF.BackColor = System.Drawing.Color.Transparent;
+            this.IRRF.Controls.Add(this.label21);
+            this.IRRF.Controls.Add(this.txtIRRFbas);
             this.IRRF.Controls.Add(this.label20);
             this.IRRF.Controls.Add(this.txtIRRFdev);
             this.IRRF.Controls.Add(this.cbIRRFdep);
@@ -376,7 +380,7 @@ namespace SistemaDesktop
             this.IRRF.Controls.Add(this.txtIRRFres);
             this.IRRF.Controls.Add(this.label14);
             this.IRRF.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.IRRF.Location = new System.Drawing.Point(12, 70);
+            this.IRRF.Location = new System.Drawing.Point(15, 70);
             this.IRRF.Name = "IRRF";
             this.IRRF.Size = new System.Drawing.Size(374, 367);
             this.IRRF.TabIndex = 12;
@@ -386,7 +390,7 @@ namespace SistemaDesktop
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(31, 221);
+            this.label20.Location = new System.Drawing.Point(31, 279);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(109, 17);
             this.label20.TabIndex = 20;
@@ -395,7 +399,7 @@ namespace SistemaDesktop
             // txtIRRFdev
             // 
             this.txtIRRFdev.Enabled = false;
-            this.txtIRRFdev.Location = new System.Drawing.Point(146, 218);
+            this.txtIRRFdev.Location = new System.Drawing.Point(146, 276);
             this.txtIRRFdev.Name = "txtIRRFdev";
             this.txtIRRFdev.Size = new System.Drawing.Size(75, 25);
             this.txtIRRFdev.TabIndex = 19;
@@ -524,11 +528,12 @@ namespace SistemaDesktop
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(68, 258);
+            this.label12.Location = new System.Drawing.Point(38, 313);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 17);
+            this.label12.Size = new System.Drawing.Size(102, 17);
             this.label12.TabIndex = 6;
-            this.label12.Text = "Resultado:";
+            this.label12.Text = "Salário liquido:";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // txtIRRFsal
             // 
@@ -541,7 +546,7 @@ namespace SistemaDesktop
             // txtIRRFres
             // 
             this.txtIRRFres.Enabled = false;
-            this.txtIRRFres.Location = new System.Drawing.Point(146, 255);
+            this.txtIRRFres.Location = new System.Drawing.Point(146, 310);
             this.txtIRRFres.Name = "txtIRRFres";
             this.txtIRRFres.Size = new System.Drawing.Size(75, 25);
             this.txtIRRFres.TabIndex = 5;
@@ -555,6 +560,24 @@ namespace SistemaDesktop
             this.label14.Size = new System.Drawing.Size(92, 17);
             this.label14.TabIndex = 0;
             this.label14.Text = "Salário Bruto:";
+            // 
+            // txtIRRFbas
+            // 
+            this.txtIRRFbas.Enabled = false;
+            this.txtIRRFbas.Location = new System.Drawing.Point(146, 226);
+            this.txtIRRFbas.Name = "txtIRRFbas";
+            this.txtIRRFbas.Size = new System.Drawing.Size(75, 25);
+            this.txtIRRFbas.TabIndex = 21;
+            this.txtIRRFbas.Text = "0,00";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(51, 229);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(89, 17);
+            this.label21.TabIndex = 22;
+            this.label21.Text = "Base Calculo:";
             // 
             // frmCalc
             // 
@@ -630,5 +653,7 @@ namespace SistemaDesktop
         private System.Windows.Forms.ComboBox cbIRRFdep;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtIRRFdev;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtIRRFbas;
     }
 }

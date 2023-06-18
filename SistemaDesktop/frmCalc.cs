@@ -33,21 +33,22 @@ namespace SistemaDesktop
         private void Limpar()
         {
 
-            txtFGTSmes.Text = "0";
-            txtResult.Text = "0,00";
-            txtFGTSsal.Text = "0,00";
-            txt1faixa.Text = "0,00";
-            txt2faixa.Text = "0,00";
-            txt3faixa.Text = "0,00";
-            txt4faixa.Text = "0,00";
-            txtINSStotal.Text = "0,00";
-            txtINSSsal.Text = "0,00";
-            txtIRRFdev.Text = "0,00";
-            txtIRRFod.Text = "0,00";
-            txtIRRFpa.Text = "0,00";
-            txtIRRFres.Text = "0,00";
-            txtIRRFsal.Text = "0,00";
-            
+            txtFGTSmes.Text = "";
+            txtResult.Text = "";
+            txtFGTSsal.Text = "";
+            txt1faixa.Text = "";
+            txt2faixa.Text = "";
+            txt3faixa.Text = "";
+            txt4faixa.Text = "";
+            txtINSStotal.Text = "";
+            txtINSSsal.Text = "";
+            txtIRRFdev.Text = "";
+            txtIRRFod.Text = "";
+            txtIRRFpa.Text = "";
+            txtIRRFres.Text = "";
+            txtIRRFsal.Text = "";
+            txtIRRFbas.Text = "";
+
 
 
         }
@@ -66,17 +67,17 @@ namespace SistemaDesktop
             if (cbCalc.Text == "FGTS")
             {
                 FGTS.Visible = true;
-                FGTS.Location = new Point(15, 57);
+                FGTS.Location = new Point(15, 60);
             }
             if (cbCalc.Text == "INSS")
             {
                 INSS.Visible = true;
-                INSS.Location = new Point(15, 57);
+                INSS.Location = new Point(15, 60);
             }
             if (cbCalc.Text == "IRRF")
             {
                 IRRF.Visible = true;
-                IRRF.Location = new Point(15, 57);
+                IRRF.Location = new Point(15, 60);
             }
 
         }
@@ -148,6 +149,7 @@ namespace SistemaDesktop
                     if (cbIRRFtab2.Text == "05/2023")
                     {
                         irrfSal += -(R + (irrfDep * 189.59) + irrfPA + irrfOD);
+                        txtIRRFbas.Text = string.Format("{0:c}", irrfSal);
 
                         if (irrfSal <= 2.112) {
 
@@ -181,7 +183,7 @@ namespace SistemaDesktop
                         }
                         if (irrfSal > 4664.68)
                         {
-                            irrfDev = (irrfSal * 0.275) - 651.73;
+                            irrfDev = (irrfSal * 0.275) - 884.96;
                             irrfSal += -irrfDev;
                             txtIRRFdev.Text = string.Format("{0:c}", irrfDev);
                             txtIRRFres.Text = string.Format("{0:c}", irrfSal);
@@ -313,6 +315,10 @@ namespace SistemaDesktop
 
         }
 
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
