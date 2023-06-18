@@ -57,21 +57,21 @@ namespace SistemaDesktop
             this.btLimpar = new System.Windows.Forms.Button();
             this.btCalc = new System.Windows.Forms.Button();
             this.IRRF = new System.Windows.Forms.GroupBox();
+            this.cbIRRFtab2 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cbIRFFtab = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtIRRFod = new System.Windows.Forms.TextBox();
+            this.txtIRRFpa = new System.Windows.Forms.TextBox();
+            this.txtIRRFdep = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtIRRFsal = new System.Windows.Forms.TextBox();
             this.txtIRRFres = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtIRRFdep = new System.Windows.Forms.TextBox();
-            this.txtIRRFpa = new System.Windows.Forms.TextBox();
-            this.txtIRRFod = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.cbIRFFtab = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.cbIRRFtab2 = new System.Windows.Forms.ComboBox();
             this.FGTS.SuspendLayout();
             this.INSS.SuspendLayout();
             this.IRRF.SuspendLayout();
@@ -379,6 +379,105 @@ namespace SistemaDesktop
             this.IRRF.TabStop = false;
             this.IRRF.Text = "IRRF";
             // 
+            // cbIRRFtab2
+            // 
+            this.cbIRRFtab2.FormattingEnabled = true;
+            this.cbIRRFtab2.Items.AddRange(new object[] {
+            "05/2023"});
+            this.cbIRRFtab2.Location = new System.Drawing.Point(269, 72);
+            this.cbIRRFtab2.Name = "cbIRRFtab2";
+            this.cbIRRFtab2.Size = new System.Drawing.Size(79, 25);
+            this.cbIRRFtab2.TabIndex = 17;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(48, 76);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(49, 17);
+            this.label19.TabIndex = 16;
+            this.label19.Text = "Tabela";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(97, 76);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(39, 17);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "INSS:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(225, 76);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(38, 17);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "IRRF:";
+            // 
+            // cbIRFFtab
+            // 
+            this.cbIRFFtab.FormattingEnabled = true;
+            this.cbIRFFtab.Items.AddRange(new object[] {
+            "05/2023"});
+            this.cbIRFFtab.Location = new System.Drawing.Point(146, 72);
+            this.cbIRFFtab.Name = "cbIRFFtab";
+            this.cbIRFFtab.Size = new System.Drawing.Size(75, 25);
+            this.cbIRFFtab.TabIndex = 13;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(25, 169);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(115, 17);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "Outras deduções:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(48, 104);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(92, 17);
+            this.label16.TabIndex = 11;
+            this.label16.Text = "Dependentes:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(12, 138);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(128, 17);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "Pensão alimentícia:";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
+            // 
+            // txtIRRFod
+            // 
+            this.txtIRRFod.Location = new System.Drawing.Point(146, 166);
+            this.txtIRRFod.Name = "txtIRRFod";
+            this.txtIRRFod.Size = new System.Drawing.Size(75, 25);
+            this.txtIRRFod.TabIndex = 9;
+            this.txtIRRFod.Text = "0";
+            // 
+            // txtIRRFpa
+            // 
+            this.txtIRRFpa.Location = new System.Drawing.Point(146, 135);
+            this.txtIRRFpa.Name = "txtIRRFpa";
+            this.txtIRRFpa.Size = new System.Drawing.Size(75, 25);
+            this.txtIRRFpa.TabIndex = 8;
+            this.txtIRRFpa.Text = "0";
+            // 
+            // txtIRRFdep
+            // 
+            this.txtIRRFdep.Location = new System.Drawing.Point(146, 101);
+            this.txtIRRFdep.Name = "txtIRRFdep";
+            this.txtIRRFdep.Size = new System.Drawing.Size(75, 25);
+            this.txtIRRFdep.TabIndex = 7;
+            this.txtIRRFdep.Text = "0";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -413,107 +512,6 @@ namespace SistemaDesktop
             this.label14.Size = new System.Drawing.Size(92, 17);
             this.label14.TabIndex = 0;
             this.label14.Text = "Salário Bruto:";
-            // 
-            // txtIRRFdep
-            // 
-            this.txtIRRFdep.Location = new System.Drawing.Point(146, 101);
-            this.txtIRRFdep.Name = "txtIRRFdep";
-            this.txtIRRFdep.Size = new System.Drawing.Size(75, 25);
-            this.txtIRRFdep.TabIndex = 7;
-            this.txtIRRFdep.Text = "0";
-            // 
-            // txtIRRFpa
-            // 
-            this.txtIRRFpa.Location = new System.Drawing.Point(146, 135);
-            this.txtIRRFpa.Name = "txtIRRFpa";
-            this.txtIRRFpa.Size = new System.Drawing.Size(75, 25);
-            this.txtIRRFpa.TabIndex = 8;
-            this.txtIRRFpa.Text = "0";
-            // 
-            // txtIRRFod
-            // 
-            this.txtIRRFod.Location = new System.Drawing.Point(146, 166);
-            this.txtIRRFod.Name = "txtIRRFod";
-            this.txtIRRFod.Size = new System.Drawing.Size(75, 25);
-            this.txtIRRFod.TabIndex = 9;
-            this.txtIRRFod.Text = "0";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(12, 138);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 17);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "Pensão alimentícia:";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(48, 104);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(92, 17);
-            this.label16.TabIndex = 11;
-            this.label16.Text = "Dependentes:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(25, 169);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(115, 17);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Outras deduções:";
-            // 
-            // cbIRFFtab
-            // 
-            this.cbIRFFtab.FormattingEnabled = true;
-            this.cbIRFFtab.Items.AddRange(new object[] {
-            "",
-            "05/2023"});
-            this.cbIRFFtab.Location = new System.Drawing.Point(142, 72);
-            this.cbIRFFtab.Name = "cbIRFFtab";
-            this.cbIRFFtab.Size = new System.Drawing.Size(79, 25);
-            this.cbIRFFtab.TabIndex = 13;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(225, 76);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 17);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "IRRF:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(97, 76);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(39, 17);
-            this.label18.TabIndex = 15;
-            this.label18.Text = "INSS:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(48, 76);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(49, 17);
-            this.label19.TabIndex = 16;
-            this.label19.Text = "Tabela";
-            // 
-            // cbIRRFtab2
-            // 
-            this.cbIRRFtab2.FormattingEnabled = true;
-            this.cbIRRFtab2.Items.AddRange(new object[] {
-            "",
-            "05/2023"});
-            this.cbIRRFtab2.Location = new System.Drawing.Point(269, 72);
-            this.cbIRRFtab2.Name = "cbIRRFtab2";
-            this.cbIRRFtab2.Size = new System.Drawing.Size(79, 25);
-            this.cbIRRFtab2.TabIndex = 17;
             // 
             // frmCalc
             // 

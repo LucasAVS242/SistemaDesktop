@@ -88,7 +88,38 @@ namespace SistemaDesktop
 
                 if (txtIRRFsal.Text != "")
                 {
+                    irrfSal = double.Parse(txtIRRFsal.Text);
+
                     if (cbIRFFtab.Text == "05/2023")
+                    {
+                        if (irrfSal <= 1320)
+                        {
+                            R = irrfSal * 0.075;
+
+                        }
+                        if (irrfSal >= 1321 && irrfSal <= 2571.29)
+                        {
+                            R = (irrfSal - 1320) * 0.09 + 99;
+
+                        }
+                        if (irrfSal >= 2571.30 && irrfSal <= 3856.94)
+                        {
+                            R = (irrfSal - 2571.29) * 0.12 + 99 + 112.62;
+
+
+                        }
+                        if (irrfSal >= 3856.95 && irrfSal <= 7507.49)
+                        {
+                            R = (irrfSal - 3856.94) * 0.14 + 99 + 112.62 + 154.28;
+
+                        }
+                        if (irrfSal >= 7507.50)
+                        {
+                            R = 876.97;
+
+                        }
+                    }
+                    if (cbIRRFtab2.Text == "05/2023")
                     {
 
 
@@ -214,4 +245,5 @@ namespace SistemaDesktop
 
         }
     }
+
 }
