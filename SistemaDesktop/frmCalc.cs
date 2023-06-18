@@ -77,7 +77,7 @@ namespace SistemaDesktop
             if (cbCalc.Text == "IRRF")
             {
                 IRRF.Visible = true;
-                IRRF.Location = new Point(15, 60);
+                IRRF.Location = new Point(15, 70);
             }
 
         }
