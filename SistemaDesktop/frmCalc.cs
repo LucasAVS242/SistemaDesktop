@@ -139,8 +139,8 @@ namespace SistemaDesktop
                         if (inssSal >= 2571.30 && inssSal <= 3856.94)
                         {
                             R = (inssSal - 2571.29) * 0.12;
-                            txt1faixa.Text = "$99,00";
-                            txt2faixa.Text = "$112,62";
+                            txt1faixa.Text = string.Format("{0:c}",99);
+                            txt2faixa.Text = string.Format("{0:c}",112.62);
                             txt3faixa.Text = string.Format("{0:c}", R);
 
                             txtINSStotal.Text = string.Format("{0:c}", (R + 99 + 112.62));
@@ -149,21 +149,21 @@ namespace SistemaDesktop
                         if (inssSal >= 3856.95 && inssSal <= 7507.49)
                         {
                             R = (inssSal - 3856.94) * 0.14;
-                            txt1faixa.Text = "$99,00";
-                            txt2faixa.Text = "$112,62";
-                            txt3faixa.Text = "$154,28";
+                            txt1faixa.Text = string.Format("{0:c}",99);
+                            txt2faixa.Text = string.Format("{0:c}",112.62);
+                            txt3faixa.Text = string.Format("{0:c}",154.28);
                             txt4faixa.Text = string.Format("{0:c}", R);
 
                             txtINSStotal.Text = string.Format("{0:c}", (R + 99 + 112.62 + 154.28));
                         }
                         if (inssSal >= 7507.50)
                         {
-                            txt1faixa.Text = "$99,00";
-                            txt2faixa.Text = "$112,62";
-                            txt3faixa.Text = "$154,28";
-                            txt4faixa.Text = "$511,07";
+                            txt1faixa.Text = string.Format("{0:c}",99);
+                            txt2faixa.Text = string.Format("{0:c}",112.62);
+                            txt3faixa.Text = string.Format("{0:c}",154.28);
+                            txt4faixa.Text = string.Format("{0:c}",511.07);
 
-                            txtINSStotal.Text = "$876,97";
+                            txtINSStotal.Text = string.Format("{0:c}",876.97);
 
                         }
 
