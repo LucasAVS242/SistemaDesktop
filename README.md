@@ -11,7 +11,7 @@
 - Cadastro de usuários
 - Cadastro de clientes
 - Controle de serviços
-- Calculadora de FGTS e INSS
+- Calculadora de FGTS, INSS e IRRF 
 
 ## Download/Instalação
 
